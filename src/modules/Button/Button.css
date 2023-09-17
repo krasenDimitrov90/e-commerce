@@ -2,18 +2,18 @@
     @apply flex flex-col justify-center items-center uppercase h-btn-small px-4 font-bold text-white text-btn-small;
 }
 
-.btn.primary {
-    @apply bg-btn-green 
+.btn.btn-primary {
+    @apply bg-green-300 text-base sm:text-sm 2xl:test-
 }
 
-.btn.secondary {
-    @apply bg-btn-green rounded
+.btn.btn-secondary {
+    @apply bg-green-300 rounded
 }
 
-.btn.outlined {
+.btn.btn-outlined {
     @apply border border-black
 }
 
-.btn.outlined-rounded {
+.btn.btn-outlined-rounded {
     @apply border rounded border-black
 }
