@@ -1,0 +1,19 @@
+.btn {
+    @apply flex flex-col justify-center items-center uppercase h-btn-small px-4 font-bold text-white text-btn-small;
+}
+
+.btn.primary {
+    @apply bg-btn-green 
+}
+
+.btn.secondary {
+    @apply bg-btn-green rounded
+}
+
+.btn.outlined {
+    @apply border border-black
+}
+
+.btn.outlined-rounded {
+    @apply border rounded border-black
+}

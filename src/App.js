@@ -1,9 +1,13 @@
+import { Button } from './modules';
+
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div className="flex justify-between p-10">
+      <Button >Add to cart</Button>
+      <Button type="secondary" >Add to cart</Button>
+      <Button type="outlined" >Add to cart</Button>
+      <Button type="outlined-rounded" >Add to cart</Button>
     </div>
   );
 }
