@@ -2,10 +2,10 @@ import { Spinner } from '../Spinner/Spinner';
 
 import './Button.css';
 
-export const Button = ({ 
+export const Button = ({
     type,
     variant,
-    classes,
+    custom,
     rounded,
     size,
     expand,
@@ -16,12 +16,13 @@ export const Button = ({
     disabled,
     isLoading }) => {
 
-    let sizeClass = size || 'mid';
-    let classNames = (classes || 'btn ' + Button.variants[variant]) + ' ' +  sizeClass + ' ' + rounded;
-    classNames += expand ? ' flex-1' : '';
+    const sizeClass = size || 'mid';
+    const expandedClass = expand ? ' flex-1' : '';
+    const variantClass = (custom || 'btn ' + Button.variants[variant])
+    const classes = [variantClass, sizeClass, expandedClass, rounded];
 
     return (
-        <button className={classNames} type={type} onClick={onClick} disabled={disabled || isLoading}>
+        <button className={classes.join(' ')} type={type} onClick={onClick} disabled={disabled || isLoading}>
             {isLoading && <Spinner />}
             {leftIcon && !isLoading && leftIcon}
             {children}
@@ -31,8 +32,7 @@ export const Button = ({
 };
 
 Button.defaultProps = {
-    style: null,
-    classes: null,
+    custom: null,
     type: 'button',
     rounded: '',
     expand: false,
