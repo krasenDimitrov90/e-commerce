@@ -6,13 +6,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'btn-green': '#49ad00'
+        green: {
+          '300': '#4dac1d',
+          '400': '#308605',
+        },
+        blue: {
+          '500': '#175EA8',
+          '800': '#124B86',
+        },
+        dark: {
+          '800': '#292B2C',
+        },
+        gray: {
+          400: '#E0E0E0'
+        }
       },
       fontSize: {
-        'btn-small': '10px'
+        'xs': '10px'
       },
       height: {
-        'btn-small': '46px',
+        '12': '46px',
+      },
+      width: {
+        '12': '46px'
+      },
+      transitionDelay: {
+        '50': '50ms',
       }
     },
   },
