@@ -1,19 +1,71 @@
+button:disabled {
+    @apply cursor-no-drop opacity-70
+}
+
+.small {
+    @apply h-8 w-8
+}
+
+.mid {
+    @apply h-12
+}
+
 .btn {
-    @apply flex flex-col justify-center items-center uppercase h-btn-small px-4 font-bold text-white text-btn-small;
+    @apply flex justify-center items-center uppercase px-4 font-bold text-xs transition-all duration-150 ease-linear;
 }
 
-.btn.btn-primary {
-    @apply bg-green-300 text-base sm:text-sm 2xl:test-
+
+.btn-green {
+    @apply bg-green-300 text-white
+}
+.btn-green:hover {
+    @apply bg-green-400 text-white
 }
 
-.btn.btn-secondary {
-    @apply bg-green-300 rounded
+
+.btn-gray-green {
+    @apply bg-gray-400
 }
 
-.btn.btn-outlined {
-    @apply border border-black
+.btn-dark {
+    @apply bg-dark-800 text-white
 }
 
-.btn.btn-outlined-rounded {
-    @apply border rounded border-black
+.btn-white {
+    @apply bg-white text-gray-700
+}
+
+.btn-dark:hover,
+.btn-gray:hover,
+.btn-white:hover,
+.btn-gray-green:hover {
+    @apply bg-green-300 text-white
+}
+
+.btn-gray,
+.btn-gray-blue {
+    @apply bg-gray-400 text-gray-700
+}
+
+
+.btn-gray-blue:hover {
+    @apply bg-blue-500 text-white
+}
+
+
+
+.btn-blue {
+    @apply bg-blue-500 text-white
+}
+
+.btn-dark-blue {
+    @apply bg-blue-800 text-white
+}
+
+.half-rounded {
+    @apply rounded-t
+}
+
+.circle {
+    @apply rounded-full
 }
