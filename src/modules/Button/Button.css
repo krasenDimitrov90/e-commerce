@@ -27,22 +27,21 @@ button:disabled {
     @apply bg-gray-400
 }
 
-.btn-dark {
+.btn-dark-green {
     @apply bg-dark-800 text-white
 }
 
-.btn-white {
+.btn-white-green {
     @apply bg-white text-gray-700
 }
 
-.btn-dark:hover,
-.btn-gray:hover,
-.btn-white:hover,
-.btn-gray-green:hover {
+.btn-dark-green:hover,
+.btn-gray-green:hover,
+.btn-white-green:hover {
     @apply bg-green-300 text-white
 }
 
-.btn-gray,
+.btn-gray-green,
 .btn-gray-blue {
     @apply bg-gray-400 text-gray-700
 }

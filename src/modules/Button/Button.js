@@ -42,13 +42,10 @@ Button.defaultProps = {
 
 Button.variants = {
     'green': 'btn-green',
-    'white': 'btn-white',
-    'gray': 'btn-gray',
+    'white-green': 'btn-white-green',
     'gray-green': 'btn-gray-green',
     'gray-blue': 'btn-gray-blue',
     'blue': 'btn-blue',
     'dark-blue': 'btn-dark-blue',
-    'dark': 'btn-dark',
-    'white-green-transparent': 'btn-white-green-transparent',
-    'gray-green-transparent': 'btn-gray-green-transparent',
+    'dark-green': 'btn-dark-green',
 };

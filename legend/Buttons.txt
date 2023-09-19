@@ -5,11 +5,10 @@ Styles
     hover effect color
 
     green
-    dark
-    white
-    gray
-    gray-blue
+    dark-green
+    white-green
     gray-green
+    gray-blue
     blue
     dark-blue
 
