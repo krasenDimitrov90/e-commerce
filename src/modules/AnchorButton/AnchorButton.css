@@ -1,0 +1,21 @@
+.anchor-btn {
+    @apply text-xs font-bold transition-all duration-150 ease-linear
+}
+
+.anchor-white-green {
+    @apply text-white
+}
+
+.anchor-gray-green {
+    @apply text-gray-700
+}
+
+/* .anchor-btn-white-green,
+.anchor-btn-gray-green {
+    @apply bg-none p-0 m-0
+} */
+
+.anchor-white-green:hover,
+.anchor-gray-green:hover {
+    @apply text-green-300
+}

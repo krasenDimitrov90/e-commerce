@@ -1,0 +1,49 @@
+Styles
+    USE THIS WITH <variant> prop 
+    When the color is only one (e.g green) the background is one color and there is no hover
+    When the color is from two colors (e.g gray-green) first is for default color, second is for 
+    hover effect color
+
+    green
+    dark
+    white
+    gray
+    gray-blue
+    gray-green
+    blue
+    dark-blue
+
+Rounded
+    USE THIS WITH <rounded> prop
+
+    half-rounded - only the top corners are rounded
+    rounded - all corners are rounded
+    circle - border is circled
+
+
+
+Size
+    USE THIS WITH <size> prop
+
+    The <mid> className is for button height - 46px
+    The <small> className is for button height - 32px and width 32px (Use this for ICON buttons)
+
+If <isLoading>  prop is set to true the spinner will pop up in the left of the content
+
+For disabling the button set <disabled> prop to true
+    If <isLoading> prop is true disabled is also trues
+
+Expand
+    If <expand> prop is set to true, the button gets <flex-1> class
+
+Type 
+    For changing the type of the button (e.g button, submit, etc) set the <type> prop
+    By default it is 'button'
+    
+For CUSTOM styles use <custom> prop
+
+For Icons 
+    <leftIcon> prop - for icon on the left side
+    <rightIcon> prop - for icon on the right side
+
+    Or for button with Icon only give an Icon children of the component
