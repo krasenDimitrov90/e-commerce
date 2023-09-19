@@ -3,6 +3,8 @@ import { Button } from './modules';
 import { AnchorButton } from './modules';
 import { Icon } from './modules';
 
+import { ButtonTypes } from './components-renderer';
+
 
 function App() {
 
@@ -15,6 +17,10 @@ function App() {
       setIsLoading(false);
     }, 1000)
   });
+
+  return (
+    <ButtonTypes onClick={clickHandler} isLoading={isLoading} ></ButtonTypes>
+  );
 
   return (
     <div className="flex justify-between p-10">
