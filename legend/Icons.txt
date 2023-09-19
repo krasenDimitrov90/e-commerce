@@ -1,0 +1,37 @@
+Icons gets two parameters => <left> and <right>
+    if set to true the component gets margin of predifined value to the coresponding side
+
+Variants 
+    search
+    heart
+    gear
+    trash
+    cart
+    user
+    user
+    phone
+    mail
+    clipboard
+    arrow
+    full
+    empty
+    calendar
+    check
+    pen
+    plus
+    minus
+    arrow
+    arrow
+    list
+    expand
+    menu-bars
+    grid
+
+    healthcare
+    mixer
+    home
+    tree
+    multimedia
+    hiking
+    sport
+    drop

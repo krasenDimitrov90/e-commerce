@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './modules';
-import { SearchIcon, HeartIcon, GearIcon } from './modules';
+import { AnchorButton } from './modules';
+import { Icon } from './modules';
 
 
 function App() {
@@ -17,21 +18,26 @@ function App() {
 
   return (
     <div className="flex justify-between p-10">
-      <Button variant="green" rounded={'rounded'} disabled={true}>Add to cart</Button>
-      <Button variant="dark" disabled={true} rightIcon={<HeartIcon right={true} />}>Add to cart</Button>
+      <Button variant="green" rounded={'rounded'}>Add to cart</Button>
+      <AnchorButton variant="white-green">Electronics</AnchorButton>
+      <AnchorButton variant="gray-green" upperCase={true}>Home</AnchorButton>
+      <Button variant="dark" disabled={true} rightIcon={<Icon variant="heart" left={true} />}>Add to cart</Button>
       <Button custom={'bg-dark-800 w-12 text-[26px] text-white rounded'}>
-        <GearIcon />
+        <Icon variant="gear"/>
       </Button>
-      <Button variant="gray" isLoading={isLoading} leftIcon={<GearIcon left={true} />} onClick={clickHandler} rounded={true} >Add to cart</Button>
-      <Button variant="gray-blue" icon={icon} left={true} rounded={'rounded'} >Add to cart</Button>
+      <Button variant="gray" isLoading={isLoading} leftIcon={<Icon variant="gear" right={true} />} onClick={clickHandler} rounded={true} >Add to cart</Button>
+      <Button variant="gray-blue" rightIcon={<Icon variant="gear" left={true}/>} rounded={'rounded'} >Add to cart</Button>
       <Button variant="blue" disabled={true} >Add to cart</Button>
       <Button variant="dark-blue" >Add to cart</Button>
       <Button variant="gray-blue" rounded={'half-rounded'}>Add to cart</Button>
       <Button variant='gray-green' rounded={'circle'} size='small'>
-        <SearchIcon />
+        <Icon variant="search"/>
       </Button>
       <Button variant='gray-blue' rounded='rounded' size='small'>
-        <HeartIcon />
+        <Icon variant="heart" />
+      </Button>
+      <Button variant='gray-blue' rounded='circle' size='small'>
+        <Icon variant="grid" />
       </Button>
     </div >
   );
