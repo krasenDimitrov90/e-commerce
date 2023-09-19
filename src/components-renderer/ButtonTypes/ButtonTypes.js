@@ -24,7 +24,9 @@ const wrapper = (WrappedComponent) => {
                 rounded={rounded}
                 leftIcon={leftIcon}
                 rightIcon={rightIcon}
-            >{children}</WrappedComponent>
+            >
+                {children}
+            </WrappedComponent>
         );
     };
 
@@ -71,24 +73,6 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
                     <Button variant={'gray-green'} leftIcon={<Icon variant='gear' right={true} />}>Left icon</Button>
                     <Button variant={'gray-green'} rightIcon={<Icon variant='search' left={true} />} >Right icon</Button>
                     <Button
-                        variant={'gray-green'}
-                        rounded='circle'
-                        leftIcon={<Icon variant='gear' right={true} />}
-                        rightIcon={<Icon variant='search' left={true} />}
-                    >
-                        Both sides
-                    </Button>
-                </div>
-            </div>
-
-            <div className={outContainerClass}>
-                <h1>Loading Buttons</h1>
-                <div className={innerContainerClass}>
-                    <Button isLoading={isLoading} onClick={onClick} variant={'gray-green'} leftIcon={<Icon variant='gear' right={true} />}>Left icon</Button>
-                    <Button isLoading={isLoading} onClick={onClick} variant={'gray-green'} rightIcon={<Icon variant='search' left={true} />} >Right icon</Button>
-                    <Button
-                        isLoading={isLoading}
-                        onClick={onClick}
                         variant={'gray-green'}
                         rounded='circle'
                         leftIcon={<Icon variant='gear' right={true} />}
