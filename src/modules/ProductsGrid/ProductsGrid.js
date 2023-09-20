@@ -4,6 +4,25 @@ import './ProductsGrid.css';
 
 export const ProductsGrid = () => {
 
+    // return (
+    //     <div className='products-grid'>
+    //         <ProductItem image='boiler' title='Телефон'/>
+    //         <ProductItem image='dispenser' title='Телефон'/>
+    //         <ProductItem image='frape' title='Телефон' />
+    //         <ProductItem image='iutiq2' title='Телефон' />
+
+    //         <ProductItem image='utiq' title='Телефон'/>
+    //         <ProductItem image='kolona' title='Телефон'/>
+    //         <ProductItem image='kolona2' title='Телефон' />
+    //         <ProductItem image='phone2' title='Телефон' />
+
+    //         <ProductItem image='melachka' title='Телефон'/>
+    //         <ProductItem image='krem' title='Телефон' />
+    //         <ProductItem image='krem2' title='Телефон' />
+    //         <ProductItem image='kartofki' title='Телефон' />
+    //     </div>
+    // );
+
     return (
         <div className='products-grid'>
             <ProductItem image='boiler' title=' Електрически водонагревател за мигновено затопляне на вода в кухнята 30-60°C с м'/>
@@ -14,7 +33,7 @@ export const ProductsGrid = () => {
             <ProductItem image='utiq' title=' Самопочистваща се парна  ютия с мека ръкохватка и температурен контрол Елеком ЕК'/>
             <ProductItem image='kolona' title=' Преносима блутут тонколона с микрофон, караоке функция и LED осветление Elekom Е...'/>
             <ProductItem image='kolona2' title=' Преносима блутут тонколона с микрофон, караоке функция и LED осветление Elekom Е' />
-            <ProductItem image='phone2' title='Телефон' />
+            <ProductItem image='phone2' title='  Уред за Вертикално гладене с Пара ЕК-801GS ' />
 
             <ProductItem image='melachka' title=' Мощна Eлектрическа Месомелачка ЕЛЕКОМ ЕК-312 '/>
             <ProductItem image='krem' title=' Масло стимулант за ускоряване растежа на косата Икаров' />

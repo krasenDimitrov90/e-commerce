@@ -45,6 +45,9 @@ module.exports = {
     fontFamily: {
       'poppins-100': ['Poppins'],
     },
+    lineHeight: {
+      '3': '14px',
+    }
   },
   plugins: [],
 }

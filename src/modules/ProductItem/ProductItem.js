@@ -14,14 +14,14 @@ export const ProductItem = ({ title, image }) => {
 
                 <ProductTitle title={title} />
 
-                <ProductPrice price={10} />
+                <ProductPrice price={10} discountFrom={15.5}/>
 
                 <ProductRating reviews={10} />
             </div>
 
             <div className='product-zoom-btn-container'>
             <Button
-                    variant='gray-green'
+                    variant='white-green'
                     rounded='rounded'
                     size='small'
                 >
