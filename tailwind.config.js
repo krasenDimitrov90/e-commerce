@@ -43,7 +43,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      'poppins-100': ['Poppins 100', 'sans'],
+      'poppins-100': ['Poppins'],
     },
   },
   plugins: [],
