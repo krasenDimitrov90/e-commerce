@@ -4,7 +4,7 @@ export const ProductPrice = ({ price }) => {
 
     return (
         <div className='product-price-container'>
-            <span className='product-price'>${price.toFixed(2)}</span>
+            <span className='product-price'>{price.toFixed(2)} лв</span>
         </div>
     );
 };

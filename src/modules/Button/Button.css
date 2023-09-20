@@ -3,7 +3,7 @@ button:disabled {
 }
 
 .small {
-    @apply h-8 w-8
+    @apply h-10 w-10
 }
 
 .mid {

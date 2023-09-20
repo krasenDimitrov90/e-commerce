@@ -1,0 +1,7 @@
+.product-image-container {
+    @apply p-[4px] flex-1
+}
+
+.product-image {
+    @apply h-auto w-[100%]
+}

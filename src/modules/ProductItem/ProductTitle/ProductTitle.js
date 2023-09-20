@@ -4,7 +4,7 @@ export const ProductTitle = ({ title }) => {
 
     return (
         <div className='product-title-container'>
-            <button className='product-description-title'>{title}</button>
+            <button className='product-title'>{title}</button>
         </div>
     );
 };
