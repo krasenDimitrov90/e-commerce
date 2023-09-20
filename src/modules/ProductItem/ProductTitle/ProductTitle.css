@@ -3,7 +3,7 @@
 }
 
 .product-title-container button {
-    @apply flex justify-start 
+    @apply flex justify-start leading-3
 }
 
 .product-title-container button:hover {

@@ -1,7 +1,7 @@
 .product-image-container {
-    @apply p-[4px] flex-1
+    @apply p-[4px] flex-1 h-[250px]
 }
 
 .product-image {
-    @apply h-auto w-[100%]
+    @apply  object-fill 
 }

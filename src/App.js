@@ -4,8 +4,10 @@ import { ButtonTypes, ProductItemType } from './components-renderer';
 
 const Menu = () => {
   return (
-    <div className='flex-1 basis-1/4'>
-      MENU
+    <div className='flex-1 flex basis-1/4 p-2'>
+      <div className='flex-1 bg-gray-300 p-4'>
+        MENU
+      </div>
     </div>
   );
 };

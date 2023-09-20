@@ -1,3 +1,7 @@
 .product-price {
-    @apply text-red-600 font-bold
+    @apply text-red-600 font-extrabold mr-4
+}
+
+.product-discount-from {
+    @apply font-extrabold text-sm text-gray-500 line-through
 }

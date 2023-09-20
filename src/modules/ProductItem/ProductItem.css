@@ -3,7 +3,7 @@
 }
 
 .product-container:hover {
-    @apply shadow-[0_-4px_40px_-12px_rgba(0,0,0,.15)] shadow-gray-500
+    @apply shadow-[0_-4px_30px_-12px_rgba(0,0,0,.15)] shadow-gray-600
 }
 
 .product-tumbnails-container {
@@ -11,11 +11,15 @@
 }
 
 .product-description-container {
-    @apply px-5 flex flex-col flex-1 justify-end mt-2
+    @apply px-2 flex flex-col flex-1 justify-end mt-2
 }
 
 .product-zoom-btn-container {
     @apply absolute top-1/4 flex justify-center w-full opacity-0
+}
+
+.product-zoom-btn-container button {
+    @apply shadow-[0_0px_20px_0px_rgba(0,0,0,.15)] shadow-gray-500 
 }
 
 .product-add-to-cart-btn-container {
