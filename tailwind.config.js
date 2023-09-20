@@ -18,11 +18,19 @@ module.exports = {
           '800': '#292B2C',
         },
         gray: {
-          400: '#E0E0E0'
+          400: '#E0E0E0',
+          500: '#BDBDBD',
+        },
+        orange: {
+          300: '#F7C360',
+        },
+        red: {
+          600: '#E95028',
         }
       },
       fontSize: {
-        'xs': '10px'
+        'xs': '10px',
+        'sm': '12px',
       },
       height: {
         '12': '46px',
@@ -33,6 +41,9 @@ module.exports = {
       transitionDelay: {
         '50': '50ms',
       }
+    },
+    fontFamily: {
+      'poppins-100': ['Poppins 100', 'sans'],
     },
   },
   plugins: [],
