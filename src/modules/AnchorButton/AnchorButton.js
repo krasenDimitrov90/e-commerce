@@ -1,10 +1,11 @@
 import './AnchorButton.css';
 
-export const AnchorButton = ({ variant, upperCase, children }) => {
+export const AnchorButton = ({ variant, upperCase, thin = false, children }) => {
 
     const upperCaseClass = upperCase ? 'uppercase' : '';
     const variantClass = 'anchor-btn ' + AnchorButton.variants[variant];
-    const classes = [upperCaseClass, variantClass];
+    const thinClass = thin ? 'thin' : '';
+    const classes = [upperCaseClass, variantClass, thinClass];
 
     return (
         <button className={classes.join(' ')}>{children}</button>
