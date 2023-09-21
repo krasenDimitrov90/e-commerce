@@ -41,14 +41,17 @@ module.exports = {
       },
       transitionDelay: {
         '50': '50ms',
-      }
+      },
+      transitionProperty: {
+        'max-height': 'max-height'
+      },
+      fontFamily: {
+        'poppins-100': ['Poppins'],
+      },
+      lineHeight: {
+        '3': '14px',
+      },
     },
-    fontFamily: {
-      'poppins-100': ['Poppins'],
-    },
-    lineHeight: {
-      '3': '14px',
-    }
   },
   plugins: [],
 }

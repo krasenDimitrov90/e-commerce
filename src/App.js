@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ButtonTypes, ProductItemType } from './components-renderer';
+import { CategoriesLeftMenu } from './modules';
 
 const Menu = () => {
   return (
@@ -18,7 +19,7 @@ function App() {
     <>
       {/* <ButtonTypes /> */}
       <div className='flex'>
-        <Menu />
+        <CategoriesLeftMenu />
         <ProductItemType />
       </div>
     </>

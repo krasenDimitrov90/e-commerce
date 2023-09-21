@@ -8,3 +8,5 @@ export * from './ProductItem/ProductPrice/ProductPrice';
 export * from './ProductItem/ProductRating/ProductRating';
 export * from './ProductItem/ProductTitle/ProductTitle';
 export * from './ProductItem/ProductImage/ProductImage';
+export * from './CategoriesLeftMenu/CategoriesLeftMenu';
+export * from './CategoriesLeftMenu/CategorieList/CategorieList'
