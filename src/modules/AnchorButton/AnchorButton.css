@@ -1,5 +1,5 @@
 .anchor-btn {
-    @apply font-bold transition-all duration-150 ease-linear
+    @apply font-bold transition-all duration-150 ease-linear text-left
 }
 
 .anchor-btn.thin {
