@@ -4,25 +4,6 @@ import './ProductsGrid.css';
 
 export const ProductsGrid = () => {
 
-    // return (
-    //     <div className='products-grid'>
-    //         <ProductItem image='boiler' title='Телефон'/>
-    //         <ProductItem image='dispenser' title='Телефон'/>
-    //         <ProductItem image='frape' title='Телефон' />
-    //         <ProductItem image='iutiq2' title='Телефон' />
-
-    //         <ProductItem image='utiq' title='Телефон'/>
-    //         <ProductItem image='kolona' title='Телефон'/>
-    //         <ProductItem image='kolona2' title='Телефон' />
-    //         <ProductItem image='phone2' title='Телефон' />
-
-    //         <ProductItem image='melachka' title='Телефон'/>
-    //         <ProductItem image='krem' title='Телефон' />
-    //         <ProductItem image='krem2' title='Телефон' />
-    //         <ProductItem image='kartofki' title='Телефон' />
-    //     </div>
-    // );
-
     return (
         <div className='products-grid'>
             <ProductItem image='boiler' title=' Електрически водонагревател за мигновено затопляне на вода в кухнята 30-60°C с м'/>
