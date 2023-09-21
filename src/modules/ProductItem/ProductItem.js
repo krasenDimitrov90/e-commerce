@@ -32,7 +32,7 @@ export const ProductItem = ({ title, image }) => {
 
             <div className='product-add-to-cart-btn-container'>
                 <Button
-                    variant='dark-green'
+                    variant='blue-green'
                     expand={true}
                     leftIcon={<Icon variant='cart' right={true} />}
                 >
