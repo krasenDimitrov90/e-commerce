@@ -48,6 +48,7 @@ Button.variants = {
     'gray-green': 'btn-gray-green',
     'gray-blue': 'btn-gray-blue',
     'blue': 'btn-blue',
+    'blue-green': 'btn-blue-green',
     'dark-blue': 'btn-dark-blue',
     'dark-green': 'btn-dark-green',
 };

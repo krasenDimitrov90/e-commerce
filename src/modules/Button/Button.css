@@ -49,7 +49,8 @@ button:disabled {
 
 .btn-dark-green:hover,
 .btn-gray-green:hover,
-.btn-white-green:hover {
+.btn-white-green:hover,
+.btn-blue-green:hover {
     @apply bg-green-300 text-white
 }
 
@@ -63,7 +64,8 @@ button:disabled {
     @apply bg-blue-500 text-white
 }
 
-.btn-blue {
+.btn-blue,
+.btn-blue-green {
     @apply bg-blue-500 text-white
 }
 
