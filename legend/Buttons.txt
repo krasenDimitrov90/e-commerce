@@ -24,8 +24,14 @@ Rounded
 Size
     USE THIS WITH <size> prop
 
-    The <mid> className is for button height - 46px
-    The <small> className is for button height - 32px and width 32px (Use this for ICON buttons)
+    The <btn-mid> className is for button height - 46px
+    The <btn-small> className is for button height - 32px and width 32px (Use this for ICON buttons)
+
+Content Size
+    USE THIS WITH <contentSize> prop
+    The <btn-content-mid> className is for fontSize - 14px
+    The <btn-content-small> className is for fontSize - 10px
+
 
 If <isLoading>  prop is set to true the spinner will pop up in the left of the content
 

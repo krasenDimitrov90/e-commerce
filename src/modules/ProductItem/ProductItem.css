@@ -15,11 +15,11 @@
 }
 
 .product-zoom-btn-container {
-    @apply absolute top-1/4 flex justify-center w-full opacity-0
+    @apply absolute top-1/2 flex justify-center w-full opacity-0
 }
 
 .product-zoom-btn-container button {
-    @apply shadow-[0_0px_20px_0px_rgba(0,0,0,.15)] shadow-gray-500 
+    @apply shadow-[0_0px_20px_0px_rgba(0,0,0,.15)] shadow-gray-500
 }
 
 .product-add-to-cart-btn-container {

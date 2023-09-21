@@ -23,7 +23,8 @@ export const ProductItem = ({ title, image }) => {
             <Button
                     variant='white-green'
                     rounded='rounded'
-                    size='small'
+                    size='btn-small'
+                    contentSize='btn-content-mid'
                 >
                    {<Icon variant='search' />}
                 </Button>

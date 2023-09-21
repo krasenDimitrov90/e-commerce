@@ -8,6 +8,7 @@ export const Button = ({
     custom,
     rounded,
     size,
+    contentSize,
     expand,
     leftIcon,
     rightIcon,
@@ -16,10 +17,11 @@ export const Button = ({
     disabled,
     isLoading }) => {
 
-    const sizeClass = size || 'mid';
+    const contentSizeClass = contentSize || size || 'btn-content-small';
+    const sizeClass = size || 'btn-mid';
     const expandedClass = expand ? ' flex-1' : '';
     const variantClass = (custom || 'btn ' + Button.variants[variant])
-    const classes = [variantClass, sizeClass, expandedClass, rounded];
+    const classes = [variantClass, contentSizeClass, sizeClass, expandedClass, rounded];
 
     return (
         <button className={classes.join(' ')} type={type} onClick={onClick} disabled={disabled || isLoading}>

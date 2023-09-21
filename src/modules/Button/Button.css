@@ -2,16 +2,24 @@ button:disabled {
     @apply cursor-no-drop opacity-70
 }
 
-.small {
+.btn-small {
     @apply h-10 w-10
 }
 
-.mid {
+.btn-mid {
     @apply h-12
 }
 
+.btn-content-small {
+    @apply text-xs
+}
+
+.btn-content-mid {
+    @apply text-md
+}
+
 .btn {
-    @apply flex justify-center items-center uppercase px-4 font-bold text-xs transition-all duration-150 ease-linear;
+    @apply flex justify-center items-center uppercase px-4 font-bold transition-all duration-150 ease-linear;
 }
 
 
