@@ -10,6 +10,10 @@
     @apply text-white hover:text-green-300
 }
 
+.link-dark {
+    @apply text-dark-800 hover:text-green-300
+}
+
 /* <<<<< LINK SIZES >>>>> */
 
 .link-xs {

@@ -34,6 +34,7 @@ LinkButton.variants = {
     variant: {
         primary: 'link-primary',
         secondary: 'link-secondary',
+        dark: 'link-dark',
     },
     size: {
         xs: 'link-xs',

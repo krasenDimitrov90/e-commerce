@@ -11,7 +11,7 @@ export const LinkTypes = () => {
                 <div className={outContainerClass}>
                     <h1>Primary</h1>
                     <div className={innerContainerClass}>
-                        <LinkButton size='xs' path='https://www.shik.bg/search/%D0%BA%D1%80%D0%B5%D0%BC'>Меню</LinkButton>
+                        <LinkButton size='xs' path='/buttons'>Меню</LinkButton>
                         <LinkButton size='sm' path='/buttons'>Мултимедия</LinkButton>
                         <LinkButton size='base' path='/buttons'>Преси</LinkButton>
                         <LinkButton size='lg' path='/buttons'>Тостери</LinkButton>
@@ -29,6 +29,19 @@ export const LinkTypes = () => {
                         <LinkButton variant='secondary' size='base' path='/buttons'>Преси</LinkButton>
                         <LinkButton variant='secondary' size='lg' path='/buttons'>Тостери</LinkButton>
                         <LinkButton variant='secondary' size='xl' path='/buttons'>Кремове</LinkButton>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className={outContainerClass}>
+                    <h1>Dark</h1>
+                    <div className={innerContainerClass}>
+                        <LinkButton variant='dark' size='xs' path='/buttons'>Меню</LinkButton>
+                        <LinkButton variant='dark' size='sm' path='/buttons'>Мултимедия</LinkButton>
+                        <LinkButton variant='dark' size='base' path='/buttons'>Преси</LinkButton>
+                        <LinkButton variant='dark' size='lg' path='/buttons'>Тостери</LinkButton>
+                        <LinkButton variant='dark' size='xl' path='/buttons'>Кремове</LinkButton>
                     </div>
                 </div>
             </div>
