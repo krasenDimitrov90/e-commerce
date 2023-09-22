@@ -1,7 +1,29 @@
 .link-btn-container {
-    @apply flex justify-center 
+    @apply flex justify-center cursor-pointer
 }
 
 .link-primary {
-    @apply text-gray-600 cursor-pointer hover:text-green-300 
+    @apply text-gray-600  hover:text-green-300
+}
+
+.link-primary {
+    @apply text-white hover:text-green-300
+}
+
+/* <<<<< LINK SIZES >>>>> */
+
+.link-xs {
+    @apply text-xs
+}
+.link-sm {
+    @apply text-sm
+}
+.link-base {
+    @apply text-base
+}
+.link-lg {
+    @apply text-lg
+}
+.link-xl {
+    @apply text-xl
 }
