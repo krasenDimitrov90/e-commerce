@@ -1,6 +1,0 @@
-This button is only text with no borders, backgrounds, borders, etc.
-It's for navigation menus
-
-Variants
-    white-green
-    gray-green

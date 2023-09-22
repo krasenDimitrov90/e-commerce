@@ -1,0 +1,15 @@
+This button is only text with no borders, backgrounds, borders, etc.
+It's for navigation menus
+
+Variants
+    primary
+    secondary
+
+Props 
+    path
+    variant
+    size
+    upperCase - set to uppercase, default is not uppercase
+    font
+    openNewTab - set to true to open in new tab, default is false
+    children
