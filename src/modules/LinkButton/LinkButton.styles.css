@@ -1,0 +1,7 @@
+.link-btn-container {
+    @apply flex justify-center 
+}
+
+.link-primary {
+    @apply text-gray-600 cursor-pointer hover:text-green-300 
+}

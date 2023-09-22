@@ -1,2 +1,2 @@
 export * from './ButtonTypes/ButtonTypes';
-export * from './ProductItemType/ProductItemType';
+export * from './LinkTypes/LinkTypes';
