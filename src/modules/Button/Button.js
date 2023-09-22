@@ -7,8 +7,8 @@ export const Button = ({
     variant,
     size,
     rounded,
+    font,
     upperCase,
-    colors,
     leftIcon,
     rightIcon,
     children,
@@ -17,10 +17,10 @@ export const Button = ({
     isLoading }) => {
 
     const classes = 'btn ' + upperCase
-        + ' ' + Button.variants.rounded[rounded]
         + ' ' + Button.variants.variant[variant]
+        + ' ' + Button.variants.rounded[rounded]
         + ' ' + Button.variants.size[size]
-        + ' ' + Button.variants.colors[colors];
+        + ' ' + Button.variants.fonts[font];
 
     return (
         <button className={classes} type={type} onClick={onClick} disabled={disabled || isLoading}>
@@ -36,6 +36,7 @@ Button.defaultProps = {
     type: 'button',
     size: 'base',
     rounded: 'not-rounded',
+    font: 'base',
     upperCase: '',
     expand: false,
     disabled: false,
@@ -68,15 +69,10 @@ Button.variants = {
         lg: 'btn-lg',
         xl: 'btn-xl',
     },
-    colors: {
-        green: 'btn-green',
-        whiteGreen: 'btn-white-green',
-        grayGreen: 'btn-gray-green',
-        blueGreen: 'btn-blue-green',
-        darkGreen: 'btn-dark-green',
-        grayBlue: 'btn-gray-blue',
-        darkBlue: 'btn-dark-blue',
-        blue: 'btn-blue',
-        red: 'btn-red',
+    fonts: {
+        sm: 'btn-font-wieght-sm',
+        base: 'btn-font-wieght-base',
+        bold: 'btn-font-wieght-bold',
+        xl: 'btn-font-wieght-xl',
     }
 };
