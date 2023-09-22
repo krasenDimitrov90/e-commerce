@@ -10,7 +10,7 @@
     @apply rounded-full
 }
 
-.btn-half-rounded {
+.btn-top-rounded {
     @apply rounded-t
 }
 
