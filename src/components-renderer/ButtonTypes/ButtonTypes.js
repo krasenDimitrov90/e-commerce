@@ -46,7 +46,7 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Default</h1>
                 <div className={innerContainerClass}>
-                    <Button variant='primary' >primary</Button>
+                    <Button upperCase='uppercase' variant='primary' >primary</Button>
                     <Button variant='secondary' >secondary</Button>
                     <Button variant='info' >info</Button>
                     <Button variant='dark'>dark</Button>

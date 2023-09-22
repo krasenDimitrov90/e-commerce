@@ -6,7 +6,7 @@
     @apply text-gray-600  hover:text-green-300
 }
 
-.link-primary {
+.link-secondary {
     @apply text-white hover:text-green-300
 }
 
@@ -26,4 +26,21 @@
 }
 .link-xl {
     @apply text-xl
+}
+
+/* <<<<< LINK FONTS >>>>> */
+
+.link-font-wieght-sm {
+    @apply font-light
+}
+
+.link-font-wieght-base {
+    @apply font-normal
+}
+.link-font-wieght-bold {
+    @apply font-bold
+}
+
+.link-font-wieght-xl {
+    @apply font-extrabold
 }
