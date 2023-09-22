@@ -2,17 +2,18 @@ import { NavLink } from 'react-router-dom';
 
 import './LinkButton.styles.css';
 
-export const LinkButton = ({ path, variant, size, upperCase, font, children }) => {
+export const LinkButton = ({ path, variant, size, upperCase, font, openNewTab, children }) => {
 
-    console.log(variant)
     const classes = 'link-btn-container ' + upperCase
         + ' ' + LinkButton.variants.variant[variant]
         + ' ' + LinkButton.variants.fonts[font]
         + ' ' + LinkButton.variants.size[size];
 
+    const target = openNewTab ? '_blank' : '_self';
+
     return (
         <div className={classes}>
-            <NavLink to={path}>
+            <NavLink to={path} target={target} >
                 {children}
             </NavLink>
         </div>
@@ -26,6 +27,7 @@ LinkButton.defaultProps = {
     size: 'base',
     upperCase: '',
     font: 'base',
+    openNewTab: false,
 }
 
 LinkButton.variants = {
