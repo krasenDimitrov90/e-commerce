@@ -29,7 +29,11 @@ module.exports = {
         }
       },
       fontSize: {
-        'md': '14px'
+        xs: ['8px', '10px'],
+        sm: ['10px', '14px'],
+        base: ['12px', '18px'],
+        lg: ['14px', '22px'],
+        xl: ['16px', '26px'],
       },
       height: {
         '12': '46px',
