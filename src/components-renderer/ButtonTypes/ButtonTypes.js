@@ -108,6 +108,16 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
                     <Button size='xl' rounded='rounded' variant='outline-danger' >XL</Button>
                 </div>
             </div>
+
+            <div className={outContainerClass}>
+                <h1>Fonts</h1>
+                <div className={innerContainerClass}>
+                    <Button font='sm' rounded='rounded' variant='primary' >SM</Button>
+                    <Button font='base' rounded='rounded' variant='primary' >BASE</Button>
+                    <Button font='bold' rounded='rounded' variant='primary' >BOLD</Button>
+                    <Button font='xl' rounded='rounded' variant='primary' >XL</Button>
+                </div>
+            </div>
         </>
     );
 };
