@@ -1,0 +1,182 @@
+.btn {
+    @apply px-5 py-2 transition-all duration-150 ease-linear;
+}
+
+/* <<<<< BUTTON VARIANTS >>>>> */
+
+.btn-default {
+    @apply rounded
+}
+.btn-rounded {
+    @apply rounded-full
+}
+.btn-sharp-corners {
+    @apply px-5 py-2 transition-all duration-150 ease-linear;
+}
+.btn-half-rounded {
+    @apply rounded-t
+}
+.btn-outlined {
+    @apply border-2
+}
+
+
+
+
+.btn-primary {
+    @apply bg-blue-500 text-white hover:bg-green-400
+}
+.btn-secondary {
+    @apply bg-gray-400 text-dark-800 hover:bg-blue-500 hover:text-white
+}
+
+.btn-info {
+    @apply bg-gray-400 text-dark-800 hover:bg-green-300 hover:text-white
+}
+
+.btn-dark {
+    @apply bg-dark-800 text-white hover:bg-green-300
+}
+
+.btn-danger {
+    @apply bg-red-600 text-white
+}
+
+
+
+/* <<<<< BUTTON COLORS >>>>> */
+
+.btn-green {
+    @apply bg-green-300 text-white hover:bg-green-400
+}
+.btn-white-green {
+    @apply bg-white text-dark-800 hover:bg-green-300 hover:text-white
+}
+.btn-gray-green {
+    @apply bg-gray-400 text-dark-800 hover:bg-green-300 hover:text-white
+}
+.btn-blue-green {
+    @apply bg-blue-500 text-white hover:bg-green-400 hover:text-white
+}
+.btn-gray-blue {
+    @apply bg-gray-400 text-dark-800 hover:bg-blue-500 hover:text-white
+}
+.btn-dark-green {
+    @apply bg-dark-800 text-white hover:bg-green-300
+}
+
+.btn-dark-blue {
+    @apply bg-dark-800  text-white hover:bg-blue-500
+}
+.btn-blue {
+    @apply bg-blue-500 text-white
+}
+.btn-red {
+    @apply bg-red-600 text-white
+}
+
+/* <<<<< BUTTON SIZES >>>>> */
+
+.btn-xs {
+    @apply text-xs leading-3
+}
+.btn-sm {
+    @apply text-sm
+}
+.btn-md {
+    @apply text-md
+}
+.btn-base {
+    @apply text-base
+}
+.btn-lg {
+    @apply text-lg
+}
+.btn-xl {
+    @apply text-xl
+}
+
+
+/* button:disabled {
+    @apply cursor-no-drop opacity-70
+}
+
+.btn-very-small {
+    @apply h-3 w-3
+}
+
+.btn-small {
+    @apply h-10 w-10
+}
+
+.btn-mid {
+    @apply h-12
+}
+
+.btn-content-small {
+    @apply text-xs p-2
+}
+
+.btn-content-mid {
+    @apply text-md px-4
+}
+
+.btn {
+    @apply flex justify-center items-center uppercase font-bold transition-all duration-150 ease-linear;
+}
+
+
+.btn-green {
+    @apply bg-green-300 text-white
+}
+.btn-green:hover {
+    @apply bg-green-400 text-white
+}
+
+
+.btn-gray-green {
+    @apply bg-gray-400
+}
+
+.btn-dark-green {
+    @apply bg-dark-800 text-white
+}
+
+.btn-white-green {
+    @apply bg-white text-dark-800
+}
+
+.btn-dark-green:hover,
+.btn-gray-green:hover,
+.btn-white-green:hover,
+.btn-blue-green:hover {
+    @apply bg-green-300 text-white
+}
+
+.btn-gray-green,
+.btn-gray-blue {
+    @apply bg-gray-400 text-dark-800
+}
+
+
+.btn-gray-blue:hover {
+    @apply bg-blue-500 text-white
+}
+
+.btn-blue,
+.btn-blue-green {
+    @apply bg-blue-500 text-white
+}
+
+.btn-dark-blue {
+    @apply bg-blue-800 text-white
+}
+
+
+.half-rounded {
+    @apply rounded-t
+}
+
+.circle {
+    @apply rounded-full
+} */

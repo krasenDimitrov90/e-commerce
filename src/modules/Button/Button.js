@@ -1,15 +1,13 @@
 import { Spinner } from '../Spinner/Spinner';
 
-import './Button.css';
+import './Button.styles.css';
 
 export const Button = ({
     type,
     variant,
-    custom,
-    rounded,
     size,
-    contentSize,
-    expand,
+    upperCase,
+    colors,
     leftIcon,
     rightIcon,
     children,
@@ -17,14 +15,13 @@ export const Button = ({
     disabled,
     isLoading }) => {
 
-    const contentSizeClass = contentSize || size || 'btn-content-small';
-    const sizeClass = size || 'btn-mid';
-    const expandedClass = expand ? ' flex-1' : '';
-    const variantClass = (custom || 'btn ' + Button.variants[variant])
-    const classes = [variantClass, contentSizeClass, sizeClass, expandedClass, rounded];
+    const classes = 'btn ' + upperCase
+        + ' ' + Button.variants.variant[variant]
+        + ' ' + Button.variants.size[size]
+        + ' ' + Button.variants.colors[colors];
 
     return (
-        <button className={classes.join(' ')} type={type} onClick={onClick} disabled={disabled || isLoading}>
+        <button className={classes} type={type} onClick={onClick} disabled={disabled || isLoading}>
             {isLoading && <Spinner />}
             {leftIcon && !isLoading && leftIcon}
             {children}
@@ -34,21 +31,39 @@ export const Button = ({
 };
 
 Button.defaultProps = {
-    custom: null,
     type: 'button',
-    rounded: '',
+    size: 'base',
+    upperCase: '',
     expand: false,
     disabled: false,
     isLoading: false,
 };
 
 Button.variants = {
-    'green': 'btn-green',
-    'white-green': 'btn-white-green',
-    'gray-green': 'btn-gray-green',
-    'gray-blue': 'btn-gray-blue',
-    'blue': 'btn-blue',
-    'blue-green': 'btn-blue-green',
-    'dark-blue': 'btn-dark-blue',
-    'dark-green': 'btn-dark-green',
+    variant: {
+        default: 'btn-default',
+        rounded: 'btn-rounded',
+        sharpCorners: 'btn-sharp-corners',
+        halfRounded: 'btn-half-rounded ',
+        outlined: 'btn-outlined',
+    },
+    size: {
+        xs: 'btn-xs',
+        sm: 'btn-sm',
+        md: 'btn-md',
+        base: 'btn-base',
+        lg: 'btn-lg',
+        xl: 'btn-xl',
+    },
+    colors: {
+        green: 'btn-green',
+        whiteGreen: 'btn-white-green',
+        grayGreen: 'btn-gray-green',
+        blueGreen: 'btn-blue-green',
+        darkGreen: 'btn-dark-green',
+        grayBlue: 'btn-gray-blue',
+        darkBlue: 'btn-dark-blue',
+        blue: 'btn-blue',
+        red: 'btn-red',
+    }
 };
