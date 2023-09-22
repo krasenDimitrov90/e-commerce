@@ -6,6 +6,7 @@ export const Button = ({
     type,
     variant,
     size,
+    rounded,
     upperCase,
     colors,
     leftIcon,
@@ -16,6 +17,7 @@ export const Button = ({
     isLoading }) => {
 
     const classes = 'btn ' + upperCase
+        + ' ' + Button.variants.rounded[rounded]
         + ' ' + Button.variants.variant[variant]
         + ' ' + Button.variants.size[size]
         + ' ' + Button.variants.colors[colors];
@@ -33,6 +35,7 @@ export const Button = ({
 Button.defaultProps = {
     type: 'button',
     size: 'base',
+    rounded: 'not-rounded',
     upperCase: '',
     expand: false,
     disabled: false,
@@ -41,16 +44,26 @@ Button.defaultProps = {
 
 Button.variants = {
     variant: {
-        default: 'btn-default',
-        rounded: 'btn-rounded',
-        sharpCorners: 'btn-sharp-corners',
-        halfRounded: 'btn-half-rounded ',
-        outlined: 'btn-outlined',
+        'primary': 'btn-primary',
+        'secondary': 'btn-secondary',
+        'info': 'btn-info',
+        'dark': 'btn-dark',
+        'danger': 'btn-danger',
+        'outline-primary': 'btn-outline-primary',
+        'outline-secondary': 'btn-outline-secondary',
+        'outline-info': 'btn-outline-info',
+        'outline-dark': 'btn-outline-dark',
+        'outline-danger': 'btn-outline-danger',
+    },
+    rounded: {
+        'not-rounded': '',
+        'rounded': 'btn-rounded',
+        'circle': 'btn-circled',
+        'half-rounded': 'btn-half-rounded',
     },
     size: {
         xs: 'btn-xs',
         sm: 'btn-sm',
-        md: 'btn-md',
         base: 'btn-base',
         lg: 'btn-lg',
         xl: 'btn-xl',

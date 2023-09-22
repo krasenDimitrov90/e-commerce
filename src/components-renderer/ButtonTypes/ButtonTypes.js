@@ -46,52 +46,66 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Default</h1>
                 <div className={innerContainerClass}>
-                    <Button variant='default' size='xs' colors='green'>Button</Button>
-                    <Button variant='default' size='sm' colors='green'>Button</Button>
-                    <Button variant='default' size='md' colors='green'>Button</Button>
-                    <Button variant='default' size='base' colors='green' upperCase='uppercase'>Button</Button>
-                    <Button variant='default' size='lg' colors='green'>Button</Button>
-                    <Button variant='default' size='xl' colors='green'>Button</Button>
-                    
+                    <Button variant='primary' >primary</Button>
+                    <Button variant='secondary' >secondary</Button>
+                    <Button variant='info' >info</Button>
+                    <Button variant='dark'>dark</Button>
+                    <Button variant='danger' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
-                <h1>Default</h1>
+                <h1>Outlined</h1>
                 <div className={innerContainerClass}>
-                    <Button  variant='sharpCorners' size='xs' colors='blueGreen'>Button</Button>
-                    <Button  variant='sharpCorners' size='sm' colors='blueGreen'>Button</Button>
-                    <Button  variant='sharpCorners' size='md' colors='blueGreen'>Button</Button>
-                    <Button  variant='sharpCorners' size='base' colors='blueGreen' upperCase='uppercase'>Button</Button>
-                    <Button  variant='sharpCorners' size='lg' colors='blueGreen'>Button</Button>
-                    <Button  variant='sharpCorners' size='xl' colors='blueGreen'>Button</Button>
-                    
+                    <Button variant='outline-primary' >primary</Button>
+                    <Button variant='outline-secondary' >secondary</Button>
+                    <Button variant='outline-info' >info</Button>
+                    <Button variant='outline-dark' >dark</Button>
+                    <Button variant='outline-danger' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
-                <h1>Default</h1>
+                <h1>Rounded</h1>
                 <div className={innerContainerClass}>
-                    <Button variant='rounded' size='xs' colors='blueGreen'>Button</Button>
-                    <Button variant='rounded' size='sm' colors='blueGreen'>Button</Button>
-                    <Button variant='rounded' size='md' colors='blueGreen'>Button</Button>
-                    <Button variant='rounded' size='base' colors='blueGreen' upperCase='uppercase'>Button</Button>
-                    <Button variant='rounded' size='lg' colors='blueGreen'>Button</Button>
-                    <Button variant='rounded' size='xl' colors='blueGreen'>Button</Button>
-                    
+                    <Button rounded='rounded' variant='outline-primary' >primary</Button>
+                    <Button rounded='rounded' variant='outline-secondary' >secondary</Button>
+                    <Button rounded='rounded' variant='outline-info' >info</Button>
+                    <Button rounded='rounded' variant='outline-dark' >dark</Button>
+                    <Button rounded='rounded' variant='outline-danger' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
-                <h1>Default</h1>
+                <h1>Circled</h1>
                 <div className={innerContainerClass}>
-                    <Button variant='outlined' size='xs' colors='darkGreen'>Button</Button>
-                    <Button variant='outlined' size='sm' colors='darkGreen'>Button</Button>
-                    <Button variant='outlined' size='md' colors='darkGreen'>Button</Button>
-                    <Button variant='outlined' size='base' colors='darkGreen' upperCase='uppercase'>Button</Button>
-                    <Button variant='outlined' size='lg' colors='darkGreen'>Button</Button>
-                    <Button variant='outlined' size='xl' colors='darkGreen'>Button</Button>
-                    
+                    <Button rounded='circle' variant='outline-primary' >primary</Button>
+                    <Button rounded='circle' variant='outline-secondary' >secondary</Button>
+                    <Button rounded='circle' variant='outline-info' >info</Button>
+                    <Button rounded='circle' variant='outline-dark' >dark</Button>
+                    <Button rounded='circle' variant='outline-danger' >danger</Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Half Circled</h1>
+                <div className={innerContainerClass}>
+                    <Button rounded='half-rounded' variant='outline-primary' >primary</Button>
+                    <Button rounded='half-rounded' variant='outline-secondary' >secondary</Button>
+                    <Button rounded='half-rounded' variant='outline-info' >info</Button>
+                    <Button rounded='half-rounded' variant='outline-dark' >dark</Button>
+                    <Button rounded='half-rounded' variant='outline-danger' >danger</Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Sizes</h1>
+                <div className={innerContainerClass}>
+                    <Button size='xs' rounded='rounded' variant='outline-primary' >XS</Button>
+                    <Button size='sm' rounded='rounded' variant='outline-secondary' >SM</Button>
+                    <Button size='base' rounded='rounded' variant='outline-info' >BASE</Button>
+                    <Button size='lg' rounded='rounded' variant='outline-dark' >LG</Button>
+                    <Button size='xl' rounded='rounded' variant='outline-danger' >XL</Button>
                 </div>
             </div>
         </>
