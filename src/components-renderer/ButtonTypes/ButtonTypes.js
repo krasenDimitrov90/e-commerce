@@ -88,13 +88,13 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             </div>
 
             <div className={outContainerClass}>
-                <h1>Half Circled</h1>
+                <h1>Top rounded</h1>
                 <div className={innerContainerClass}>
-                    <Button rounded='half-rounded' variant='outline-primary' >primary</Button>
-                    <Button rounded='half-rounded' variant='outline-secondary' >secondary</Button>
-                    <Button rounded='half-rounded' variant='outline-info' >info</Button>
-                    <Button rounded='half-rounded' variant='outline-dark' >dark</Button>
-                    <Button rounded='half-rounded' variant='outline-danger' >danger</Button>
+                    <Button rounded='top-rounded' variant='outline-primary' >primary</Button>
+                    <Button rounded='top-rounded' variant='outline-secondary' >secondary</Button>
+                    <Button rounded='top-rounded' variant='outline-info' >info</Button>
+                    <Button rounded='top-rounded' variant='outline-dark' >dark</Button>
+                    <Button rounded='top-rounded' variant='outline-danger' >danger</Button>
                 </div>
             </div>
 

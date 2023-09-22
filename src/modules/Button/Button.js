@@ -60,7 +60,7 @@ Button.variants = {
         'not-rounded': '',
         'rounded': 'btn-rounded',
         'circle': 'btn-circled',
-        'half-rounded': 'btn-half-rounded',
+        'top-rounded': 'btn-top-rounded',
     },
     size: {
         xs: 'btn-xs',
