@@ -1,4 +1,3 @@
-import React from 'react';
 import './Qauantity.styles.css';
 
 export const Qauantity = ({ quantity, setQuantity }) => {
