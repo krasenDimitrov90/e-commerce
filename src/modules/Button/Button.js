@@ -5,9 +5,10 @@ import './Button.styles.css';
 export const Button = ({
     type,
     variant,
-    size,
     rounded,
-    font,
+    size,
+    fontWeight,
+    fontSize,
     upperCase,
     leftIcon,
     rightIcon,
@@ -20,7 +21,8 @@ export const Button = ({
         + ' ' + Button.variants.variant[variant]
         + ' ' + Button.variants.rounded[rounded]
         + ' ' + Button.variants.size[size]
-        + ' ' + Button.variants.fonts[font];
+        + ' ' + Button.variants.fontWeight[fontWeight]
+        + ' ' + Button.variants.fontSize[fontSize];
 
     return (
         <button className={classes} type={type} onClick={onClick} disabled={disabled || isLoading}>
@@ -34,9 +36,10 @@ export const Button = ({
 
 Button.defaultProps = {
     type: 'button',
-    size: 'base',
+    size: 'sm',
     rounded: 'not-rounded',
-    font: 'base',
+    fontWeight: 'base',
+    fontSize: 'sm',
     upperCase: '',
     expand: false,
     disabled: false,
@@ -68,8 +71,16 @@ Button.variants = {
         base: 'btn-base',
         lg: 'btn-lg',
         xl: 'btn-xl',
+        square: 'btn-square',
     },
-    fonts: {
+    fontSize: {
+        xs: 'btn-font-xs',
+        sm: 'btn-font-sm',
+        base: 'btn-font-base',
+        lg: 'btn-font-lg',
+        xl: 'btn-font-xl',
+    },
+    fontWeight: {
         sm: 'btn-font-wieght-sm',
         base: 'btn-font-wieght-base',
         bold: 'btn-font-wieght-bold',
