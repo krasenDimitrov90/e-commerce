@@ -1,0 +1,7 @@
+.mage-container {
+    @apply flex-1 flex
+}
+
+.image {
+    @apply max-w-[100%] max-h-[100%] object-cover
+}

@@ -1,4 +1,4 @@
-import './Spinner.css';
+import './Spinner.styles.css';
 
 export const Spinner = ({ size }) => {
 
