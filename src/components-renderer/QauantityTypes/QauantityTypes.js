@@ -1,12 +1,16 @@
+import React from "react";
 import { Qauantity } from "../../modules";
 
 export const QauantityTypes = () => {
 
-    const submitHanler = (v) => console.log('The amount is ' + v); 
+    const [quantity, setQuantity] = React.useState(1);
+
+    const setQuantityHandler = (newValue) => setQuantity(newValue);
+
 
     return (
         <div className="flex justify-center items-center">
-            <Qauantity />
+            <Qauantity quantity={quantity} setQuantity={setQuantityHandler} />
         </div>
     );
 };
