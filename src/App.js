@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { Router, RouterProvider, createBrowserRouter, NavLink, Outlet } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, NavLink, Outlet } from 'react-router-dom';
 
 import { ButtonTypes } from './components-renderer/ButtonTypes/ButtonTypes';
 import { LinkTypes } from './components-renderer/LinkTypes/LinkTypes';
+import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
 import { LinkButton } from './modules';
+
 
 const Layout = () => {
 
@@ -14,6 +16,7 @@ const Layout = () => {
         <nav className='flex justify-between w-6/12'>
           <LinkButton variant='secondary' font='xl' path='/buttons'>BUTTONS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/links'>LINKS</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/images'>IMAGES</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -29,6 +32,7 @@ const router = createBrowserRouter([
     children: [
       { path: '/buttons', element: <ButtonTypes /> },
       { path: '/links', element: <LinkTypes /> },
+      { path: '/images', element: <ImageTypes /> },
     ]
   }
 ]);
