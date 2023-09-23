@@ -18,7 +18,7 @@ const wrapper = (WrappedComponent) => {
             setIsLoading(true);
             setTimeout(() => {
                 setIsLoading(false);
-            }, 3000)
+            }, 2000)
         });
         return (
             <WrappedComponent onClick={clickHandler}
@@ -161,7 +161,7 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             </div>
 
             <div className={outContainerClass}>
-                <h1>Square Text With Icon</h1>
+                <h1>Text With Icon</h1>
                 <div className={innerContainerClass}>
                     <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='primary' >Настройки</Button>
                     <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='secondary' >Настройки</Button>
@@ -174,11 +174,22 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Loading Buttons - Click To Try</h1>
                 <div className={innerContainerClass}>
-                    <Button1 isLoading={true} expand={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button1>
-                    <Button2 isLoading={true} expand={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button2>
-                    <Button3 isLoading={true} expand={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button3>
-                    <Button4 isLoading={true} expand={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button4>
-                    <Button5 isLoading={true} expand={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button5>
+                    <Button1 isLoading={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button1>
+                    <Button2 isLoading={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button2>
+                    <Button3 isLoading={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button3>
+                    <Button4 isLoading={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button4>
+                    <Button5 isLoading={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button5>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Loading Buttons - Click To Try</h1>
+                <div className={innerContainerClass}>
+                    <Button1 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button1>
+                    <Button2 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button2>
+                    <Button3 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button3>
+                    <Button4 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button4>
+                    <Button5 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button5>
                 </div>
             </div>
         </>
