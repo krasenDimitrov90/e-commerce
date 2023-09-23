@@ -1,0 +1,16 @@
+Component for the quantity to add when adding to cart 
+It gets two props 
+    { quantity, setQuantity}
+The scenario is like this
+
+ParentComponent = () = {
+    const [quantity, setQuantity] = React.useState(1);
+
+    const setQuantityHandler = (newValue) => setQuantity(newValue);
+
+     return (
+        <div className="flex justify-center items-center">
+            <Qauantity quantity={quantity} setQuantity={setQuantityHandler} />
+        </div>
+    );
+};
