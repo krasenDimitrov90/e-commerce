@@ -1,5 +1,5 @@
 .btn {
-    @apply  transition-all duration-150 ease-linear;
+    @apply flex justify-center items-center transition-all duration-150 ease-linear;
 }
 
 .btn-rounded {
@@ -64,13 +64,13 @@
     @apply h-[26px] px-2
 }
 .btn-base {
-    @apply h-[32px] px-2
+    @apply h-[32px] px-3
 }
 .btn-lg {
-    @apply h-[38px] px-2
+    @apply h-[38px] px-3
 }
 .btn-xl {
-    @apply h-[46px] px-2
+    @apply h-[46px] px-4
 }
 
 .btn-square {

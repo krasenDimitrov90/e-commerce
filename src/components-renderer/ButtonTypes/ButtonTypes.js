@@ -123,11 +123,11 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Font Sizes And Sizes</h1>
                 <div className={innerContainerClass}>
-                    <Button fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button>
-                    <Button fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button>
-                    <Button fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button>
-                    <Button fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button>
-                    <Button fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
+                    <Button isLoading={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button>
+                    <Button isLoading={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button>
+                    <Button isLoading={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button>
+                    <Button isLoading={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button>
+                    <Button isLoading={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
                 </div>
             </div>
 
@@ -149,6 +149,17 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
                     <Button fontSize='base' size='square' rounded='rounded' variant='info' ><Icon variant='search' /></Button>
                     <Button fontSize='lg' size='square' rounded='rounded' variant='dark' ><Icon variant='search' /></Button>
                     <Button fontSize='xl' size='square' rounded='rounded' variant='danger' ><Icon variant='search' /></Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Square Text With Icon</h1>
+                <div className={innerContainerClass}>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='primary' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='secondary' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='info' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='dark' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='danger' >Настройки</Button>
                 </div>
             </div>
         </>
