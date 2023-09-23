@@ -1,18 +1,22 @@
 import './Image.styles.css';
 
 import kolonka from '../../images/kolona2.jpg'
+import noImage from '../../images/No-Image.svg.png';
 
 export const Image = ({ src, alt }) => {
 
-    const path = '../../images/' + src;
-
     return (
         <div className='image-container'>
-            <img className='image' src={kolonka}  alt={alt} />
+            <img className='image' src={'awdawd'} alt={alt}
+                onError={({ currentTarget }) => {
+                    currentTarget.onerror = null; // prevents looping
+                    currentTarget.src = noImage;
+                }}
+            />
         </div>
     );
 };
 
 Image.defaultProps = {
-    alt: 'Product image',
+    alt: 'Product',
 };
