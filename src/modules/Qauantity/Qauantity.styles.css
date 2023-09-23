@@ -1,0 +1,35 @@
+.quantity-container {
+    @apply flex w-[100px] h-[40px]
+}
+
+.quantity-minus-container,
+.quantity-input-container,
+.quantity-plus-container {
+    @apply flex justify-center items-center
+}
+
+.quantity-minus-container {
+    @apply basis-1/4 flex rounded-l border-[1px] border-gray-500 text-gray-500 hover:bg-gray-200 cursor-pointer
+}
+.quantity-input-container {
+    @apply flex-1 flex border-t-[1px] border-b-[1px] border-gray-500
+}
+.quantity-plus-container {
+    @apply basis-1/4 flex rounded-r border-[1px] border-gray-500 text-gray-500  hover:bg-gray-200 cursor-pointer
+}
+
+.quantity-input {
+    @apply outline-none w-full text-center appearance-none
+}
+
+.quantity-btn {
+    @apply w-full h-full
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
