@@ -30,11 +30,11 @@ module.exports = {
         }
       },
       fontSize: {
-        xs: ['8px', '10px'],
-        sm: ['10px', '14px'],
-        base: ['12px', '18px'],
-        lg: ['14px', '22px'],
-        xl: ['16px', '26px'],
+        xs: ['8px', '8px'],
+        sm: ['10px', '10px'],
+        base: ['12px', '12px'],
+        lg: ['14px', '14px'],
+        xl: ['16px', '16px'],
       },
       height: {
         '12': '46px',

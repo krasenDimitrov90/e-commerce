@@ -81,7 +81,7 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
                 <div className={innerContainerClass}>
                     <Button rounded='circle' variant='outline-primary' >primary</Button>
                     <Button rounded='circle' variant='outline-secondary' >secondary</Button>
-                    <Button rounded='circle' variant='outline-info' >info</Button>
+                    <Button rounded='circle' variant='outline-info' >is</Button>
                     <Button rounded='circle' variant='outline-dark' >dark</Button>
                     <Button rounded='circle' variant='outline-danger' >danger</Button>
                 </div>
@@ -101,7 +101,7 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Sizes</h1>
                 <div className={innerContainerClass}>
-                    <Button size='xs' rounded='rounded' variant='outline-primary' >XS</Button>
+                    <Button size='xs' rounded='rounded' variant='outline-primary' >X</Button>
                     <Button size='sm' rounded='rounded' variant='outline-secondary' >SM</Button>
                     <Button size='base' rounded='rounded' variant='outline-info' >BASE</Button>
                     <Button size='lg' rounded='rounded' variant='outline-dark' >LG</Button>
@@ -110,12 +110,45 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             </div>
 
             <div className={outContainerClass}>
+                <h1>Font Sizes</h1>
+                <div className={innerContainerClass}>
+                    <Button fontSize='xs' size='xl' rounded='rounded' variant='primary' >XS</Button>
+                    <Button fontSize='sm' size='xl' rounded='rounded' variant='secondary' >SM</Button>
+                    <Button fontSize='base' size='xl' rounded='rounded' variant='info' >BASE</Button>
+                    <Button fontSize='lg' size='xl' rounded='rounded' variant='dark' >LG</Button>
+                    <Button fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Font Sizes And Sizes</h1>
+                <div className={innerContainerClass}>
+                    <Button fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button>
+                    <Button fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button>
+                    <Button fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button>
+                    <Button fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button>
+                    <Button fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
                 <h1>Fonts</h1>
                 <div className={innerContainerClass}>
-                    <Button font='sm' rounded='rounded' variant='primary' >SM</Button>
-                    <Button font='base' rounded='rounded' variant='primary' >BASE</Button>
-                    <Button font='bold' rounded='rounded' variant='primary' >BOLD</Button>
-                    <Button font='xl' rounded='rounded' variant='primary' >XL</Button>
+                    <Button fontWeight='sm' rounded='rounded' variant='primary' >SM</Button>
+                    <Button fontWeight='base' rounded='rounded' variant='primary' >BASE</Button>
+                    <Button fontWeight='bold' rounded='rounded' variant='primary' >BOLD</Button>
+                    <Button fontWeight='xl' rounded='rounded' variant='primary' >XL</Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Square Button h-36 w-36</h1>
+                <div className={innerContainerClass}>
+                    <Button fontSize='xs' size='square' rounded='rounded' variant='primary' ><Icon variant='search' /></Button>
+                    <Button fontSize='sm' size='square' rounded='rounded' variant='secondary' ><Icon variant='search' /></Button>
+                    <Button fontSize='base' size='square' rounded='rounded' variant='info' ><Icon variant='search' /></Button>
+                    <Button fontSize='lg' size='square' rounded='rounded' variant='dark' ><Icon variant='search' /></Button>
+                    <Button fontSize='xl' size='square' rounded='rounded' variant='danger' ><Icon variant='search' /></Button>
                 </div>
             </div>
         </>
