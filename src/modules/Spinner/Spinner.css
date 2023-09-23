@@ -12,20 +12,40 @@
     }
 } */
 
-.loader {
-    /* width: 1.5rem;
-    height: 1.5rem; */
+.spinner-xs {
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+}
+.spinner-sm {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+}
+.spinner-base {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+.spinner-lg {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+.spinner-xl {
     width: 16px;
     height: 16px;
+    margin-right: 8px;
+}
+
+.loader {
     border-width: 2px;
     font-size: 16px;
-    margin-right: 0.5rem;
 
     position: relative;
     display: inline-block;
     overflow: hidden;
-    text-indent: -999em;
-    border: 0.15em solid;
+    border: 1.5px solid;
     border-color: currentColor transparent currentColor currentColor;
     border-radius: 50%;
     animation-name: spinner-border;
@@ -33,22 +53,11 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     vertical-align: bottom;
-
-    /* color: #cf3a3a !important; */
-
-    --bs-spinner-width: 2rem;
-    --bs-spinner-height: 2rem;
-    --bs-spinner-vertical-align: -0.125em;
-    --bs-spinner-border-width: 0.25em;
     --bs-spinner-animation-speed: 0.75s;
     --bs-spinner-animation-name: spinner-border;
 
     animation: var(--bs-spinner-animation-speed) linear infinite var(--bs-spinner-animation-name);
 
-    box-sizing: border-box;
-    font-weight: normal;
-    white-space: normal;
-    word-wrap: break-word;
 }
 
 @keyframes spinner-border{

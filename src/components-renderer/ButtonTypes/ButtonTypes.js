@@ -5,6 +5,9 @@ const wrapper = (WrappedComponent) => {
     const NewComponent = ({
         variant,
         rounded,
+        size,
+        fontSize,
+        expand,
         leftIcon,
         rightIcon,
         children
@@ -15,12 +18,15 @@ const wrapper = (WrappedComponent) => {
             setIsLoading(true);
             setTimeout(() => {
                 setIsLoading(false);
-            }, 1000)
+            }, 3000)
         });
         return (
             <WrappedComponent onClick={clickHandler}
                 isLoading={isLoading}
                 variant={variant}
+                size={size}
+                fontSize={fontSize}
+                expand={expand}
                 rounded={rounded}
                 leftIcon={leftIcon}
                 rightIcon={rightIcon}
@@ -36,6 +42,8 @@ const wrapper = (WrappedComponent) => {
 const Button1 = wrapper(Button);
 const Button2 = wrapper(Button);
 const Button3 = wrapper(Button);
+const Button4 = wrapper(Button);
+const Button5 = wrapper(Button);
 
 export const ButtonTypes = ({ onClick, isLoading }) => {
     const outContainerClass = 'm-4 border-2 border-black p-4';
@@ -46,7 +54,7 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Default</h1>
                 <div className={innerContainerClass}>
-                    <Button upperCase='uppercase' variant='primary' >primary</Button>
+                    <Button upperCase={true} variant='primary' >primary</Button>
                     <Button variant='secondary' >secondary</Button>
                     <Button variant='info' >info</Button>
                     <Button variant='dark'>dark</Button>
@@ -123,11 +131,11 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Font Sizes And Sizes</h1>
                 <div className={innerContainerClass}>
-                    <Button isLoading={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button>
-                    <Button isLoading={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button>
-                    <Button isLoading={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button>
-                    <Button isLoading={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button>
-                    <Button isLoading={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
+                    <Button fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button>
+                    <Button fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button>
+                    <Button fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button>
+                    <Button fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button>
+                    <Button fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
                 </div>
             </div>
 
@@ -160,6 +168,17 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
                     <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='info' >Настройки</Button>
                     <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='dark' >Настройки</Button>
                     <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='danger' >Настройки</Button>
+                </div>
+            </div>
+
+            <div className={outContainerClass}>
+                <h1>Loading Buttons - Click To Try</h1>
+                <div className={innerContainerClass}>
+                    <Button1 isLoading={true} expand={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button1>
+                    <Button2 isLoading={true} expand={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button2>
+                    <Button3 isLoading={true} expand={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button3>
+                    <Button4 isLoading={true} expand={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button4>
+                    <Button5 isLoading={true} expand={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button5>
                 </div>
             </div>
         </>
