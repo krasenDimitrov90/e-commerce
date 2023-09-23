@@ -10,6 +10,7 @@ export const Button = ({
     fontWeight,
     fontSize,
     upperCase,
+    expand,
     leftIcon,
     rightIcon,
     children,
@@ -17,7 +18,10 @@ export const Button = ({
     disabled,
     isLoading }) => {
 
-    const classes = 'btn ' + upperCase
+    const expanded = expand ? ' flex-1 ' : ' ';
+    const uppercase = upperCase ? ' uppercase ' : ' ';
+
+    const classes = 'btn ' + expanded + uppercase 
         + ' ' + Button.variants.variant[variant]
         + ' ' + Button.variants.rounded[rounded]
         + ' ' + Button.variants.size[size]
@@ -26,7 +30,7 @@ export const Button = ({
 
     return (
         <button className={classes} type={type} onClick={onClick} disabled={disabled || isLoading}>
-            {isLoading && <Spinner />}
+            {isLoading && <Spinner size={fontSize} />}
             {leftIcon && !isLoading && leftIcon}
             {children}
             {rightIcon && rightIcon}
@@ -40,7 +44,7 @@ Button.defaultProps = {
     rounded: 'not-rounded',
     fontWeight: 'base',
     fontSize: 'sm',
-    upperCase: '',
+    upperCase: false,
     expand: false,
     disabled: false,
     isLoading: false,

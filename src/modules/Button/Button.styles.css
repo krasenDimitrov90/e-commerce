@@ -1,5 +1,5 @@
 .btn {
-    @apply flex justify-center items-center transition-all duration-150 ease-linear;
+    @apply transition-all duration-150 ease-linear;
 }
 
 .btn-rounded {
