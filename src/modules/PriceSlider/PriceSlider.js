@@ -11,36 +11,47 @@ export const PriceSlider = ({ min, max, onChange }) => {
     const rightBarRef = React.useRef(null);
     const barsWidth = 19;
 
-    const mouseMoveHandler = (e) => {
+    const getLeftPercentage = React.useCallback((refElement, defaultVal) => {
+        return parseFloat(refElement.current.style.left || defaultVal);
+    }, []);
 
-        let containerWidth = containerRef.current.offsetWidth;
-        let containerX = containerRef.current.getBoundingClientRect().x;
-        let mouseX = Math.max(e.clientX, containerX);
+    const setNewStyle = React.useCallback((refElement, value, style) => {
+        refElement.current.style[style] = value + '%';
+    }, []);
 
-
-        if (!mouseIsDown || !sliderBar) return;
-
+    const handleKnobsMovement = React.useCallback((offsetPercentage) => {
+        const rightBarLeftPercent = getLeftPercentage(rightBarRef, 100);
+        const leftBarLeftPercent = getLeftPercentage(leftBarRef, 0);
 
         if (sliderBar === 'left') {
-            let rightBarLeftPercent = parseFloat(rightBarRef.current.style.left || 100);
-
-            let width = Math.max(((containerX + containerWidth) - mouseX), 0);
-            let left = Math.max(100 - (((width + barsWidth) / containerWidth) * 100), 0);
-            leftBarRef.current.style.left = Math.min(left, rightBarLeftPercent) + '%';
-
-        } else {
-            let leftBarLeftPercent = parseFloat(leftBarRef.current.style.left || 0);
-
-            let width = Math.max(((containerX + containerWidth) - mouseX), 0);
-            let left = Math.max(100 - (((width + barsWidth) / containerWidth) * 100), 0);
-            rightBarRef.current.style.left = Math.max(left, leftBarLeftPercent) + '%';
-
+            setNewStyle(leftBarRef, Math.min(offsetPercentage, rightBarLeftPercent), 'left');
+        } else if (sliderBar === 'right') {
+            setNewStyle(rightBarRef, Math.max(offsetPercentage, leftBarLeftPercent), 'left');
         }
+    }, [leftBarRef, rightBarRef, sliderBar]);
 
-        sliderRef.current.style.width =
-            parseFloat(rightBarRef.current.style.left || 100) - parseFloat(leftBarRef.current.style.left || 0) + '%';
-        sliderRef.current.style.left = parseFloat(leftBarRef.current.style.left || 0) + '%';
+    const hadleSliderPosition = React.useCallback(() => {
+        const difference = getLeftPercentage(rightBarRef, 100) - getLeftPercentage(leftBarRef, 0);
+        setNewStyle(sliderRef, difference, 'width');
+        setNewStyle(sliderRef, getLeftPercentage(leftBarRef, 0), 'left');
 
+    },[leftBarRef, rightBarRef, sliderBar]);
+
+    const getOffsetPercentage = React.useCallback((mousePosX) => {
+
+        const containerWidth = containerRef.current.offsetWidth;
+        const containerX = containerRef.current.getBoundingClientRect().x;
+        const mouseX = Math.max(mousePosX, containerX);
+        const newSliderWidth = Math.max(((containerX + containerWidth) - mouseX), 0);
+
+        return Math.max(100 - (((newSliderWidth + barsWidth) / containerWidth) * 100), 0);
+    },[containerRef]);
+
+    const mouseMoveHandler = (e) => {
+        if (!mouseIsDown || !sliderBar) return;
+
+        handleKnobsMovement(getOffsetPercentage(e.clientX));
+        hadleSliderPosition();
     }
 
     const mouseUpHandler = () => {
@@ -60,8 +71,8 @@ export const PriceSlider = ({ min, max, onChange }) => {
     return (
         <div ref={containerRef} className='range-slider-container'>
             <div ref={sliderRef} className='slider'></div>
-            
-            <span className='left-bar'
+
+            <span className='left-knob'
                 ref={leftBarRef}
 
                 onMouseDown={() => {
@@ -70,7 +81,7 @@ export const PriceSlider = ({ min, max, onChange }) => {
                 }}
             >
             </span>
-            <span className='right-bar'
+            <span className='right-knob'
                 ref={rightBarRef}
                 onMouseDown={() => {
                     setMouseIsDown(true);
