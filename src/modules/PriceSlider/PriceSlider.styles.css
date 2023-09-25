@@ -1,9 +1,6 @@
 .range-slider-container {
-    @apply relative h-[8px] flex-1 flex justify-center bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
+    @apply relative h-[8px] flex-1  bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
 }
-/* .range-slider-container {
-    box-shadow: 0 0 4px 1px rgba(0,0,0,.2) inset;
-} */
 
 .slider {
     @apply bg-green-500 w-[100%] flex justify-between h-full absolute rounded-full
@@ -11,7 +8,7 @@
 
 .left-bar,
 .right-bar {
-    @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-black rounded-full top-[-110%] cursor-pointer
+    @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-green-500 rounded-full top-[-110%] cursor-pointer
 }
 
 .left-bar {

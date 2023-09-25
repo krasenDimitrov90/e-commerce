@@ -13,43 +13,10 @@ export const PriceSlider = ({ min, max, onChange }) => {
 
     const mouseMoveHandler = (e) => {
 
-        // if (mouseIsDown && sliderBar) {
-        //     if (sliderBar === 'left') {
-
-        //         let containerWidth = containerRef.current.offsetWidth;
-        //         let containerX = containerRef.current.getBoundingClientRect().x;
-        //         let mouseX = Math.max(e.clientX, containerX);
-
-
-        //         let width = Math.max(((containerX + containerWidth) - mouseX), 0);
-        //         let left = Math.max(100 - ((width / containerWidth) * 100), 0);
-        //         barContainerRef.current.style.width = (Math.max((width / containerWidth) * 100, barsWidth)) + '%';
-        //         barContainerRef.current.style.left = Math.min(left, 100 - barsWidth) + '%';
-        //         leftBarRef.current.style.left = Math.min(left, 100 - barsWidth) + '%';
-
-        //     } else {
-
-        //         let containerWidth = containerRef.current.offsetWidth;
-        //         let containerX = containerRef.current.getBoundingClientRect().x;
-        //         let mouseX = Math.max(e.clientX, containerX);
-
-
-        //         let width = Math.max(((containerX + containerWidth) - mouseX), 0);
-        //         width = Math.max(100 - ((width / containerWidth) * 100), barsWidth);
-        //         barContainerRef.current.style.width = width + '%';
-        //         barContainerRef.current.style.left = 0 + '%';
-        //         rightBarRef.current.style.right = 100 - width + '%';
-        //     }
-
-        // }
-
-        let leftBarX = leftBarRef.current.getBoundingClientRect().x
-        let rightBarX = rightBarRef.current.getBoundingClientRect().x
         let containerWidth = containerRef.current.offsetWidth;
         let containerX = containerRef.current.getBoundingClientRect().x;
         let mouseX = Math.max(e.clientX, containerX);
 
-        // console.log({leftBarX, rightBarX, containerX, containerWidth})
 
         if (!mouseIsDown || !sliderBar) return;
 
@@ -70,7 +37,7 @@ export const PriceSlider = ({ min, max, onChange }) => {
 
         }
 
-        sliderRef.current.style.width = 
+        sliderRef.current.style.width =
             parseFloat(rightBarRef.current.style.left || 100) - parseFloat(leftBarRef.current.style.left || 0) + '%';
         sliderRef.current.style.left = parseFloat(leftBarRef.current.style.left || 0) + '%';
 
@@ -92,23 +59,19 @@ export const PriceSlider = ({ min, max, onChange }) => {
 
     return (
         <div ref={containerRef} className='range-slider-container'>
-            <div
-                ref={sliderRef}
-                className='slider'
-            >
-            </div>
-            <span
+            <div ref={sliderRef} className='slider'></div>
+            
+            <span className='left-bar'
                 ref={leftBarRef}
-                className={`left-bar`}
+
                 onMouseDown={() => {
                     setMouseIsDown(true);
                     setSliderBar('left');
                 }}
             >
             </span>
-            <span
+            <span className='right-bar'
                 ref={rightBarRef}
-                className="right-bar"
                 onMouseDown={() => {
                     setMouseIsDown(true);
                     setSliderBar('right');
