@@ -6,14 +6,14 @@
     @apply bg-green-500 w-[100%] flex justify-between h-full absolute rounded-full
 }
 
-.left-bar,
-.right-bar {
+.left-knob,
+.right-knob {
     @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-green-500 rounded-full top-[-110%] cursor-pointer
 }
 
-.left-bar {
+.left-knob {
     @apply ml-[-1px] left-0
 }
-.right-bar {
+.right-knob {
     @apply left-[calc(100%_-_19px)]
 }
