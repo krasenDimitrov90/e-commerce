@@ -11,12 +11,12 @@
 
 .left-bar,
 .right-bar {
-    @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-green-500 rounded-full top-[-110%] cursor-pointer
+    @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-black rounded-full top-[-110%] cursor-pointer
 }
 
 .left-bar {
     @apply ml-[-1px] left-0
 }
 .right-bar {
-    @apply mr-[-1px] right-0
+    @apply left-[calc(100%_-_19px)]
 }
