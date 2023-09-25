@@ -5,11 +5,18 @@
     box-shadow: 0 0 4px 1px rgba(0,0,0,.2) inset;
 } */
 
-.bar-sliders-container {
-    @apply bg-green-500 w-[100%] flex justify-between h-full absolute 
+.slider {
+    @apply bg-green-500 w-[100%] flex justify-between h-full absolute rounded-full
 }
 
 .left-bar,
 .right-bar {
-    @apply relative flex h-[16px] w-[16px] bg-green-500 top-[-80%] cursor-pointer
+    @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-green-500 rounded-full top-[-110%] cursor-pointer
+}
+
+.left-bar {
+    @apply ml-[-1px] left-0
+}
+.right-bar {
+    @apply mr-[-1px] right-0
 }
