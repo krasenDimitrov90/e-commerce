@@ -7,7 +7,7 @@ import { ButtonTypes } from './components-renderer/ButtonTypes/ButtonTypes';
 import { LinkTypes } from './components-renderer/LinkTypes/LinkTypes';
 import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
 import { QauantityTypes } from './components-renderer/QauantityTypes/QauantityTypes';
-
+import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
 
 const Layout = () => {
 
@@ -19,6 +19,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/links'>LINKS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/images'>IMAGES</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/quantity'>QUANTITY</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/price-slider'>PRICE-SLIDER</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
       { path: '/links', element: <LinkTypes /> },
       { path: '/images', element: <ImageTypes /> },
       { path: '/quantity', element: <QauantityTypes /> },
+      { path: '/price-slider', element: <PriceSliderTypes /> },
     ]
   }
 ]);

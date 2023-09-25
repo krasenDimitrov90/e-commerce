@@ -1,0 +1,15 @@
+.range-slider-container {
+    @apply relative h-[8px] flex-1 flex justify-center bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
+}
+/* .range-slider-container {
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.2) inset;
+} */
+
+.bar-sliders-container {
+    @apply bg-green-500 w-[100%] flex justify-between h-full absolute 
+}
+
+.left-bar,
+.right-bar {
+    @apply relative flex h-[16px] w-[16px] bg-green-500 top-[-80%] cursor-pointer
+}
