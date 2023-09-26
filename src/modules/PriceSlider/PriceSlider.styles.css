@@ -1,9 +1,13 @@
-.range-slider-container {
+.range-slider-container-outer {
+    @apply bg-[#F1F1F1] w-full h-[60px] flex justify-center items-center
+}
+
+.range-slider-container-inner {
     @apply relative h-[8px] flex-1  bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
 }
 
 .slider {
-    @apply bg-green-500 w-[100%] flex justify-between h-full absolute rounded-full
+    @apply bg-green-500 w-[100%] h-full absolute rounded-full
 }
 
 .left-knob,
@@ -16,4 +20,19 @@
 }
 .right-knob {
     @apply left-[calc(100%_-_19px)]
+}
+
+.price-input-container {
+    @apply flex w-full justify-between
+}
+
+.price-input {
+    @apply w-[80px] h-[30px] text-center border-[1px] border-gray-500 rounded
+}
+
+.price-input-container >input[type="number"]::-webkit-inner-spin-button,
+.price-input-container >input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
 }

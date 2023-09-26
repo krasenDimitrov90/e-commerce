@@ -1,7 +1,7 @@
 import React from 'react';
 import './PriceSlider.styles.css';
 
-export const PriceSlider = ({ min, max, onChange }) => {
+export const PriceSlider = ({ min, max, maxPrice, onMinChange, onMaxChange }) => {
 
     const [mouseIsDown, setMouseIsDown] = React.useState(false);
     const [sliderBar, setSliderBar] = React.useState(null);
@@ -10,6 +10,11 @@ export const PriceSlider = ({ min, max, onChange }) => {
     const leftBarRef = React.useRef(null);
     const rightBarRef = React.useRef(null);
     const barsWidth = 19;
+
+    const validateNumberInput = React.useCallback((input) => {
+        if (!/^\d+$/.test(input)) return;
+        return Number(input) <= maxPrice;
+    }, []);
 
     const getLeftPercentage = React.useCallback((refElement, defaultVal) => {
         return parseFloat(refElement.current.style.left || defaultVal);
@@ -35,7 +40,7 @@ export const PriceSlider = ({ min, max, onChange }) => {
         setNewStyle(sliderRef, difference, 'width');
         setNewStyle(sliderRef, getLeftPercentage(leftBarRef, 0), 'left');
 
-    },[leftBarRef, rightBarRef, sliderBar]);
+    }, [leftBarRef, rightBarRef, sliderBar]);
 
     const getOffsetPercentage = React.useCallback((mousePosX) => {
 
@@ -45,7 +50,7 @@ export const PriceSlider = ({ min, max, onChange }) => {
         const newSliderWidth = Math.max(((containerX + containerWidth) - mouseX), 0);
 
         return Math.max(100 - (((newSliderWidth + barsWidth) / containerWidth) * 100), 0);
-    },[containerRef]);
+    }, [containerRef]);
 
     const mouseMoveHandler = (e) => {
         if (!mouseIsDown || !sliderBar) return;
@@ -69,26 +74,48 @@ export const PriceSlider = ({ min, max, onChange }) => {
     })
 
     return (
-        <div ref={containerRef} className='range-slider-container'>
-            <div ref={sliderRef} className='slider'></div>
+        <>
+            <div className="range-slider-container-outer">
+                <div ref={containerRef} className='range-slider-container-inner'>
+                    <div ref={sliderRef} className='slider'></div>
 
-            <span className='left-knob'
-                ref={leftBarRef}
+                    <span className='left-knob'
+                        ref={leftBarRef}
 
-                onMouseDown={() => {
-                    setMouseIsDown(true);
-                    setSliderBar('left');
-                }}
-            >
-            </span>
-            <span className='right-knob'
-                ref={rightBarRef}
-                onMouseDown={() => {
-                    setMouseIsDown(true);
-                    setSliderBar('right');
-                }}
-            >
-            </span>
-        </div>
+                        onMouseDown={() => {
+                            setMouseIsDown(true);
+                            setSliderBar('left');
+                        }}
+                    >
+                    </span>
+                    <span className='right-knob'
+                        ref={rightBarRef}
+                        onMouseDown={() => {
+                            setMouseIsDown(true);
+                            setSliderBar('right');
+                        }}
+                    >
+                    </span>
+                </div>
+            </div >
+            <div className="price-input-container">
+                <input className='price-input' type="text"
+                    value={min}
+                    onChange={(e) => {
+                        let value = e.target.value || '0';
+                        if (!validateNumberInput(value)) return;
+                        onMinChange(Number(value));
+                    }}
+                />
+                <input className='price-input' type="text"
+                    value={max}
+                    onChange={(e) => {
+                        let value = e.target.value || '0';
+                        if (!validateNumberInput(value)) return;
+                        onMaxChange(Number(e.target.value));
+                    }}
+                />
+            </div>
+        </>
     );
 };
