@@ -1,7 +1,7 @@
 import React from 'react';
 import './PriceSlider.styles.css';
 
-export const PriceSlider = ({ min, max, maxPrice, onMinChange, onMaxChange }) => {
+export const PriceSlider = ({ min, max, maxPrice, minDiffPercent, maxDiffPercent, onMinChange, onMaxChange }) => {
 
     const [mouseIsDown, setMouseIsDown] = React.useState(false);
     const [sliderBar, setSliderBar] = React.useState(null);
@@ -10,6 +10,23 @@ export const PriceSlider = ({ min, max, maxPrice, onMinChange, onMaxChange }) =>
     const leftBarRef = React.useRef(null);
     const rightBarRef = React.useRef(null);
     const barsWidth = 19;
+
+    React.useEffect(() => {
+        window.addEventListener('mousemove', mouseMoveHandler);
+        window.addEventListener('mouseup', mouseUpHandler);
+        return (() => {
+            window.removeEventListener('mousemove', mouseMoveHandler);
+            window.addEventListener('mouseup', mouseUpHandler);
+        })
+    })
+
+    React.useEffect(() => {
+        setNewStyle(leftBarRef, minDiffPercent, 'left');
+    }, [minDiffPercent]);
+
+    React.useEffect(() => {
+        setNewStyle(rightBarRef, maxDiffPercent, 'left');
+    }, [maxDiffPercent]);
 
     const validateNumberInput = React.useCallback((input) => {
         if (!/^\d+$/.test(input)) return;
@@ -64,14 +81,7 @@ export const PriceSlider = ({ min, max, maxPrice, onMinChange, onMaxChange }) =>
         setSliderBar(null);
     }
 
-    React.useEffect(() => {
-        window.addEventListener('mousemove', mouseMoveHandler);
-        window.addEventListener('mouseup', mouseUpHandler);
-        return (() => {
-            window.removeEventListener('mousemove', mouseMoveHandler);
-            window.addEventListener('mouseup', mouseUpHandler);
-        })
-    })
+   
 
     return (
         <>

@@ -23,13 +23,15 @@ export const PriceSliderTypes = () => {
         setMaxDiffPercent(getPercent(newValue, maxPrice));
     }, []);
 
-    // console.log({ minDiffPercent, maxDiffPercent, max, min });
+    console.log({ minDiffPercent, maxDiffPercent, max, min });
 
     return (
         <div className="flex flex-col m-auto w-[360px] justify-center items-center">
             <PriceSlider
                 min={min}
                 max={max}
+                minDiffPercent={minDiffPercent}
+                maxDiffPercent={maxDiffPercent}
                 maxPrice={maxPrice}
                 onMinChange={handleMinChange}
                 onMaxChange={handleMaxChange}

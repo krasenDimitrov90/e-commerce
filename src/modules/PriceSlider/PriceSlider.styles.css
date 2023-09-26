@@ -6,9 +6,11 @@
     @apply relative h-[8px] flex-1  bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
 }
 
-.slider {
+/* THIS IS COMMENT JUST FOR TEST ANOTHER COMPONENT WITH THE SAME CLASS */
+
+/* .slider {
     @apply bg-green-500 w-[100%] h-full absolute rounded-full
-}
+} */
 
 .left-knob,
 .right-knob {
