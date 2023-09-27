@@ -52,11 +52,11 @@
 }
 
 .range-bar {
-    @apply bg-green-500
+    @apply bg-green-300
 }
 
 .knob {
-    @apply absolute w-[20px] h-[20px] bg-white z-10 rounded-full border-[6px] border-green-500 
+    @apply absolute w-[20px] h-[20px] bg-white z-10 rounded-full border-[6px] border-green-300 cursor-pointer hover:border-green-400
 }
 
 .left-knob {
