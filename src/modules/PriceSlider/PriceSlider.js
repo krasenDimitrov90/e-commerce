@@ -1,5 +1,5 @@
 import React from 'react';
-import './PriceSlider.styles.css';
+// import './PriceSlider.styles.css';
 
 export const PriceSlider = ({ min, max, maxPrice, minDiffPercent, maxDiffPercent, onMinChange, onMaxChange }) => {
 
