@@ -3,20 +3,44 @@ import PropTypes from "prop-types";
 
 import './Slider.styles.css';
 
-export const Slider = ({ min, max, maxPrice, minDiffPercent, maxDiffPercent, onMinChange, onMaxChange }) => {
+export const Slider = ({ min, max, maxPrice, onMinChange, onMaxChange }) => {
+
+    const rangeRef = React.useRef(null);
+    const leftKnobRef = React.useRef(null);
+    const rightKnobRef = React.useRef(null);
 
     const validateNumberInput = React.useCallback((input) => {
         if (!/^\d+$/.test(input)) return;
         return Number(input) <= maxPrice;
     }, []);
 
+    const getPercent = React.useCallback((val, maxVal) => {
+        return (val / maxVal) * 100;
+    }, []);
+
+    const setNewStyle = React.useCallback((refElement, value, style) => {
+        refElement.current.style[style] = value + '%';
+    }, []);
+
+    React.useEffect(() => {
+        const minPercentage = getPercent(min, maxPrice);
+        const maxPercentage = getPercent(max, maxPrice);
+        const diff = maxPercentage - minPercentage;
+        const sliderPercentage = diff < 0 ? 0 : diff;
+        setNewStyle(leftKnobRef, minPercentage, 'left');
+        setNewStyle(rightKnobRef, maxPercentage, 'left');
+        setNewStyle(rangeRef, minPercentage, 'left');
+        setNewStyle(rangeRef, sliderPercentage, 'width');
+    }, [min, max]);
+
+
     return (
         <div className="custom-price-filter">
             <div className="custom-price-slider">
                 <div className="price-slider">
-                    <a className="knob left-knob"></a>
-                    <div className="range-bar"></div>
-                    <a className="knob right-knob"></a>
+                    <a ref={leftKnobRef} className="knob left-knob"></a>
+                    <div ref={rangeRef} className="range-bar"></div>
+                    <a ref={rightKnobRef} className="knob right-knob"></a>
                 </div>
 
             </div>
