@@ -20,7 +20,7 @@ export const SliderType = () => {
     }, []);
 
     return (
-        <div className="w-[300px] m-auto flex justify-center">
+        <div className="w-[300px] m-auto p-5 bg-gray-200 flex justify-center">
             <Slider
                 min={min}
                 max={max}
