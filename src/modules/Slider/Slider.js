@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import './Slider.styles.css';
 
-export const Slider = ({ min, max, maxPrice, onMinChange, onMaxChange }) => {
+export const Slider = ({ min, max, maxPrice, minPercent, maxPercent, onMinChange, onMaxChange }) => {
 
     const rangeRef = React.useRef(null);
     const leftKnobRef = React.useRef(null);
@@ -23,14 +23,12 @@ export const Slider = ({ min, max, maxPrice, onMinChange, onMaxChange }) => {
     }, []);
 
     React.useEffect(() => {
-        const minPercentage = getPercent(min, maxPrice);
-        const maxPercentage = getPercent(max, maxPrice);
-        const diff = maxPercentage - minPercentage;
-        const sliderPercentage = diff < 0 ? 0 : diff;
-        setNewStyle(leftKnobRef, minPercentage, 'left');
-        setNewStyle(rightKnobRef, maxPercentage, 'left');
-        setNewStyle(rangeRef, minPercentage, 'left');
-        setNewStyle(rangeRef, sliderPercentage, 'width');
+        const diff = maxPercent - minPercent;
+        const sliderPercent = diff < 0 ? 0 : diff;
+        setNewStyle(leftKnobRef, minPercent, 'left');
+        setNewStyle(rightKnobRef, maxPercent, 'left');
+        setNewStyle(rangeRef, minPercent, 'left');
+        setNewStyle(rangeRef, sliderPercent, 'width');
     }, [min, max]);
 
 
