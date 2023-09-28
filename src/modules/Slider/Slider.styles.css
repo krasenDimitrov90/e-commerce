@@ -74,8 +74,19 @@
     transform: translateX(0);
 }
 
-.price-inputs {
-    @apply flex
+.price-inputs-container {
+    @apply flex w-full justify-between
+}
+
+.price-input {
+    @apply w-[80px] h-[30px] text-center border-[1px] border-gray-500 rounded transition-all duration-150 ease-linear outline-none focus:border-blue-400
+}
+
+.price-input-container >input[type="number"]::-webkit-inner-spin-button,
+.price-input-container >input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
 }
 
 

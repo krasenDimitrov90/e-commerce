@@ -44,15 +44,16 @@ export const Slider = ({ min, max, maxPrice, onMinChange, onMaxChange }) => {
                 </div>
 
             </div>
-            <div className="price-inputs">
-                <input type="text" value={min}
+            <div className="price-inputs-container">
+                <input type="text" className="price-input" value={min}
                     onChange={(e) => {
                         let value = e.target.value || '0';
                         if (!validateNumberInput(value)) return;
                         onMinChange(Number(value));
                     }}
                 />
-                <input type="text" value={max}
+                <span className="text-gray-600">-</span>
+                <input type="text" className="price-input" value={max}
                     onChange={(e) => {
                         let value = e.target.value || '0';
                         if (!validateNumberInput(value)) return;
