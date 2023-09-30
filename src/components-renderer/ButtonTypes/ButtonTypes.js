@@ -152,11 +152,11 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Square Button h-36 w-36</h1>
                 <div className={innerContainerClass}>
-                    <Button fontSize='xs' size='square' rounded='rounded' variant='primary' ><Icon variant='search' /></Button>
-                    <Button fontSize='sm' size='square' rounded='rounded' variant='secondary' ><Icon variant='search' /></Button>
-                    <Button fontSize='base' size='square' rounded='rounded' variant='info' ><Icon variant='search' /></Button>
-                    <Button fontSize='lg' size='square' rounded='rounded' variant='dark' ><Icon variant='search' /></Button>
-                    <Button fontSize='xl' size='square' rounded='rounded' variant='danger' ><Icon variant='search' /></Button>
+                    <Button fontSize='xs' size='square-xs' rounded='rounded' variant='primary' ><Icon variant='search' /></Button>
+                    <Button fontSize='sm' size='square-sm' rounded='rounded' variant='secondary' ><Icon variant='search' /></Button>
+                    <Button fontSize='base' size='square-base' rounded='rounded' variant='info' ><Icon variant='search' /></Button>
+                    <Button fontSize='lg' size='square-lg' rounded='rounded' variant='dark' ><Icon variant='search' /></Button>
+                    <Button fontSize='xl' size='square-xl' rounded='rounded' variant='danger' ><Icon variant='search' /></Button>
                 </div>
             </div>
 
