@@ -1,4 +1,102 @@
-.range-slider-container-outer {
+.custom-price-filter {
+    @apply flex flex-1 flex-col
+}
+
+.custom-price-slider {
+    @apply w-full h-[20px] relative mb-[30px]
+}
+
+.custom-price-slider::after {
+    /* width: auto;
+    left: -20px;
+    right: -20px; */
+    z-index: 1;
+    box-sizing: border-box;
+    content: "";
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    height: 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 25px;
+    background: #d7d9dc;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    box-shadow: 0 0 4px 1px rgba(0,0,0,.2) inset;
+}
+
+.price-slider {
+    @apply relative w-[calc(100%_-_40px)] h-[20px]
+}
+
+.price-slider {
+    /* display: block; */
+    margin: auto;
+    /* margin: 0 auto 20px auto; */
+}
+
+.range-bar {
+    right: 0;
+    left: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    position: absolute;
+    height: 8px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.range-bar {
+    @apply bg-green-300
+}
+
+.knob {
+    @apply absolute w-[20px] h-[20px] bg-white z-10 rounded-full border-[6px] border-green-300 cursor-pointer hover:border-green-400
+}
+
+.left-knob {
+    @apply left-0
+}
+.left-knob {
+    transform: translateX(-100%);
+}
+
+.right-knob {
+    @apply left-[100%]
+}
+
+.right-knob {
+    transform: translateX(0);
+}
+
+.price-inputs-container {
+    @apply flex w-full justify-between
+}
+
+.price-input {
+    @apply w-[80px] h-[30px] text-center border-[1px] border-gray-500 text-gray-600 rounded transition-all duration-150 ease-linear outline-none focus:border-blue-400
+}
+
+.price-input-container >input[type="number"]::-webkit-inner-spin-button,
+.price-input-container >input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+
+
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<---------------->>>>>>>>>>>>>>>>>> */
+
+/* .range-slider-container-outer {
     @apply bg-[#F1F1F1] w-full h-[60px] flex justify-center items-center
 }
 
@@ -6,11 +104,10 @@
     @apply relative h-[8px] flex-1  bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
 }
 
-/* THIS IS COMMENT JUST FOR TEST ANOTHER COMPONENT WITH THE SAME CLASS */
 
-/* .slider {
+.slider {
     @apply bg-green-500 w-[100%] h-full absolute rounded-full
-} */
+}
 
 .left-knob,
 .right-knob {
@@ -37,4 +134,4 @@
     -webkit-appearance: none;
     appearance: none;
     display: none;
-}
+} */

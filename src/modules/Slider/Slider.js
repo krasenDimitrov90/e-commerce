@@ -3,42 +3,107 @@ import PropTypes from "prop-types";
 
 import './Slider.styles.css';
 
-export const Slider = ({ min, max, maxPrice, minPercent, maxPercent, onMinChange, onMaxChange }) => {
+export const Slider = React.memo(({
+    min,
+    max,
+    maxPrice,
+    onMinChange,
+    onMaxChange,}) => {
+
+    const [mouseIsDown, setMouseIsDown] = React.useState(false);
+    const [minPercent, setMinPercent] = React.useState(0);
+    const [maxPercent, setMaxPercent] = React.useState(100);
 
     const rangeRef = React.useRef(null);
     const leftKnobRef = React.useRef(null);
     const rightKnobRef = React.useRef(null);
+
+
+    const getPercent = React.useCallback((val, maxVal) => {
+        return (val / maxVal) * 100;
+    }, []);
 
     const validateNumberInput = React.useCallback((input) => {
         if (!/^\d+$/.test(input)) return;
         return Number(input) <= maxPrice;
     }, []);
 
-    const getPercent = React.useCallback((val, maxVal) => {
-        return (val / maxVal) * 100;
+    const getLeftPercentage = React.useCallback((refElement, defaultVal) => {
+        return parseFloat(refElement.current.style.left || defaultVal);
     }, []);
 
     const setNewStyle = React.useCallback((refElement, value, style) => {
         refElement.current.style[style] = value + '%';
     }, []);
 
+    const handleSliderPosition = React.useCallback(() => {
+        const difference = getLeftPercentage(rightKnobRef, 100) - getLeftPercentage(leftKnobRef, 0);
+        setNewStyle(rangeRef, difference, 'width');
+        setNewStyle(rangeRef, getLeftPercentage(leftKnobRef, 0), 'left');
+
+    }, [leftKnobRef, rightKnobRef, rangeRef]);
+
+
+    const mouseMoveHandler = (e) => {
+
+        if ( !leftKnobRef || !rightKnobRef || !rangeRef) return;
+        const mouseXPos = e.clientX;
+        const rangeXPos = rangeRef.current.getBoundingClientRect().x;
+        const rangeWidth = rangeRef.current.offsetWidth;
+
+        // The position of the cursor relative to the range container in percent
+        let mousePosPercent = (((mouseXPos + 10) - rangeXPos) / rangeWidth) * 100;
+
+        const leftKnobLeftPercent = parseFloat(leftKnobRef.current.style.left);
+        let newPercent = Math.max(0, mousePosPercent);
+        newPercent = Math.min(newPercent, maxPercent);
+        let newMin = (parseInt((maxPrice * (newPercent / 100))));
+
+        
+        // setNewStyle(leftKnobRef, Math.floor(newPercent), 'left');
+        // setNewStyle(rangeRef,maxPercent - Math.floor(newPercent), 'width');
+        // setNewStyle(rangeRef, Math.floor(newPercent), 'left');
+        // onMinChange(newMin);
+
+    };
+
+
+    const mouseUpHandler = () => {
+        setMouseIsDown(false);
+    };
+
+    // React.useEffect(() => {
+    //     const diff = maxPercent - minPercent;
+    //     const rangePercent = diff < 0 ? 0 : diff;
+    //     setNewStyle(leftKnobRef, minPercent, 'left');
+    //     setNewStyle(rightKnobRef, maxPercent, 'left');
+    //     setNewStyle(rangeRef, minPercent, 'left');
+    //     setNewStyle(rangeRef, rangePercent, 'width');
+    // }, [minPercent, maxPercent]);
+
     React.useEffect(() => {
-        const diff = maxPercent - minPercent;
-        const sliderPercent = diff < 0 ? 0 : diff;
-        setNewStyle(leftKnobRef, minPercent, 'left');
-        setNewStyle(rightKnobRef, maxPercent, 'left');
-        setNewStyle(rangeRef, minPercent, 'left');
-        setNewStyle(rangeRef, sliderPercent, 'width');
-    }, [min, max]);
+        window.addEventListener('mousemove', mouseMoveHandler);
+        window.addEventListener('mouseup', mouseUpHandler);
+        return (() => {
+            window.removeEventListener('mousemove', mouseMoveHandler);
+            window.removeEventListener('mouseup', mouseUpHandler);
+        })
+    })
 
 
     return (
         <div className="custom-price-filter">
             <div className="custom-price-slider">
                 <div className="price-slider">
-                    <a ref={leftKnobRef} className="knob left-knob"></a>
+                    <a className="knob left-knob"
+                        ref={leftKnobRef}
+                        onMouseDown={() => setMouseIsDown(true)}
+                    ></a>
                     <div ref={rangeRef} className="range-bar"></div>
-                    <a ref={rightKnobRef} className="knob right-knob"></a>
+                    <a className="knob right-knob"
+                        ref={rightKnobRef}
+                        onMouseDown={() => setMouseIsDown(true)}
+                    ></a>
                 </div>
 
             </div>
@@ -48,6 +113,7 @@ export const Slider = ({ min, max, maxPrice, minPercent, maxPercent, onMinChange
                         let value = e.target.value || '0';
                         if (!validateNumberInput(value)) return;
                         onMinChange(Number(value));
+                        setMinPercent(getPercent(value, maxPrice));
                     }}
                 />
                 <span className="text-gray-600">-</span>
@@ -56,12 +122,13 @@ export const Slider = ({ min, max, maxPrice, minPercent, maxPercent, onMinChange
                         let value = e.target.value || '0';
                         if (!validateNumberInput(value)) return;
                         onMaxChange(Number(e.target.value));
+                        setMaxPercent(getPercent(value, maxPrice));
                     }}
                 />
             </div>
         </div>
     );
-};
+});
 
 // export const Slider = ({ min, max, onChange }) => {
 //     const [minVal, setMinVal] = useState(min);

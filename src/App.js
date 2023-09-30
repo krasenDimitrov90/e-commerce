@@ -40,7 +40,7 @@ const router = createBrowserRouter([
       { path: '/images', element: <ImageTypes /> },
       { path: '/quantity', element: <QauantityTypes /> },
       { path: '/price-slider', element: <PriceSliderTypes /> },
-      { path: '/slider', element: <SliderType /> },
+      { path: '/slider', element: <SliderType minPrice={0} maxPrice={1000} /> },
     ]
   }
 ]);

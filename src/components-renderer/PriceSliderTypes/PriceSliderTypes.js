@@ -23,11 +23,20 @@ export const PriceSliderTypes = () => {
         setMaxDiffPercent(getPercent(newValue, maxPrice));
     }, []);
 
-    console.log({ minDiffPercent, maxDiffPercent, max, min });
+    const handleMin = React.useCallback((newValue) => {
+        setMin(newValue);
+    }, []);
+
+    const handleMax = React.useCallback((newValue) => {
+        setMax(newValue);
+    }, []);
 
     return (
-        <div className="flex flex-col m-auto w-[360px] justify-center items-center">
+        <div className="w-[300px] m-auto p-5 bg-gray-200 flex justify-center">
+        {/* <div className="flex flex-col m-auto w-[360px] justify-center items-center"> */}
             <PriceSlider
+                handleMin={handleMin}
+                handleMax={handleMax}
                 min={min}
                 max={max}
                 minDiffPercent={minDiffPercent}
