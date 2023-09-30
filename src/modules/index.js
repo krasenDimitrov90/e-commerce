@@ -5,4 +5,3 @@ export * from './LinkButton/LinkButton';
 export * from './Image/Image';
 export * from './Qauantity/Qauantity';
 export * from './PriceSlider/PriceSlider';
-export * from './Slider/Slider';

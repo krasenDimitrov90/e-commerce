@@ -1,8 +1,16 @@
 import React from 'react';
+import { Button } from '../Button/Button';
+import { Icon } from '../Icons/Icons';
 import './PriceSlider.styles.css';
 
-export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPrice, minDiffPercent, maxDiffPercent, onMinChange, onMaxChange }) => {
+export const PriceSlider = ({ minPrice, maxPrice, handlePriceSet }) => {
 
+    const [min, setMin] = React.useState(minPrice);
+    const [max, setMax] = React.useState(maxPrice);
+    const [minDiffPercent, setMinDiffPercent] = React.useState(0);
+    const [maxDiffPercent, setMaxDiffPercent] = React.useState(100);
+
+    const [init, setInit] = React.useState(true);
     const [mouseIsDown, setMouseIsDown] = React.useState(false);
     const [sliderKnob, setSliderKnob] = React.useState(null);
     const containerRef = React.useRef(null);
@@ -10,6 +18,11 @@ export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPric
     const leftKnobRef = React.useRef(null);
     const rightKnobRef = React.useRef(null);
     const knobsRadius = 10;
+
+    React.useEffect(() => {
+        if (init) setInit(false);
+        else if (!mouseIsDown) handlePriceSet(min, max);
+    }, [mouseIsDown]);
 
     React.useEffect(() => {
         window.addEventListener('mousemove', mouseMoveHandler);
@@ -30,6 +43,11 @@ export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPric
         handleRangePosition();
     }, [maxDiffPercent]);
 
+
+    const getPercent = React.useCallback((val, maxVal) => {
+        return (val / maxVal) * 100;
+    }, []);
+
     const validateNumberInput = React.useCallback((input) => {
         if (!/^\d+$/.test(input)) return;
         return Number(input) <= maxPrice;
@@ -49,10 +67,10 @@ export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPric
 
         if (sliderKnob === 'left') {
             setNewStyle(leftKnobRef, Math.min(rangeWidthPercentage, rightKnobLeftPercent), 'left');
-            onLeftKnobMove(Math.floor(maxPrice * (Math.min(rangeWidthPercentage, rightKnobLeftPercent) / 100)))
+            setMin(Math.floor(maxPrice * (Math.min(rangeWidthPercentage, rightKnobLeftPercent) / 100)))
         } else if (sliderKnob === 'right') {
             setNewStyle(rightKnobRef, Math.max(rangeWidthPercentage, leftKnobLeftPercent), 'left');
-            onRightKnobMove(Math.floor(maxPrice * (Math.max(rangeWidthPercentage, leftKnobLeftPercent) / 100)))
+            setMax(Math.floor(maxPrice * (Math.max(rangeWidthPercentage, leftKnobLeftPercent) / 100)))
         }
     }, [leftKnobRef, rightKnobRef, sliderKnob]);
 
@@ -118,7 +136,8 @@ export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPric
                     onChange={(e) => {
                         let value = e.target.value || '0';
                         if (!validateNumberInput(value)) return;
-                        onMinChange(Number(value));
+                        setMin(Number(value))
+                        setMinDiffPercent(getPercent(Number(value), maxPrice));
                     }}
                 />
                 <span className="text-gray-600">-</span>
@@ -127,9 +146,12 @@ export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPric
                     onChange={(e) => {
                         let value = e.target.value || '0';
                         if (!validateNumberInput(value)) return;
-                        onMaxChange(Number(e.target.value));
+                        setMax(Number(value))
+                        setMaxDiffPercent(getPercent(Number(value), maxPrice));
                     }}
                 />
+
+                <Button onClick={handlePriceSet.bind(null, min, max)}><Icon variant='arrow-right' /></Button>
             </div>
         </div>
     );
