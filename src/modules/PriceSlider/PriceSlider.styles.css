@@ -7,9 +7,6 @@
 }
 
 .custom-price-slider::after {
-    /* width: auto;
-    left: -20px;
-    right: -20px; */
     z-index: 1;
     box-sizing: border-box;
     content: "";
@@ -28,13 +25,7 @@
 }
 
 .price-slider {
-    @apply relative w-[calc(100%_-_40px)] h-[20px]
-}
-
-.price-slider {
-    /* display: block; */
-    margin: auto;
-    /* margin: 0 auto 20px auto; */
+    @apply relative w-[calc(100%_-_40px)] h-[20px] m-auto
 }
 
 .range-bar {
@@ -88,50 +79,3 @@
     appearance: none;
     display: none;
 }
-
-
-
-
-
-
-/* <<<<<<<<<<<<<<<<<<<<---------------->>>>>>>>>>>>>>>>>> */
-
-/* .range-slider-container-outer {
-    @apply bg-[#F1F1F1] w-full h-[60px] flex justify-center items-center
-}
-
-.range-slider-container-inner {
-    @apply relative h-[8px] flex-1  bg-[#D2D2D2] rounded border-[#e1e1e1] border-[1px] shadow-[0_0_4px_1px_rgba(0,0,0,0.2)_inset]
-}
-
-
-.slider {
-    @apply bg-green-500 w-[100%] h-full absolute rounded-full
-}
-
-.left-knob,
-.right-knob {
-    @apply absolute flex h-[20px] w-[20px] bg-white border-[6px] border-green-500 rounded-full top-[-110%] cursor-pointer
-}
-
-.left-knob {
-    @apply ml-[-1px] left-0
-}
-.right-knob {
-    @apply left-[calc(100%_-_19px)]
-}
-
-.price-input-container {
-    @apply flex w-full justify-between
-}
-
-.price-input {
-    @apply w-[80px] h-[30px] text-center border-[1px] border-gray-500 rounded
-}
-
-.price-input-container >input[type="number"]::-webkit-inner-spin-button,
-.price-input-container >input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    display: none;
-} */

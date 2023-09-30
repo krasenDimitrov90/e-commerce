@@ -4,10 +4,10 @@ import { PriceSlider } from "../../modules";
 export const PriceSliderTypes = () => {
 
     const [min, setMin] = React.useState(1);
-    const [max, setMax] = React.useState(1000);
+    const [max, setMax] = React.useState(300);
     const [minDiffPercent, setMinDiffPercent] = React.useState(0);
     const [maxDiffPercent, setMaxDiffPercent] = React.useState(100);
-    const maxPrice = 1000;
+    const maxPrice = 300;
 
     const getPercent = React.useCallback((val, maxVal) => {
         return (val / maxVal) * 100;
