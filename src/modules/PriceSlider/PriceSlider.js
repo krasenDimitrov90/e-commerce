@@ -1,7 +1,7 @@
 import React from 'react';
 import './PriceSlider.styles.css';
 
-export const PriceSlider = ({ handleMin, handleMax, min, max, maxPrice, minDiffPercent, maxDiffPercent, onMinChange, onMaxChange }) => {
+export const PriceSlider = ({ onLeftKnobMove, onRightKnobMove, min, max, maxPrice, minDiffPercent, maxDiffPercent, onMinChange, onMaxChange }) => {
 
     const [mouseIsDown, setMouseIsDown] = React.useState(false);
     const [sliderKnob, setSliderKnob] = React.useState(null);
@@ -49,10 +49,10 @@ export const PriceSlider = ({ handleMin, handleMax, min, max, maxPrice, minDiffP
 
         if (sliderKnob === 'left') {
             setNewStyle(leftKnobRef, Math.min(rangeWidthPercentage, rightKnobLeftPercent), 'left');
-            handleMin(Math.floor(maxPrice * (Math.min(rangeWidthPercentage, rightKnobLeftPercent) / 100)))
+            onLeftKnobMove(Math.floor(maxPrice * (Math.min(rangeWidthPercentage, rightKnobLeftPercent) / 100)))
         } else if (sliderKnob === 'right') {
             setNewStyle(rightKnobRef, Math.max(rangeWidthPercentage, leftKnobLeftPercent), 'left');
-            handleMax(Math.floor(maxPrice * (Math.max(rangeWidthPercentage, leftKnobLeftPercent) / 100)))
+            onRightKnobMove(Math.floor(maxPrice * (Math.max(rangeWidthPercentage, leftKnobLeftPercent) / 100)))
         }
     }, [leftKnobRef, rightKnobRef, sliderKnob]);
 

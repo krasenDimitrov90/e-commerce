@@ -23,20 +23,19 @@ export const PriceSliderTypes = () => {
         setMaxDiffPercent(getPercent(newValue, maxPrice));
     }, []);
 
-    const handleMin = React.useCallback((newValue) => {
+    const onLeftKnobMove = React.useCallback((newValue) => {
         setMin(newValue);
     }, []);
 
-    const handleMax = React.useCallback((newValue) => {
+    const onRightKnobMove = React.useCallback((newValue) => {
         setMax(newValue);
     }, []);
 
     return (
         <div className="w-[300px] m-auto p-5 bg-gray-200 flex justify-center">
-        {/* <div className="flex flex-col m-auto w-[360px] justify-center items-center"> */}
             <PriceSlider
-                handleMin={handleMin}
-                handleMax={handleMax}
+                onLeftKnobMove={onLeftKnobMove}
+                onRightKnobMove={onRightKnobMove}
                 min={min}
                 max={max}
                 minDiffPercent={minDiffPercent}
