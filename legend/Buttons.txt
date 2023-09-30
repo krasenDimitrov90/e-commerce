@@ -1,7 +1,7 @@
 Variants
     USE THIS WITH <variant> prop 
 
-    primary
+    primary - default
     secondary
     info
     dark
@@ -13,10 +13,10 @@ Variants
     outline-danger
 
 Rounded
-    USE THIS WITH <rounded> prop
+    USE THIS WITH <rounded> prop,  default is rounded
 
+    not-rounded - withouth border radius
     top-rounded - only the top corners are rounded
-    rounded - all corners are rounded
     circle - border is circled
 
 
@@ -26,11 +26,27 @@ Size
 
     xs
     sm
-    base
+    base - default
     lg
     xl
     square
 
+ FontSize
+    USE THIS WITH <fontSize> prop
+
+    xs
+    sm
+    base - default
+    lg
+    xl
+
+FontWeight
+    USE THIS WITH <fontWeight> prop
+
+    sm
+    base - default
+    bold
+    xl
 
 If <isLoading>  prop is set to true the spinner will pop up in the left of the content
 

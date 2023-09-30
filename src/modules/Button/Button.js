@@ -40,10 +40,11 @@ export const Button = ({
 
 Button.defaultProps = {
     type: 'button',
-    size: 'sm',
-    rounded: 'not-rounded',
+    variant: 'primary',
+    size: 'base',
+    rounded: 'rounded',
     fontWeight: 'base',
-    fontSize: 'sm',
+    fontSize: 'base',
     upperCase: false,
     expand: false,
     disabled: false,

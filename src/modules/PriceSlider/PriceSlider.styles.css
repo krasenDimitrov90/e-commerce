@@ -70,7 +70,7 @@
 }
 
 .price-input {
-    @apply w-[80px] h-[30px] text-center border-[1px] border-gray-500 text-gray-600 rounded transition-all duration-150 ease-linear outline-none focus:border-blue-400
+    @apply w-[80px] h-[32px] text-center border-[1px] border-gray-500 text-gray-600 rounded transition-all duration-150 ease-linear outline-none focus:border-blue-400
 }
 
 .price-input-container >input[type="number"]::-webkit-inner-spin-button,
