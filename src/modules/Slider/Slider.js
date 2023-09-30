@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
 
-import './Slider.styles.css';
+// import './Slider.styles.css';
 
 export const Slider = React.memo(({
     min,
