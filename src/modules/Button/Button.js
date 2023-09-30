@@ -76,7 +76,11 @@ Button.variants = {
         base: 'btn-base',
         lg: 'btn-lg',
         xl: 'btn-xl',
-        square: 'btn-square',
+        'square-xs': 'btn-square-xs',
+        'square-sm': 'btn-square-sm',
+        'square-base': 'btn-square-base',
+        'square-lg': 'btn-square-lg',
+        'square-xl': 'btn-square-xl',
     },
     fontSize: {
         xs: 'btn-font-xs',

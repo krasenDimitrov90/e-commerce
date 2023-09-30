@@ -151,7 +151,7 @@ export const PriceSlider = ({ minPrice, maxPrice, handlePriceSet }) => {
                     }}
                 />
 
-                <Button onClick={handlePriceSet.bind(null, min, max)}><Icon variant='arrow-right' /></Button>
+                <Button onClick={handlePriceSet.bind(null, min, max)} size='square-sm' ><Icon variant='arrow-right' /></Button>
             </div>
         </div>
     );

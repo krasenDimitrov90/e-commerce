@@ -19,6 +19,7 @@
 .btn-primary {
     @apply bg-blue-500 text-white hover:bg-green-400
 }
+
 .btn-secondary {
     @apply bg-gray-400 text-dark-800 hover:bg-blue-500 hover:text-white
 }
@@ -26,6 +27,7 @@
 .btn-info {
     @apply bg-gray-400 text-dark-800 hover:bg-green-300 hover:text-white
 }
+
 .btn-dark {
     @apply bg-dark-800 text-white hover:bg-green-300
 }
@@ -41,6 +43,7 @@
 .btn-outline-primary {
     @apply border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white
 }
+
 .btn-outline-secondary {
     @apply border-2 border-gray-400 text-gray-400 hover:bg-green-500 hover:border-green-500 hover:text-white
 }
@@ -52,6 +55,7 @@
 .btn-outline-dark {
     @apply border-2 border-dark-800 text-dark-800 hover:bg-dark-800 hover:text-white
 }
+
 .btn-outline-danger {
     @apply border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white
 }
@@ -60,39 +64,69 @@
 .btn-xs {
     @apply h-[22px] px-2
 }
+
 .btn-sm {
     @apply h-[26px] px-2
 }
+
 .btn-base {
     @apply h-[32px] px-3
 }
+
 .btn-lg {
     @apply h-[38px] px-3
 }
+
 .btn-xl {
     @apply h-[46px] px-4
 }
 
+/* <<<<< SQUARE BUTTONS SIZES >>>>> */
+
 .btn-square {
-    @apply  h-[36px] w-[36px]
+    @apply h-[36px] w-[36px]
+}
+
+.btn-square-xs {
+    @apply h-[28px] w-[28px]
+}
+
+.btn-square-sm {
+    @apply h-[30px] w-[30px]
+}
+
+.btn-square-base {
+    @apply h-[32px] w-[32px]
+}
+
+.btn-square-lg {
+    @apply h-[34px] w-[34px]
+}
+
+.btn-square-xl {
+    @apply h-[36px] w-[36px]
 }
 
 /* <<<<< BUTTON FONT SIZES >>>>> */
 
 .btn-font-xs {
-    @apply text-xs 
+    @apply text-xs
 }
+
 .btn-font-sm {
-    @apply text-sm 
+    @apply text-sm
 }
+
 .btn-font-base {
     @apply text-base
 }
+
 .btn-font-lg {
-    @apply text-lg 
+    @apply text-lg
 }
+
 .btn-font-xl {
-    @apply text-xl 
+    @apply text-xl
 }
 
 /* <<<<< BUTTON FONTS >>>>>*/
@@ -104,6 +138,7 @@
 .btn-font-wieght-base {
     @apply font-normal
 }
+
 .btn-font-wieght-bold {
     @apply font-bold
 }
@@ -111,88 +146,3 @@
 .btn-font-wieght-xl {
     @apply font-extrabold
 }
-
-
-/* button:disabled {
-    @apply cursor-no-drop opacity-70
-}
-
-.btn-very-small {
-    @apply h-3 w-3
-}
-
-.btn-small {
-    @apply h-10 w-10
-}
-
-.btn-mid {
-    @apply h-12
-}
-
-.btn-content-small {
-    @apply text-xs p-2
-}
-
-.btn-content-mid {
-    @apply text-md px-4
-}
-
-.btn {
-    @apply flex justify-center items-center uppercase font-bold transition-all duration-150 ease-linear;
-}
-
-
-.btn-green {
-    @apply bg-green-300 text-white
-}
-.btn-green:hover {
-    @apply bg-green-400 text-white
-}
-
-
-.btn-gray-green {
-    @apply bg-gray-400
-}
-
-.btn-dark-green {
-    @apply bg-dark-800 text-white
-}
-
-.btn-white-green {
-    @apply bg-white text-dark-800
-}
-
-.btn-dark-green:hover,
-.btn-gray-green:hover,
-.btn-white-green:hover,
-.btn-blue-green:hover {
-    @apply bg-green-300 text-white
-}
-
-.btn-gray-green,
-.btn-gray-blue {
-    @apply bg-gray-400 text-dark-800
-}
-
-
-.btn-gray-blue:hover {
-    @apply bg-blue-500 text-white
-}
-
-.btn-blue,
-.btn-blue-green {
-    @apply bg-blue-500 text-white
-}
-
-.btn-dark-blue {
-    @apply bg-blue-800 text-white
-}
-
-
-.half-rounded {
-    @apply rounded-t
-}
-
-.circle {
-    @apply rounded-full
-} */
