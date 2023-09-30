@@ -8,6 +8,7 @@ import { LinkTypes } from './components-renderer/LinkTypes/LinkTypes';
 import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
 import { QauantityTypes } from './components-renderer/QauantityTypes/QauantityTypes';
 import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
+import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
 
 const Layout = () => {
 
@@ -20,6 +21,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/images'>IMAGES</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/quantity'>QUANTITY</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/price-slider'>PRICE-SLIDER</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/contacts'>CONTACTS</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
       { path: '/images', element: <ImageTypes /> },
       { path: '/quantity', element: <QauantityTypes /> },
       { path: '/price-slider', element: <PriceSliderTypes /> },
+      { path: '/contacts', element: <ContactsTypes /> },
     ]
   }
 ]);
