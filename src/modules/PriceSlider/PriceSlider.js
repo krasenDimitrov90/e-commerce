@@ -90,7 +90,7 @@ export const PriceSlider = ({ minPrice, maxPrice, handlePriceSet }) => {
         const mouseX = Math.max(mousePosX, containerX - knobsRadius);
 
         let newRangeWidth = Math.max(((containerX + containerWidth) - (mouseX)) - knobsRadius, 0);
-        if (sliderBar === 'right') newRangeWidth = Math.max(((containerX + containerWidth) - (mouseX)) + 10, 0);
+        if (sliderBar === 'right') newRangeWidth = Math.max(((containerX + containerWidth) - (mouseX)) + knobsRadius, 0);
 
         return Math.max(100 - (((newRangeWidth) / containerWidth) * 100), 0);
     }, [containerRef]);
