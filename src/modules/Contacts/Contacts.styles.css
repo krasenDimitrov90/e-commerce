@@ -1,0 +1,15 @@
+.contacts {
+    @apply flex items-center text-white text-base 
+}
+
+.contacts i {
+    @apply text-green-500 text-lg mr-[4px]
+}
+
+.contacts-content {
+    @apply font-extrabold text-base
+}
+
+.contacts-content-info {
+    @apply font-semibold text-base
+}
