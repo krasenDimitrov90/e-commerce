@@ -6,3 +6,4 @@ export * from './Image/Image';
 export * from './Qauantity/Qauantity';
 export * from './PriceSlider/PriceSlider';
 export * from './Contacts/Contacts';
+export * from './FilterCheckbox/FilterCheckbox';
