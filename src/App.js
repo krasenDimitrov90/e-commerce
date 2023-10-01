@@ -9,6 +9,7 @@ import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
 import { QauantityTypes } from './components-renderer/QauantityTypes/QauantityTypes';
 import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
+import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
 
 const Layout = () => {
 
@@ -22,6 +23,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/quantity'>QUANTITY</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/price-slider'>PRICE-SLIDER</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/contacts'>CONTACTS</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/checkbox'>CECKBOX</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -41,6 +43,7 @@ const router = createBrowserRouter([
       { path: '/quantity', element: <QauantityTypes /> },
       { path: '/price-slider', element: <PriceSliderTypes /> },
       { path: '/contacts', element: <ContactsTypes /> },
+      { path: '/checkbox', element: <FilterCheckboxTypes /> },
     ]
   }
 ]);

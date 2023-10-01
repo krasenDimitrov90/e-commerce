@@ -42,6 +42,7 @@ Icon.variants = {
     'expand': 'fa-solid fa-up-right-and-down-left-from-center rotate-90',
     'menu-bars': 'fa-solid fa-bars',
     'grid': 'fa-solid fa-border-all',
+    'truck': 'fa-solid fa-truck-fast fa-flip-horizontal',
 
     'healthcare': 'fa-solid fa-hand-holding-heart',
     'mixer': 'fa-solid fa-blender',
