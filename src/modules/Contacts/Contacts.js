@@ -3,7 +3,7 @@ import './Contacts.styles.css';
 
 export const Contacts = ({ variant, info }) => {
 
-    const { title, icon } = Contacts.variants.variant[variant];
+    const { title, icon, href } = Contacts.variants.variant[variant];
 
     return (
         <div className='contacts'>
@@ -11,8 +11,11 @@ export const Contacts = ({ variant, info }) => {
                 <Icon variant={icon} />
             </div>
             <div className='contacts-content'>
-                <span className='contacts-content-title'>{title} : </span>
-                <span className='contacts-content-info'><a href={`mailto:${info}`}>{info}</a></span>
+                <span className='contacts-content-title'>{title} :&nbsp;</span>
+                <div>
+                    <a className='contacts-content-info' href={`${href}:${info}`}>{info}</a>
+
+                </div>
             </div>
         </div>
     );
@@ -23,10 +26,12 @@ Contacts.variants = {
         mail: {
             title: 'Емайл',
             icon: 'mail',
+            href: 'mailto',
         },
         phone: {
             title: 'Телефон',
             icon: 'phone',
+            href: 'tel',
         },
     }
 }
