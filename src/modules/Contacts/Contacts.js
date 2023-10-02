@@ -12,7 +12,7 @@ export const Contacts = ({ variant, info }) => {
             </div>
             <div className='contacts-content'>
                 <span className='contacts-content-title'>{title} : </span>
-                <span className='contacts-content-info'>{info}</span>
+                <span className='contacts-content-info'><a href={`mailto:${info}`}>{info}</a></span>
             </div>
         </div>
     );
