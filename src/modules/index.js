@@ -7,3 +7,4 @@ export * from './Qauantity/Qauantity';
 export * from './PriceSlider/PriceSlider';
 export * from './Contacts/Contacts';
 export * from './FilterCheckbox/FilterCheckbox';
+export * from './ProductCard/ProductCard';
