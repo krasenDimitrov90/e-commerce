@@ -1,7 +1,16 @@
-.mage-container {
-    @apply flex-1 flex
+.image-container.image-primary {
+    @apply bg-gray-300
+}
+.image-container.image-secondary {
+    @apply bg-white
 }
 
-.image {
-    @apply max-w-[100%] max-h-[100%] object-cover
+.image-container {
+    @apply flex flex-1;
+    /* background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat; */
+    .image-item {
+        @apply w-full h-full object-contain
+    }
 }

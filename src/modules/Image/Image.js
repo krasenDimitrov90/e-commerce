@@ -1,13 +1,15 @@
 import './Image.styles.css';
 
-import kolonka from '../../images/kolona2.jpg'
 import noImage from '../../images/No-Image.svg.png';
 
-export const Image = ({ src, alt }) => {
+export const Image = ({ variant, src, alt }) => {
+
+    const classes = 'image-container' + ' ' + Image.variants.variant[variant];
 
     return (
-        <div className='image-container'>
-            <img className='image' src={kolonka} alt={alt}
+        <div className={classes}>
+            {/* <div className={'image-container'} style={{backgroundImage: `url(/static/media/product.70fc2ae69e275e556fd3.png)`}}> */}
+            <img className='image-item' src={src}
                 onError={({ currentTarget }) => {
                     currentTarget.onerror = null; // prevents looping
                     currentTarget.src = noImage;
@@ -17,6 +19,15 @@ export const Image = ({ src, alt }) => {
     );
 };
 
+
 Image.defaultProps = {
+    variant: 'primary',
     alt: 'Product',
+};
+
+Image.variants = {
+    variant: {
+        primary: 'image-primary',
+        secondary: 'image-secondary',
+    }
 };
