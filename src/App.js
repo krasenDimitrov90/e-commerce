@@ -10,12 +10,13 @@ import { QauantityTypes } from './components-renderer/QauantityTypes/QauantityTy
 import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
 import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
+import { ProductCardType } from './components-renderer/ProductCardType/ProductCardType';
 
 const Layout = () => {
 
   return (
     <>
-      <div className='p-4 bg-blue-500 fixed top-0 w-full'>
+      <div className='p-4 bg-blue-500 fixed top-0 w-full z-10'>
         <nav className='flex justify-between w-6/12'>
           <LinkButton variant='secondary' font='xl' path='/buttons'>BUTTONS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/links'>LINKS</LinkButton>
@@ -24,6 +25,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/price-slider'>PRICE-SLIDER</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/contacts'>CONTACTS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/checkbox'>CECKBOX</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/product'>PRODUCT</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -44,6 +46,7 @@ const router = createBrowserRouter([
       { path: '/price-slider', element: <PriceSliderTypes /> },
       { path: '/contacts', element: <ContactsTypes /> },
       { path: '/checkbox', element: <FilterCheckboxTypes /> },
+      { path: '/product', element: <ProductCardType /> },
     ]
   }
 ]);

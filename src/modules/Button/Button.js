@@ -55,6 +55,7 @@ Button.variants = {
     variant: {
         'primary': 'btn-primary',
         'secondary': 'btn-secondary',
+        'tumbnail': 'btn-tumbnail',
         'info': 'btn-info',
         'dark': 'btn-dark',
         'danger': 'btn-danger',

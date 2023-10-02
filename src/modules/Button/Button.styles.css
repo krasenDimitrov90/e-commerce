@@ -17,12 +17,17 @@
 /* <<<<< BUTTON VARIANTS >>>>> */
 
 .btn-primary {
-    @apply bg-blue-500 text-white hover:bg-green-400
+    @apply bg-blue-500 text-white hover:bg-green-300
 }
 
 .btn-secondary {
     @apply bg-gray-400 text-dark-800 hover:bg-blue-500 hover:text-white
 }
+
+.btn-tumbnail {
+    @apply bg-white text-dark-800 hover:bg-green-300 hover:text-white
+}
+
 
 .btn-info {
     @apply bg-gray-400 text-dark-800 hover:bg-green-300 hover:text-white
@@ -45,11 +50,11 @@
 }
 
 .btn-outline-secondary {
-    @apply border-2 border-gray-400 text-gray-400 hover:bg-green-500 hover:border-green-500 hover:text-white
+    @apply border-2 border-gray-400 text-gray-400 hover:bg-green-300 hover:border-green-300 hover:text-white
 }
 
 .btn-outline-info {
-    @apply border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white
+    @apply border-2 border-green-300 text-green-300 hover:bg-green-300 hover:text-white
 }
 
 .btn-outline-dark {
@@ -83,10 +88,6 @@
 
 /* <<<<< SQUARE BUTTONS SIZES >>>>> */
 
-.btn-square {
-    @apply h-[36px] w-[36px]
-}
-
 .btn-square-xs {
     @apply h-[28px] w-[28px]
 }
@@ -100,11 +101,11 @@
 }
 
 .btn-square-lg {
-    @apply h-[34px] w-[34px]
+    @apply h-[36px] w-[36px]
 }
 
 .btn-square-xl {
-    @apply h-[36px] w-[36px]
+    @apply h-[40px] w-[40px]
 }
 
 /* <<<<< BUTTON FONT SIZES >>>>> */
