@@ -7,11 +7,11 @@
 }
 
 .price-decimal {
-    @apply text-base relative top-[-4px] mx-[1px]
+    @apply text-base relative top-[-5px] mx-[1px]
 }
 
 .price-decimal-discount {
-    @apply text-sm relative top-[-4px] mx-[1px]
+    @apply text-sm relative top-[-3px] mx-[1px]
 }
 
 .product-discount-from {

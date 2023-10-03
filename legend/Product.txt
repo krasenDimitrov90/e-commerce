@@ -1,0 +1,10 @@
+Props {
+    title,
+    image,
+    productPath, - a path for Navlink to go to the Product Page
+    modalPath, - a path to open a modal with product images and descriptions 
+    price,
+    discountFrom,
+    onLike,
+    onAddToCart
+}

@@ -5,10 +5,11 @@ import { Icon } from '../../Icons/Icons';
 
 import './ProductTumbnails.styles.css';
 
-const ProductTumbnails = ({ path }) => {
+const ProductTumbnails = ({ path, onLike }) => {
     return (
         <div className='product-tumbnail-btns-container'>
             <Button
+                onClick={onLike}
                 variant='tumbnail'
                 rounded='rounded'
                 size='square-lg'
