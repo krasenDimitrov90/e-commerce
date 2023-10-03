@@ -2,12 +2,25 @@ import './ProductPrice.styles.css';
 
 const ProductPrice = ({ price, discountFrom = null }) => {
 
+    const [integer, decimal] = price.toFixed(2).toString().split('.');
+    const [discountInt, discountDecimal] = discountFrom ? discountFrom.toFixed(2).toString().split('.') : [null, null];
+
     return (
         <div className='product-price-container'>
-            <span className='product-price'>{price.toFixed(2)} лв</span>
-            {discountFrom && <span className='product-discount-from'>{discountFrom.toFixed(2)} лв</span>}
+            <p className='product-price'>
+                {integer}
+                <span className='price-decimal'>{decimal}</span>
+                лв
+            </p>
+            {discountFrom &&
+                <p className='product-discount-from'>
+                    {discountInt}
+                    <span className='price-decimal-discount'>{discountDecimal}</span>
+                    лв
+                </p>
+            }
         </div>
     );
 };
 
-export  default ProductPrice;
+export default ProductPrice;
