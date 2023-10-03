@@ -1,3 +1,4 @@
+import React from 'react';
 import { LinkButton } from '../../LinkButton/LinkButton';
 import './ProductDescription.styles.css';
 
@@ -10,4 +11,4 @@ const ProductDescription = ({ title, path }) => {
     );
 };
 
-export default ProductDescription;
+export default React.memo(ProductDescription);
