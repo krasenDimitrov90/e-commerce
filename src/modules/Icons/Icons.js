@@ -1,10 +1,12 @@
+import React from "react";
+
 const getMargins = (left, right) => {
     let marginLeft = left ? 'ml-2' : '';
     let marginRight = right ? 'mr-2' : '';
     return [marginLeft, marginRight];
 };
 
-export const Icon = ({
+export const Icon = React.memo(({
     variant,
     left = null,
     right = null }) => {
@@ -15,7 +17,7 @@ export const Icon = ({
     return (
         <i className={classes}></i>
     );
-};
+});
 
 Icon.variants = {
     'search': 'fa-solid fa-magnifying-glass',

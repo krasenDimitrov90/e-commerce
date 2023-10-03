@@ -1,13 +1,14 @@
+import React from 'react';
 import './Spinner.styles.css';
 
-export const Spinner = ({ size }) => {
+export const Spinner = React.memo(({ size }) => {
 
     const classes = 'loader ' + 'spinner-' + size;
 
     return (
         <span className={classes}></span>
     );
-};
+});
 
 
 

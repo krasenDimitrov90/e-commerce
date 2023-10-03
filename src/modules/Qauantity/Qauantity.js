@@ -1,6 +1,7 @@
+import React from 'react';
 import './Qauantity.styles.css';
 
-export const Qauantity = ({ quantity, setQuantity }) => {
+export const Qauantity = React.memo(({ quantity, setQuantity }) => {
 
     const increaseQuantityHandler = () => updateInput(quantity + 1);
 
@@ -25,4 +26,4 @@ export const Qauantity = ({ quantity, setQuantity }) => {
             </div>
         </div>
     );
-};
+});

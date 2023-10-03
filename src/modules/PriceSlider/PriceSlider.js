@@ -3,7 +3,7 @@ import { Button } from '../Button/Button';
 import { Icon } from '../Icons/Icons';
 import './PriceSlider.styles.css';
 
-export const PriceSlider = ({ minPrice, maxPrice, handlePriceSet }) => {
+export const PriceSlider = React.memo(({ minPrice, maxPrice, handlePriceSet }) => {
 
     const [min, setMin] = React.useState(minPrice);
     const [max, setMax] = React.useState(maxPrice);
@@ -155,4 +155,4 @@ export const PriceSlider = ({ minPrice, maxPrice, handlePriceSet }) => {
             </div>
         </div>
     );
-};
+});

@@ -3,7 +3,7 @@ import { Icon } from '../Icons/Icons';
 
 import './ToggleButton.css';
 
-export const ToggleButton = ({ defaultIcon, toggledIcon, onCLick }) => {
+export const ToggleButton = React.memo(({ defaultIcon, toggledIcon, onCLick }) => {
 
     const [isToggled, setIsToggled] = React.useState(false);
 
@@ -18,4 +18,4 @@ export const ToggleButton = ({ defaultIcon, toggledIcon, onCLick }) => {
             {isToggled && <Icon variant={toggledIcon} />}
         </button>
     );
-};
+});
