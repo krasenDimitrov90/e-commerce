@@ -13,8 +13,3 @@
 .product-description-container {
     @apply px-2 flex flex-col flex-1 justify-end mt-2
 }
-
-
-.product-add-to-cart-btn-container {
-    @apply flex absolute w-full bottom-0 opacity-0 
-}

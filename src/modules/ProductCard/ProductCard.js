@@ -10,6 +10,7 @@ import { Button } from '../Button/Button';
 import { Icon } from '../Icons/Icons';
 
 import './ProductCard.styles.css';
+import React from 'react';
 
 export const ProductCard = ({ title, image, productPath, modalPath }) => {
 
