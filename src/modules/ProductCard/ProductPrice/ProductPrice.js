@@ -1,3 +1,4 @@
+import React from 'react';
 import './ProductPrice.styles.css';
 
 const ProductPrice = ({ price, discountFrom = null }) => {
@@ -23,4 +24,4 @@ const ProductPrice = ({ price, discountFrom = null }) => {
     );
 };
 
-export default ProductPrice;
+export default React.memo(ProductPrice);

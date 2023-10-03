@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button } from '../../Button/Button';
 import { LinkButton } from '../../LinkButton/LinkButton';
 import { Icon } from '../../Icons/Icons';
@@ -28,4 +29,4 @@ const ProductTumbnails = ({ path }) => {
     );
 };
 
-export default ProductTumbnails;
+export default React.memo(ProductTumbnails);

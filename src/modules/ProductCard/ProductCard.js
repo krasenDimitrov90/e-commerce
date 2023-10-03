@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import ProductPrice from './ProductPrice/ProductPrice';
@@ -10,9 +11,8 @@ import { Button } from '../Button/Button';
 import { Icon } from '../Icons/Icons';
 
 import './ProductCard.styles.css';
-import React from 'react';
 
-export const ProductCard = ({ title, image, productPath, modalPath, price }) => {
+export const ProductCard = React.memo(({ title, image, productPath, modalPath, price }) => {
 
     return (
         <div className='product-container'>
@@ -39,4 +39,4 @@ export const ProductCard = ({ title, image, productPath, modalPath, price }) => 
             </div>
         </div>
     );
-};
+});

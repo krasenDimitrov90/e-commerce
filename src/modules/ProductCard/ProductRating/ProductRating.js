@@ -1,3 +1,4 @@
+import React from 'react';
 import { Icon } from '../../Icons/Icons';
 
 import './ProductRating.styles.css';
@@ -20,4 +21,4 @@ const ProductRating = ({ reviews }) => {
     );
 };
 
-export default ProductRating;
+export default React.memo(ProductRating);
