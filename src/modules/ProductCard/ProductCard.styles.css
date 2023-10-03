@@ -1,5 +1,5 @@
 .product-container {
-    @apply relative flex flex-col w-[calc(25%_-_20px)] mx-[10px] border-[1px] border-gray-200 my-2 transition-all duration-300 ease-linear overflow-hidden
+    @apply relative flex flex-col w-[calc(25%_-_20px)] mx-[10px] rounded border-[1px] border-gray-200 my-2 transition-all duration-300 ease-linear overflow-hidden
 }
 
 .product-container:hover {
