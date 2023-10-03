@@ -1,6 +1,6 @@
 import { Icon } from '../../Icons/Icons';
 
-import './ProductRating.css';
+import './ProductRating.styles.css';
 
 const ProductRating = ({ reviews }) => {
 

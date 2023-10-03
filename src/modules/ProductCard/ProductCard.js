@@ -1,6 +1,9 @@
+import { NavLink } from 'react-router-dom';
+
 import ProductPrice from './ProductPrice/ProductPrice';
 import ProductRating from './ProductRating/ProductRating';
-import ProductTitle from './ProductTitle/ProductTitle';
+import ProductDescription from './ProductDescription/ProductDescription';
+import ProductTumbnails from './ProductTumbnails/ProductTumbnails';
 
 import { Image } from '../Image/Image';
 import { Button } from '../Button/Button';
@@ -8,39 +11,18 @@ import { Icon } from '../Icons/Icons';
 
 import './ProductCard.styles.css';
 
-export const ProductCard = ({ title, image }) => {
+export const ProductCard = ({ title, image, productPath, modalPath }) => {
 
     return (
         <div className='product-container'>
-            <div className='product-tumbnails-container'>
+            <NavLink className='product-image-container'>
                 <Image src={image} />
-            </div>
-
+            </NavLink>
+            <ProductTumbnails path={modalPath} />
             <div className='product-description-container'>
-
-                <ProductTitle title={title} />
-
+                <ProductDescription title={title} path={productPath} />
                 <ProductPrice price={10} discountFrom={15.5} />
-
                 <ProductRating reviews={10} />
-            </div>
-
-            <div className='product-tumbnail-btns-container'>
-                <Button
-                    variant='tumbnail'
-                    rounded='rounded'
-                    size='square-lg'
-                    fontSize='lg'
-                >
-                    {<Icon variant='heart' />}
-                </Button>
-                <Button
-                    variant='tumbnail'
-                    rounded='rounded'
-                    size='square-lg'
-                >
-                    {<Icon variant='search' />}
-                </Button>
             </div>
 
             <div className='product-add-to-cart-btn-container'>

@@ -1,4 +1,4 @@
-import './ProductPrice.css';
+import './ProductPrice.styles.css';
 
 const ProductPrice = ({ price, discountFrom = null }) => {
 

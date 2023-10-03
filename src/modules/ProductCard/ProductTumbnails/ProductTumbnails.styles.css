@@ -1,0 +1,31 @@
+.product-tumbnail-btns-container {
+    @apply absolute top-1/2 flex justify-center w-full opacity-0
+}
+
+.product-tumbnail-btns-container button {
+    @apply shadow-[0_0px_20px_0px_rgba(0,0,0,.15)] shadow-gray-500
+}
+
+.product-tumbnail-btns-container button:nth-child(1) {
+    @apply mr-2 translate-y-[16px]
+}
+
+
+.product-tumbnail-btns-container,
+.product-add-to-cart-btn-container {
+    @apply transition-all duration-300 ease-linear translate-y-1/2
+}
+
+
+.product-container:hover .product-tumbnail-btns-container,
+.product-container:hover .product-add-to-cart-btn-container {
+    @apply opacity-100 translate-y-0 transition-all duration-150 ease-linear
+}
+
+.product-container:hover .product-tumbnail-btns-container button:nth-child(1) {
+    @apply opacity-100 translate-y-0 transition-all duration-300 ease-linear
+}
+
+.product-container:not(:hover) .product-tumbnail-btns-container {
+    @apply transition-none
+}
