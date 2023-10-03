@@ -1,9 +1,9 @@
 .product-price-container {
-    @apply flex items-end leading-4 mb-2
+    @apply flex items-end leading-4 mb-2 font-bold
 }
 
 .product-price {
-    @apply text-[18px] text-red-600 font-extrabold mr-4
+    @apply text-[18px] text-red-600 font-bold mr-4
 }
 
 .price-decimal {
@@ -15,5 +15,5 @@
 }
 
 .product-discount-from {
-    @apply font-extrabold text-lg text-gray-500 line-through
+    @apply text-lg text-gray-500 line-through
 }

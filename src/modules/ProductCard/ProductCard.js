@@ -12,7 +12,7 @@ import { Icon } from '../Icons/Icons';
 import './ProductCard.styles.css';
 import React from 'react';
 
-export const ProductCard = ({ title, image, productPath, modalPath }) => {
+export const ProductCard = ({ title, image, productPath, modalPath, price }) => {
 
     return (
         <div className='product-container'>
@@ -22,7 +22,7 @@ export const ProductCard = ({ title, image, productPath, modalPath }) => {
             <ProductTumbnails path={modalPath} />
             <div className='product-description-container'>
                 <ProductDescription title={title} path={productPath} />
-                <ProductPrice price={10} discountFrom={15.5} />
+                <ProductPrice price={price} discountFrom={15.5} />
                 <ProductRating reviews={10} />
             </div>
 
