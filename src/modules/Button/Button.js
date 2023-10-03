@@ -1,8 +1,9 @@
+import React from 'react';
 import { Spinner } from '../Spinner/Spinner';
 
 import './Button.styles.css';
 
-export const Button = ({
+export const Button = React.memo(({
     type,
     variant,
     rounded,
@@ -36,7 +37,7 @@ export const Button = ({
             {rightIcon && rightIcon}
         </button>
     );
-};
+});
 
 Button.defaultProps = {
     type: 'button',

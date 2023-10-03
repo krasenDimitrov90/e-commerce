@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
 import './LinkButton.styles.css';
+import React from 'react';
 
-export const LinkButton = ({ path, variant, size, upperCase, font, openNewTab, children }) => {
+export const LinkButton = React.memo(({ path, variant, size, upperCase, font, openNewTab, children }) => {
 
     const classes = 'link-btn-container ' + upperCase
         + ' ' + LinkButton.variants.variant[variant]
@@ -19,7 +20,7 @@ export const LinkButton = ({ path, variant, size, upperCase, font, openNewTab, c
         </div>
     );
 
-};
+});
 
 LinkButton.defaultProps = {
     variant: 'primary',

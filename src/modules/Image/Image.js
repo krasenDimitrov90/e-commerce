@@ -1,8 +1,9 @@
 import './Image.styles.css';
 
 import noImage from '../../images/No-Image.svg.png';
+import React from 'react';
 
-export const Image = ({ variant, src, alt }) => {
+export const Image = React.memo(({ variant, src, alt }) => {
 
     const classes = 'image-container' + ' ' + Image.variants.variant[variant];
 
@@ -17,7 +18,7 @@ export const Image = ({ variant, src, alt }) => {
             />
         </div>
     );
-};
+});
 
 
 Image.defaultProps = {

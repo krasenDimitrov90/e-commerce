@@ -1,6 +1,7 @@
+import React from 'react';
 import './FilterCheckbox.styles.css';
 
-export const FilterCheckbox = ({ label }) => {
+export const FilterCheckbox = React.memo(({ label }) => {
 
     return (
         <div className='filter-checkbox'>
@@ -10,4 +11,4 @@ export const FilterCheckbox = ({ label }) => {
             </label>
         </div>
     );
-};
+});

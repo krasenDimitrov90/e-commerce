@@ -1,7 +1,8 @@
+import React from 'react';
 import { Icon } from '../Icons/Icons';
 import './Contacts.styles.css';
 
-export const Contacts = ({ variant, info }) => {
+export const Contacts = React.memo(({ variant, info }) => {
 
     const { title, icon, href } = Contacts.variants.variant[variant];
 
@@ -19,7 +20,7 @@ export const Contacts = ({ variant, info }) => {
             </div>
         </div>
     );
-};
+});
 
 Contacts.variants = {
     variant: {
