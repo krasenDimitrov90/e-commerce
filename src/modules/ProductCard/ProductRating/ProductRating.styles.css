@@ -1,5 +1,18 @@
+.product-container-horizontal {
+    .product-rating-container {
+        @apply text-xs
+    }
+}
+
+
+.product-container-vertical {
+    .product-rating-container {
+        @apply text-base
+    }
+}
+
 .product-rating-container {
-    @apply flex text-xs font-medium my-4
+    @apply flex font-medium my-4
 }
 
 .product-rating-stars {

@@ -13,6 +13,7 @@ import { Icon } from '../Icons/Icons';
 import './ProductCard.styles.css';
 
 export const ProductCard = React.memo(({
+    variant,
     title,
     image,
     productPath,
@@ -23,30 +24,81 @@ export const ProductCard = React.memo(({
     onAddToCart
 }) => {
 
-    return (
-        <div className='product-container'>
-            <NavLink className='product-image-container'>
-                <Image src={image} />
-            </NavLink>
-            <ProductTumbnails path={modalPath} onLike={onLike} />
-            <div className='product-description-container'>
-                <ProductDescription title={title} path={productPath} />
-                <ProductPrice price={price} discountFrom={discountFrom} />
-                <ProductRating reviews={10} />
-            </div>
 
-            <div className='product-add-to-cart-btn-container'>
-                <Button
-                    onClick={onAddToCart}
-                    variant='primary'
-                    rounded='not-rounded'
-                    size='lg'
-                    expand={true}
-                    leftIcon={<Icon variant='cart' right={true} />}
-                >
-                    Добави в кошницата
-                </Button>
+    if (variant === 'horizontal') {
+        return (
+            <div className='product-container-horizontal'>
+                <div className='flex relative'>
+                    <NavLink to={productPath} className='product-image-container'>
+                        <Image src={image} />
+                    </NavLink>
+                    <ProductTumbnails path={modalPath} onLike={onLike} />
+                </div>
+                <div className='product-description-container'>
+                    <ProductDescription title={title} path={productPath} />
+                    <ProductPrice price={price} discountFrom={discountFrom} />
+                    <ProductRating reviews={10} />
+                </div>
+
+                <div className='product-add-to-cart-btn-container'>
+                    <Button
+                        onClick={onAddToCart}
+                        variant='primary'
+                        rounded='not-rounded'
+                        size='lg'
+                        expand={true}
+                        leftIcon={<Icon variant='cart' right={true} />}
+                    >
+                        Добави в кошницата
+                    </Button>
+                </div>
             </div>
-        </div>
-    );
+        );
+    } else if (variant === 'vertical') {
+
+        return (
+            <div className='product-container-vertical'>
+                <div className='flex w-[280px]'>
+                    <NavLink to={productPath} className='product-image-container'>
+                        <Image src={image} />
+                    </NavLink>
+                </div>
+
+                <div className="product-right-side">
+                    <div className='product-description-container'>
+                        <ProductPrice price={price} discountFrom={discountFrom} />
+                        <ProductRating reviews={10} />
+
+                        <div className='text-green-400 my-2'>
+                            <span className='mr-1'>
+                                <i class="fa-regular fa-circle-check"></i>
+                            </span>
+                            <spna>На склад</spna>
+                        </div>
+
+                        <ProductDescription title={title} path={productPath} />
+                    </div>
+
+                    <div className='product-add-to-cart-btn-container-vertical'>
+                        <div className='flex gap-2'>
+                            <Button
+                                onClick={onAddToCart}
+                                variant='dark'
+                                size='lg'
+                                leftIcon={<Icon variant='cart' right={true} />}
+                            >
+                                Добави в кошницата
+                            </Button>
+                            <ProductTumbnails path={modalPath} onLike={onLike} variant='vertical' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
 });
+
+ProductCard.defaultProps = {
+    variant: 'horizontal',
+};
