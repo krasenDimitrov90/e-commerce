@@ -35,7 +35,7 @@ export const ProductCard = React.memo(({
                     <ProductTumbnails path={modalPath} onLike={onLike} />
                 </div>
                 <div className='product-description-container'>
-                    <ProductDescription title={title} path={productPath} />
+                    <ProductDescription title={title} path={productPath}  />
                     <ProductPrice price={price} discountFrom={discountFrom} />
                     <ProductRating reviews={10} />
                 </div>
@@ -76,7 +76,7 @@ export const ProductCard = React.memo(({
                             <spna>На склад</spna>
                         </div>
 
-                        <ProductDescription title={title} path={productPath} />
+                        <ProductDescription title={title} path={productPath} cardVariant='vertical' />
                     </div>
 
                     <div className='product-add-to-cart-btn-container-vertical'>
