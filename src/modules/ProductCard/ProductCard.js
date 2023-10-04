@@ -58,7 +58,7 @@ export const ProductCard = React.memo(({
 
         return (
             <div className='product-container-vertical'>
-                <div className='flex w-[280px]'>
+                <div className='product-image-wrap'>
                     <NavLink to={productPath} className='product-image-container'>
                         <Image src={image} />
                     </NavLink>
