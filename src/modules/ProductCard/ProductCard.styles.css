@@ -1,30 +1,30 @@
+/* <<<<<----HORIZONTAL VARIANT---->>>>> */
+
 .product-container-horizontal {
-    @apply relative flex flex-col w-[calc(25%_-_20px)] mx-[10px] rounded border-[1px] border-gray-200 my-2 transition-all duration-300 ease-linear overflow-hidden;
+    @apply relative flex flex-col w-[calc(25%_-_20px)] max-[640px]:w-[calc(50%_-_20px)] mx-[10px] rounded border-[1px] border-gray-200 my-2 transition-all duration-300 ease-linear overflow-hidden;
 
     .product-image-container {
-        @apply flex p-1 h-[250px];
+        @apply flex p-1 h-[250px] ;
     }
 
     .product-description-container {
         @apply px-2 flex flex-col flex-1 justify-end mt-2;
     }
 
-    .product-add-to-cart-btn-container {
-        @apply flex absolute w-full bottom-0 opacity-0;
-    }
+   
 }
 
 .product-container-horizontal:hover {
     @apply shadow-[0_-4px_30px_-12px_rgba(0_0_0_.15)] shadow-gray-600;
 }
 
-/* <<<<<----SECONDARY VARIANT---->>>>> */
+/* <<<<<----VERICAL VARIANT---->>>>> */
 
 .product-container-vertical {
     @apply flex w-full mx-[15px] py-[30px] border-b-[1px] border-y-gray-400;
 
     .product-image-wrap {
-        @apply flex w-[280px] relative rounded bg-gray-300 transition-all duration-300 ease-linear overflow-hidden;
+        @apply flex w-[120px] sm:w-[280px] items-start relative rounded  transition-all duration-300 ease-linear overflow-hidden;
     }
     .product-image-wrap::after {
         content: "";
@@ -46,12 +46,8 @@
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
-    /* .product-image-wrap:hover {
-        @apply shadow-[0_-10px_30px_-12px_rgba(0_0_0_.15)] shadow-gray-600 ;
-    } */
     .product-image-wrap:hover {
         @apply shadow-[0px_-9px_16px_5px_rgb(243_234_234)]
-        /* box-shadow: 0px -9px 16px 5px rgb(243 234 234); */
     }
     .product-image-wrap:hover::after {
         right: -100px;
@@ -59,7 +55,7 @@
     }
 
     .product-right-side {
-        @apply flex flex-col px-[30px] py-[16px];
+        @apply flex flex-1 flex-col px-[30px] py-[16px];
 
         .product-description-container {
 
@@ -70,6 +66,14 @@
 
         .product-add-to-cart-btn-container-vertical {
             @apply flex flex-1 items-end gap-2;
+
+            .add-to-cart-desctop-screen {
+                @apply hidden sm:flex
+            }
+
+            .add-to-cart-small-screen {
+                @apply sm:hidden
+            }
         }
     }
 

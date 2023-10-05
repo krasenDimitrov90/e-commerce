@@ -26,7 +26,7 @@ export const ProductCardType = () => {
     }, []);
 
     return (
-        <div className="flex">
+        <div className="flex max-[640px]:flex-col">
             <div className="flex items-start basis-1/4 bg-[#F1F1F1]">
                 <button onClick={handleHorizontal} className="bg-gray-500 m-4 text-white p-2 rounded hover:bg-green-500">CHANGE ORIENTATION</button>
             </div>
