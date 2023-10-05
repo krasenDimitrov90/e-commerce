@@ -66,7 +66,7 @@ export const ProductCard = React.memo(({
 
                 <div className="product-right-side">
                     <div className='product-description-container'>
-                        <ProductPrice price={price} discountFrom={discountFrom} />
+                        <ProductPrice price={price} discountFrom={discountFrom} cardVariant='vertical' />
                         <ProductRating reviews={10} />
 
                         <div className='text-green-400 my-2'>
