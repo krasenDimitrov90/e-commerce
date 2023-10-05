@@ -35,7 +35,7 @@ export const ProductCard = React.memo(({
                     <ProductTumbnails path={modalPath} onLike={onLike} />
                 </div>
                 <div className='product-description-container'>
-                    <ProductDescription title={title} path={productPath}  />
+                    <ProductDescription title={title} path={productPath} />
                     <ProductPrice price={price} discountFrom={discountFrom} />
                     <ProductRating reviews={10} />
                 </div>
@@ -60,7 +60,7 @@ export const ProductCard = React.memo(({
             <div className='product-container-vertical'>
                 <div className='product-image-wrap'>
                     <NavLink to={productPath} className='product-image-container'>
-                        <Image src={image} />
+                        <Image src={image} variant='secondary' />
                     </NavLink>
                 </div>
 
@@ -81,14 +81,25 @@ export const ProductCard = React.memo(({
 
                     <div className='product-add-to-cart-btn-container-vertical'>
                         <div className='flex gap-2'>
-                            <Button
-                                onClick={onAddToCart}
-                                variant='dark'
-                                size='lg'
-                                leftIcon={<Icon variant='cart' right={true} />}
-                            >
-                                Добави в кошницата
-                            </Button>
+                            <div className='add-to-cart-desctop-screen'>
+                                <Button
+                                    onClick={onAddToCart}
+                                    variant='dark'
+                                    size='lg'
+                                    leftIcon={<Icon variant='cart' right={true} />}
+                                >
+                                    Добави в кошницата
+                                </Button>
+                            </div>
+                            <div className='add-to-cart-small-screen'>
+                                <Button
+                                    onClick={onAddToCart}
+                                    // variant='dark'
+                                    size='square-lg'
+                                >
+                                    {<Icon variant='cart' />}
+                                </Button>
+                            </div>
                             <ProductTumbnails path={modalPath} onLike={onLike} variant='vertical' />
                         </div>
                     </div>
