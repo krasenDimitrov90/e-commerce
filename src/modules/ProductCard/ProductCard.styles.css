@@ -21,7 +21,7 @@
 /* <<<<<----VERICAL VARIANT---->>>>> */
 
 .product-container-vertical {
-    @apply flex w-full mx-[15px] py-[30px] border-b-[1px] border-y-gray-400;
+    @apply flex mx-[15px] py-[30px] border-b-[1px] border-y-gray-400;
 
     .product-image-wrap {
         @apply flex w-[120px] sm:w-[280px] items-start relative rounded  transition-all duration-300 ease-linear overflow-hidden;
