@@ -5,6 +5,7 @@ import ProductPrice from './ProductPrice/ProductPrice';
 import ProductRating from './ProductRating/ProductRating';
 import ProductDescription from './ProductDescription/ProductDescription';
 import ProductTumbnails from './ProductTumbnails/ProductTumbnails';
+import ProductLabel from './ProductLabel/ProductLabel';
 
 import { Image } from '../Image/Image';
 import { Button } from '../Button/Button';
@@ -19,11 +20,13 @@ export const ProductCard = React.memo(({
     productPath,
     modalPath,
     price,
-    discountFrom,
+    oldPrice,
+    isNew,
     onLike,
     onAddToCart
 }) => {
 
+    let hasPromo = !!oldPrice;
 
     if (variant === 'horizontal') {
         return (
@@ -31,12 +34,13 @@ export const ProductCard = React.memo(({
                 <div className='flex relative'>
                     <NavLink to={productPath} className='product-image-container'>
                         <Image src={image} />
+                        <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                     </NavLink>
                     <ProductTumbnails path={modalPath} onLike={onLike} />
                 </div>
                 <div className='product-description-container'>
                     <ProductDescription title={title} path={productPath} />
-                    <ProductPrice price={price} discountFrom={discountFrom} />
+                    <ProductPrice price={price} oldPrice={oldPrice} />
                     <ProductRating reviews={10} />
                 </div>
 
@@ -61,12 +65,13 @@ export const ProductCard = React.memo(({
                 <div className='product-image-wrap'>
                     <NavLink to={productPath} className='product-image-container'>
                         <Image src={image} variant='secondary' />
+                        <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                     </NavLink>
                 </div>
 
                 <div className="product-right-side">
                     <div className='product-description-container'>
-                        <ProductPrice price={price} discountFrom={discountFrom} cardVariant='vertical' />
+                        <ProductPrice price={price} oldPrice={oldPrice} cardVariant='vertical' />
                         <ProductRating reviews={10} />
 
                         <div className='text-green-400 my-2'>

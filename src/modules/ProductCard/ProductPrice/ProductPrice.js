@@ -1,10 +1,10 @@
 import React from 'react';
 import './ProductPrice.styles.css';
 
-const ProductPrice = ({ price, discountFrom = null, cardVariant = 'horizontal' }) => {
+const ProductPrice = ({ price, oldPrice = null, cardVariant = 'horizontal' }) => {
 
     const [integer, decimal] = price.toFixed(2).toString().split('.');
-    const [discountInt, discountDecimal] = discountFrom ? discountFrom.toFixed(2).toString().split('.') : [null, null];
+    const [discountInt, discountDecimal] = oldPrice ? oldPrice.toFixed(2).toString().split('.') : [null, null];
 
     const classes = 'product-price-container-' + cardVariant;
         
@@ -15,7 +15,7 @@ const ProductPrice = ({ price, discountFrom = null, cardVariant = 'horizontal' }
                 <span className='price-decimal'>{decimal}</span>
                 лв
             </p>
-            {discountFrom &&
+            {oldPrice &&
                 <p className='product-discount-from'>
                     {discountInt}
                     <span className='price-decimal-discount'>{discountDecimal}</span>
