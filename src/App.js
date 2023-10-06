@@ -33,6 +33,10 @@ const Layout = () => {
   );
 };
 
+const Modal = () => (
+  <div className='w-32 h-32 bg-green-300 absolute top-[30%] left-[50%]'>MODAL</div>
+);
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -46,7 +50,13 @@ const router = createBrowserRouter([
       { path: '/price-slider', element: <PriceSliderTypes /> },
       { path: '/contacts', element: <ContactsTypes /> },
       { path: '/checkbox', element: <FilterCheckboxTypes /> },
-      { path: '/product', element: <ProductCardType /> },
+      {
+        path: '/product',
+        element: <ProductCardType />,
+        children: [
+          { path: 'productId', element: <Modal /> }
+        ],
+      },
     ]
   }
 ]);
