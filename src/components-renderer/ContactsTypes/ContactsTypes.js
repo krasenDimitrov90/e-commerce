@@ -4,12 +4,12 @@ export const ContactsTypes = () => {
     return (
         <div className="[w-500px] flex p-4 bg-blue-500">
             <Contacts
-                variant='mail'
+                variant='MAIL'
                 info='contacts@shik.bg'
             />
            <div className="ml-10">
            <Contacts
-                variant='phone'
+                variant='PHONE'
                 info='+359 894 66 43 27'
             />
            </div>

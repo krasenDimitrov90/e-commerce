@@ -4,7 +4,7 @@ import './Contacts.styles.css';
 
 export const Contacts = React.memo(({ variant, info }) => {
 
-    const { title, icon, href } = Contacts.variants.variant[variant];
+    const { title, icon, href } = Contacts.variants[variant];
 
     return (
         <div className='contacts'>
@@ -23,16 +23,14 @@ export const Contacts = React.memo(({ variant, info }) => {
 });
 
 Contacts.variants = {
-    variant: {
-        mail: {
-            title: 'Имейл',
-            icon: 'mail',
-            href: 'mailto',
-        },
-        phone: {
-            title: 'Телефон',
-            icon: 'phone',
-            href: 'tel',
-        },
-    }
+    MAIL: {
+        title: 'Имейл',
+        icon: 'mail',
+        href: 'mailto',
+    },
+    PHONE: {
+        title: 'Телефон',
+        icon: 'phone',
+        href: 'tel',
+    },
 }
