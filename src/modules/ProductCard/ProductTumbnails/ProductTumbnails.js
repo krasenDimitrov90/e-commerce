@@ -8,26 +8,26 @@ import './ProductTumbnails.styles.css';
 const ProductTumbnails = ({ path, onLike, variant }) => {
 
     const classes = ProductTumbnails.variants.variant[variant];
-    const btnVariant = variant === 'horizontal' ? 'tumbnail' : 'info';
+    const btnVariant = variant === 'horizontal' ? 'TUMBNAIL' : 'INFO';
 
     return (
         <div className={classes} >
             <Button
                 onClick={onLike}
                 variant={btnVariant}
-                rounded='rounded'
-                size='square-lg'
-                fontSize='lg'
+                rounded='ROUNDED'
+                size='SQUARE_LG'
+                fontSize='LG'
             >
-                {<Icon variant='heart' />}
+                {<Icon variant='HEART' />}
             </Button>
             <LinkButton path={path}>
                 <Button
                     variant={btnVariant}
-                    rounded='rounded'
-                    size='square-lg'
+                    rounded='ROUNDED'
+                    size='SQUARE_LG'
                 >
-                    {<Icon variant='search' />}
+                    {<Icon variant='SEARCH' />}
                 </Button>
             </LinkButton>
         </div>

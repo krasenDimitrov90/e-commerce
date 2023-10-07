@@ -34,11 +34,11 @@ export const Horizontal = React.memo((props) => {
             <div className='product-add-to-cart-btn-container'>
                 <Button
                     onClick={onAddToCart}
-                    variant='primary'
-                    rounded='not-rounded'
-                    size='lg'
+                    // variant='primary'
+                    rounded='NOT_ROUNDED'
+                    size='LG'
                     expand={true}
-                    leftIcon={<Icon variant='cart' right={true} />}
+                    leftIcon={<Icon variant='CART' right={true} />}
                 >
                     Добави в кошницата
                 </Button>
