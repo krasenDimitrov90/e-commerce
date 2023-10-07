@@ -23,7 +23,7 @@ export const Horizontal = React.memo((props) => {
                     <Image src={image} />
                     <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                 </NavLink>
-                <ProductTumbnails path={modalPath} onLike={onLike} />
+                <ProductTumbnails path={modalPath} onLike={onLike} variant='HORIZONTAL' />
             </div>
             <div className='product-description-container'>
                 <ProductDescription title={title} path={productPath} />
@@ -34,7 +34,6 @@ export const Horizontal = React.memo((props) => {
             <div className='product-add-to-cart-btn-container'>
                 <Button
                     onClick={onAddToCart}
-                    // variant='primary'
                     rounded='NOT_ROUNDED'
                     size='LG'
                     expand={true}

@@ -8,7 +8,7 @@ import './ProductTumbnails.styles.css';
 const ProductTumbnails = ({ path, onLike, variant }) => {
 
     const classes = ProductTumbnails.variants.variant[variant];
-    const btnVariant = variant === 'horizontal' ? 'TUMBNAIL' : 'INFO';
+    const btnVariant = variant === 'HORIZONTAL' ? 'TUMBNAIL' : 'INFO';
 
     return (
         <div className={classes} >
@@ -37,12 +37,12 @@ const ProductTumbnails = ({ path, onLike, variant }) => {
 export default React.memo(ProductTumbnails);
 
 ProductTumbnails.defaultProps = {
-    variant: 'horizontal',
+    variant: 'HORIZONTAL',
 };
 
 ProductTumbnails.variants = {
     variant: {
-        horizontal: 'product-tumbnail-btns-container',
-        vertical: 'product-tumbnail-btns-container-vertical',
+        HORIZONTAL: 'product-tumbnail-btns-container',
+        VERTICAL: 'product-tumbnail-btns-container-vertical',
     },
 };
