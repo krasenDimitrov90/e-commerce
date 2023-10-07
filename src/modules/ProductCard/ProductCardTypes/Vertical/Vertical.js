@@ -20,7 +20,7 @@ export const Vertical = React.memo((props) => {
         <div className='product-container-vertical'>
             <div className='product-image-wrap'>
                 <NavLink to={productPath} className='product-image-container'>
-                    <Image src={image} variant='secondary' />
+                    <Image src={image} variant='SECONDARY' />
                     <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                 </NavLink>
             </div>

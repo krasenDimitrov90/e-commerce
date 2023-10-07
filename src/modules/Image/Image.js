@@ -5,7 +5,7 @@ import React from 'react';
 
 export const Image = React.memo(({ variant, src, alt }) => {
 
-    const classes = 'image-container' + ' ' + Image.variants.variant[variant];
+    const classes = 'image-container' + ' ' + Image.variants[variant];
 
     return (
         <div className={classes}>
@@ -22,13 +22,11 @@ export const Image = React.memo(({ variant, src, alt }) => {
 
 
 Image.defaultProps = {
-    variant: 'primary',
+    variant: 'PRIMARY',
     alt: 'Product',
 };
 
 Image.variants = {
-    variant: {
-        primary: 'image-primary',
-        secondary: 'image-secondary',
-    }
+    PRIMARY: 'image-primary',
+    SECONDARY: 'image-secondary',
 };
