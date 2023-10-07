@@ -3,7 +3,7 @@ import './Spinner.styles.css';
 
 export const Spinner = React.memo(({ size }) => {
 
-    const classes = 'loader ' + 'spinner-' + size;
+    const classes = 'loader ' + Spinner.styles.size[size];
 
     return (
         <span className={classes}></span>
@@ -12,12 +12,12 @@ export const Spinner = React.memo(({ size }) => {
 
 
 
-Spinner.variants = {
+Spinner.styles = {
     size: {
-        xs: 'spinner-xs',
-        sm: 'spinner-sm',
-        base: 'spinner-base',
-        lg: 'spinner-lg',
-        xl: 'spinner-xl',
+        XS: 'spinner-xs',
+        SM: 'spinner-sm',
+        BASE: 'spinner-base',
+        LG: 'spinner-lg',
+        XL: 'spinner-xl',
     },
 };

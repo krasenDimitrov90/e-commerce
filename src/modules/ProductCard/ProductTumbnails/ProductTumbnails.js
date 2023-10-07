@@ -10,9 +10,6 @@ const ProductTumbnails = ({ path, onLike, variant }) => {
     const classes = ProductTumbnails.variants.variant[variant];
     const btnVariant = variant === 'horizontal' ? 'tumbnail' : 'info';
 
-    console.log(variant)
-
-
     return (
         <div className={classes} >
             <Button

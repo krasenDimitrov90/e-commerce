@@ -54,142 +54,142 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Default</h1>
                 <div className={innerContainerClass}>
-                    <Button upperCase={true} variant='primary' >primary</Button>
-                    <Button variant='secondary' >secondary</Button>
-                    <Button variant='info' >info</Button>
-                    <Button variant='dark'>dark</Button>
-                    <Button variant='danger' >danger</Button>
+                    <Button upperCase={true} variant='PRIMARY' >primary</Button>
+                    <Button variant='SECONDARY' >secondary</Button>
+                    <Button variant='INFO' >info</Button>
+                    <Button variant='DARK'>dark</Button>
+                    <Button variant='DANGER' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Outlined</h1>
                 <div className={innerContainerClass}>
-                    <Button variant='outline-primary' >primary</Button>
-                    <Button variant='outline-secondary' >secondary</Button>
-                    <Button variant='outline-info' >info</Button>
-                    <Button variant='outline-dark' >dark</Button>
-                    <Button variant='outline-danger' >danger</Button>
+                    <Button variant='OUTLINE_PRIMARY' >primary</Button>
+                    <Button variant='OUTLINE_SECONDARY' >secondary</Button>
+                    <Button variant='OUTLINE_INFO' >info</Button>
+                    <Button variant='OUTLINE_DARK' >dark</Button>
+                    <Button variant='OUTLINE_DANGER' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Rounded</h1>
                 <div className={innerContainerClass}>
-                    <Button rounded='rounded' variant='outline-primary' >primary</Button>
-                    <Button rounded='rounded' variant='outline-secondary' >secondary</Button>
-                    <Button rounded='rounded' variant='outline-info' >info</Button>
-                    <Button rounded='rounded' variant='outline-dark' >dark</Button>
-                    <Button rounded='rounded' variant='outline-danger' >danger</Button>
+                    <Button rounded='ROUNDED' variant='OUTLINE_PRIMARY' >primary</Button>
+                    <Button rounded='ROUNDED' variant='OUTLINE_SECONDARY' >secondary</Button>
+                    <Button rounded='ROUNDED' variant='OUTLINE_INFO' >info</Button>
+                    <Button rounded='ROUNDED' variant='OUTLINE_DARK' >dark</Button>
+                    <Button rounded='ROUNDED' variant='OUTLINE_DANGER' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Circled</h1>
                 <div className={innerContainerClass}>
-                    <Button rounded='circle' variant='outline-primary' >primary</Button>
-                    <Button rounded='circle' variant='outline-secondary' >secondary</Button>
-                    <Button rounded='circle' variant='outline-info' >is</Button>
-                    <Button rounded='circle' variant='outline-dark' >dark</Button>
-                    <Button rounded='circle' variant='outline-danger' >danger</Button>
+                    <Button rounded='CIRCLED' variant='OUTLINE_PRIMARY' >primary</Button>
+                    <Button rounded='CIRCLED' variant='OUTLINE_SECONDARY' >secondary</Button>
+                    <Button rounded='CIRCLED' variant='OUTLINE_INFO' >is</Button>
+                    <Button rounded='CIRCLED' variant='OUTLINE_DARK' >dark</Button>
+                    <Button rounded='CIRCLED' variant='OUTLINE_DANGER' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Top rounded</h1>
                 <div className={innerContainerClass}>
-                    <Button rounded='top-rounded' variant='outline-primary' >primary</Button>
-                    <Button rounded='top-rounded' variant='outline-secondary' >secondary</Button>
-                    <Button rounded='top-rounded' variant='outline-info' >info</Button>
-                    <Button rounded='top-rounded' variant='outline-dark' >dark</Button>
-                    <Button rounded='top-rounded' variant='outline-danger' >danger</Button>
+                    <Button rounded='TOP_ROUNDED' variant='OUTLINE_PRIMARY' >primary</Button>
+                    <Button rounded='TOP_ROUNDED' variant='OUTLINE_SECONDARY' >secondary</Button>
+                    <Button rounded='TOP_ROUNDED' variant='OUTLINE_INFO' >info</Button>
+                    <Button rounded='TOP_ROUNDED' variant='OUTLINE_DARK' >dark</Button>
+                    <Button rounded='TOP_ROUNDED' variant='OUTLINE_DANGER' >danger</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Sizes</h1>
                 <div className={innerContainerClass}>
-                    <Button size='xs' rounded='rounded' variant='outline-primary' >X</Button>
-                    <Button size='sm' rounded='rounded' variant='outline-secondary' >SM</Button>
-                    <Button size='base' rounded='rounded' variant='outline-info' >BASE</Button>
-                    <Button size='lg' rounded='rounded' variant='outline-dark' >LG</Button>
-                    <Button size='xl' rounded='rounded' variant='outline-danger' >XL</Button>
+                    <Button size='XS' rounded='ROUNDED' variant='OUTLINE_PRIMARY' >X</Button>
+                    <Button size='SM' rounded='ROUNDED' variant='OUTLINE_SECONDARY' >SM</Button>
+                    <Button size='BASE' rounded='ROUNDED' variant='OUTLINE_INFO' >BASE</Button>
+                    <Button size='LG' rounded='ROUNDED' variant='OUTLINE_DARK' >LG</Button>
+                    <Button size='XL' rounded='ROUNDED' variant='OUTLINE_DANGER' >XL</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Font Sizes</h1>
                 <div className={innerContainerClass}>
-                    <Button fontSize='xs' size='xl' rounded='rounded' variant='primary' >XS</Button>
-                    <Button fontSize='sm' size='xl' rounded='rounded' variant='secondary' >SM</Button>
-                    <Button fontSize='base' size='xl' rounded='rounded' variant='info' >BASE</Button>
-                    <Button fontSize='lg' size='xl' rounded='rounded' variant='dark' >LG</Button>
-                    <Button fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
+                    <Button fontSize='XS' size='XL' rounded='ROUNDED' variant='PRIMARY' >XS</Button>
+                    <Button fontSize='SM' size='XL' rounded='ROUNDED' variant='SECONDARY' >SM</Button>
+                    <Button fontSize='BASE' size='XL' rounded='ROUNDED' variant='INFO' >BASE</Button>
+                    <Button fontSize='LG' size='XL' rounded='ROUNDED' variant='DARK' >LG</Button>
+                    <Button fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Font Sizes And Sizes</h1>
                 <div className={innerContainerClass}>
-                    <Button fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button>
-                    <Button fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button>
-                    <Button fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button>
-                    <Button fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button>
-                    <Button fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button>
+                    <Button fontSize='XS' size='XS' rounded='ROUNDED' variant='PRIMARY' >XS</Button>
+                    <Button fontSize='SM' size='SM' rounded='ROUNDED' variant='SECONDARY' >SM</Button>
+                    <Button fontSize='BASE' size='BASE' rounded='ROUNDED' variant='INFO' >BASE</Button>
+                    <Button fontSize='LG' size='LG' rounded='ROUNDED' variant='DARK' >LG</Button>
+                    <Button fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Fonts</h1>
                 <div className={innerContainerClass}>
-                    <Button fontWeight='sm' rounded='rounded' variant='primary' >SM</Button>
-                    <Button fontWeight='base' rounded='rounded' variant='primary' >BASE</Button>
-                    <Button fontWeight='bold' rounded='rounded' variant='primary' >BOLD</Button>
-                    <Button fontWeight='xl' rounded='rounded' variant='primary' >XL</Button>
+                    <Button fontWeight='SM' rounded='ROUNDED' variant='PRIMARY' >SM</Button>
+                    <Button fontWeight='BASE' rounded='ROUNDED' variant='PRIMARY' >BASE</Button>
+                    <Button fontWeight='BOLD' rounded='ROUNDED' variant='PRIMARY' >BOLD</Button>
+                    <Button fontWeight='XL' rounded='ROUNDED' variant='PRIMARY' >XL</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Square Button h-36 w-36</h1>
                 <div className={innerContainerClass}>
-                    <Button fontSize='xs' size='square-xs' rounded='rounded' variant='primary' ><Icon variant='search' /></Button>
-                    <Button fontSize='sm' size='square-sm' rounded='rounded' variant='secondary' ><Icon variant='search' /></Button>
-                    <Button fontSize='base' size='square-base' rounded='rounded' variant='info' ><Icon variant='search' /></Button>
-                    <Button fontSize='lg' size='square-lg' rounded='rounded' variant='dark' ><Icon variant='search' /></Button>
-                    <Button fontSize='xl' size='square-xl' rounded='rounded' variant='danger' ><Icon variant='search' /></Button>
+                    <Button fontSize='XS' size='SQUARE_XS' rounded='ROUNDED' variant='PRIMARY' ><Icon variant='search' /></Button>
+                    <Button fontSize='SM' size='SQUARE_SM' rounded='ROUNDED' variant='SECONDARY' ><Icon variant='search' /></Button>
+                    <Button fontSize='BASE' size='SQUARE_BASE' rounded='ROUNDED' variant='INFO' ><Icon variant='search' /></Button>
+                    <Button fontSize='LG' size='SQUARE_LG' rounded='ROUNDED' variant='DARK' ><Icon variant='search' /></Button>
+                    <Button fontSize='XL' size='SQUARE_XL' rounded='ROUNDED' variant='DANGER' ><Icon variant='search' /></Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Text With Icon</h1>
                 <div className={innerContainerClass}>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='primary' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='secondary' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='info' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='dark' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='rounded' variant='danger' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='PRIMARY' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='SECONDARY' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='INFO' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='DARK' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='DANGER' >Настройки</Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Loading Buttons - Click To Try</h1>
                 <div className={innerContainerClass}>
-                    <Button1 isLoading={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button1>
-                    <Button2 isLoading={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button2>
-                    <Button3 isLoading={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button3>
-                    <Button4 isLoading={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button4>
-                    <Button5 isLoading={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button5>
+                    <Button1 fontSize='XS' size='XS' rounded='ROUNDED' variant='PRIMARY' >XS</Button1>
+                    <Button2 fontSize='SM' size='SM' rounded='ROUNDED' variant='SECONDARY' >SM</Button2>
+                    <Button3 fontSize='BASE' size='BASE' rounded='ROUNDED' variant='INFO' >BASE</Button3>
+                    <Button4 fontSize='LG' size='LG' rounded='ROUNDED' variant='DARK' >LG</Button4>
+                    <Button5 fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button5>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Loading Buttons - Click To Try</h1>
                 <div className={innerContainerClass}>
-                    <Button1 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='xs' size='xs' rounded='rounded' variant='primary' >XS</Button1>
-                    <Button2 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='sm' size='sm' rounded='rounded' variant='secondary' >SM</Button2>
-                    <Button3 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='base' size='base' rounded='rounded' variant='info' >BASE</Button3>
-                    <Button4 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='lg' size='lg' rounded='rounded' variant='dark' >LG</Button4>
-                    <Button5 leftIcon={<Icon variant='cart' right={true} />} isLoading={true} fontSize='xl' size='xl' rounded='rounded' variant='danger' >XL</Button5>
+                    <Button1 leftIcon={<Icon variant='cart' right={true} />} fontSize='XS' size='XS' rounded='ROUNDED' variant='PRIMARY' >XS</Button1>
+                    <Button2 leftIcon={<Icon variant='cart' right={true} />} fontSize='SM' size='SM' rounded='ROUNDED' variant='SECONDARY' >SM</Button2>
+                    <Button3 leftIcon={<Icon variant='cart' right={true} />} fontSize='BASE' size='BASE' rounded='ROUNDED' variant='INFO' >BASE</Button3>
+                    <Button4 leftIcon={<Icon variant='cart' right={true} />} fontSize='LG' size='LG' rounded='ROUNDED' variant='DARK' >LG</Button4>
+                    <Button5 leftIcon={<Icon variant='cart' right={true} />} fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button5>
                 </div>
             </div>
         </>

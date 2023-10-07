@@ -22,12 +22,12 @@ export const Button = React.memo(({
     const expanded = expand ? ' flex-1 ' : ' ';
     const uppercase = upperCase ? ' uppercase ' : ' ';
 
-    const classes = 'btn ' + expanded + uppercase 
-        + ' ' + Button.variants.variant[variant]
-        + ' ' + Button.variants.rounded[rounded]
-        + ' ' + Button.variants.size[size]
-        + ' ' + Button.variants.fontWeight[fontWeight]
-        + ' ' + Button.variants.fontSize[fontSize];
+    const classes = 'btn ' + expanded + uppercase
+        + ' ' + Button.variants[variant]
+        + ' ' + Button.styles.rounded[rounded]
+        + ' ' + Button.styles.size[size]
+        + ' ' + Button.styles.fontWeight[fontWeight]
+        + ' ' + Button.styles.fontSize[fontSize];
 
     return (
         <button className={classes} type={type} onClick={onClick} disabled={disabled || isLoading}>
@@ -41,11 +41,11 @@ export const Button = React.memo(({
 
 Button.defaultProps = {
     type: 'button',
-    variant: 'primary',
-    size: 'base',
-    rounded: 'rounded',
-    fontWeight: 'base',
-    fontSize: 'base',
+    variant: 'PRIMARY',
+    size: 'BASE',
+    rounded: 'ROUNDED',
+    fontWeight: 'BASE',
+    fontSize: 'BASE',
     upperCase: false,
     expand: false,
     disabled: false,
@@ -53,48 +53,49 @@ Button.defaultProps = {
 };
 
 Button.variants = {
-    variant: {
-        'primary': 'btn-primary',
-        'secondary': 'btn-secondary',
-        'tumbnail': 'btn-tumbnail',
-        'info': 'btn-info',
-        'dark': 'btn-dark',
-        'danger': 'btn-danger',
-        'outline-primary': 'btn-outline-primary',
-        'outline-secondary': 'btn-outline-secondary',
-        'outline-info': 'btn-outline-info',
-        'outline-dark': 'btn-outline-dark',
-        'outline-danger': 'btn-outline-danger',
-    },
+    PRIMARY: 'btn-primary',
+    SECONDARY: 'btn-secondary',
+    TUMBNAIL: 'btn-tumbnail',
+    INFO: 'btn-info',
+    DARK: 'btn-dark',
+    DANGER: 'btn-danger',
+    OUTLINE_PRIMARY: 'btn-outline-primary',
+    OUTLINE_SECONDARY: 'btn-outline-secondary',
+    OUTLINE_INFO: 'btn-outline-info',
+    OUTLINE_DARK: 'btn-outline-dark',
+    OUTLINE_DANGER: 'btn-outline-danger',
+};
+
+Button.styles = {
     rounded: {
-        'not-rounded': '',
-        'rounded': 'btn-rounded',
-        'circle': 'btn-circled',
-        'top-rounded': 'btn-top-rounded',
+        NOT_ROUNDED: '',
+        ROUNDED: 'btn-rounded',
+        CIRCLED: 'btn-circled',
+        TOP_ROUNDED: 'btn-top-rounded',
     },
     size: {
-        xs: 'btn-xs',
-        sm: 'btn-sm',
-        base: 'btn-base',
-        lg: 'btn-lg',
-        xl: 'btn-xl',
-        'square-xs': 'btn-square-xs',
-        'square-sm': 'btn-square-sm',
-        'square-base': 'btn-square-base',
-        'square-lg': 'btn-square-lg',
-        'square-xl': 'btn-square-xl',
+        XS: 'btn-xs',
+        SM: 'btn-sm',
+        BASE: 'btn-base',
+        LG: 'btn-lg',
+        XL: 'btn-xl',
+        SQUARE_XS: 'btn-square-xs',
+        SQUARE_SM: 'btn-square-sm',
+        SQUARE_BASE: 'btn-square-base',
+        SQUARE_LG: 'btn-square-lg',
+        SQUARE_XL: 'btn-square-xl',
     },
     fontSize: {
-        xs: 'btn-font-xs',
-        sm: 'btn-font-sm',
-        base: 'btn-font-base',
-        lg: 'btn-font-lg',
-        xl: 'btn-font-xl',
+        XS: 'btn-font-xs',
+        SM: 'btn-font-sm',
+        BASE: 'btn-font-base',
+        LG: 'btn-font-lg',
+        XL: 'btn-font-xl',
     },
     fontWeight: {
-        sm: 'btn-font-wieght-sm',
-        base: 'btn-font-wieght-base',
-        bold: 'btn-font-wieght-bold',
-        xl: 'btn-font-wieght-xl',
+        SM: 'btn-font-wieght-sm',
+        BASE: 'btn-font-wieght-base',
+        BOLD: 'btn-font-wieght-bold',
+        XL: 'btn-font-wieght-xl',
     }
 };

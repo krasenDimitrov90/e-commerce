@@ -26,7 +26,6 @@ export const ProductCardType = () => {
 
     const [variant, setVariant] = React.useState(initialState);
 
-
     const handleHorizontal = React.useCallback(() => {
         const newState = variant === ProductCard.variants.HORIZONTAL ? ProductCard.variants.VERTICAL : ProductCard.variants.HORIZONTAL;
         localStorage.setItem('product-variant', newState);
