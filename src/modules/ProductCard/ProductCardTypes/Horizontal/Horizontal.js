@@ -27,7 +27,7 @@ export const Horizontal = React.memo((props) => {
             </div>
             <div className='product-description-container'>
                 <ProductDescription title={title} path={productPath} />
-                <ProductPrice price={price} oldPrice={oldPrice} />
+                <ProductPrice price={price} oldPrice={oldPrice} variant='HORIZONTAL' />
                 <ProductRating reviews={reviews || 0} />
             </div>
 
