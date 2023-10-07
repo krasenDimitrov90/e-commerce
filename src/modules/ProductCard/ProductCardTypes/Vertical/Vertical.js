@@ -59,7 +59,7 @@ export const Vertical = React.memo((props) => {
                                 {<Icon variant='CART' />}
                             </Button>
                         </div>
-                        <ProductTumbnails path={modalPath} onLike={onLike} variant='vertical' />
+                        <ProductTumbnails path={modalPath} onLike={onLike} variant='VERTICAL' />
                     </div>
                 </div>
             </div>
