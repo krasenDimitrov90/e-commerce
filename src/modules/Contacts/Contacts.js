@@ -25,7 +25,7 @@ export const Contacts = React.memo(({ variant, info }) => {
 Contacts.variants = {
     variant: {
         mail: {
-            title: 'Емайл',
+            title: 'Имейл',
             icon: 'mail',
             href: 'mailto',
         },
