@@ -152,22 +152,22 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Square Button h-36 w-36</h1>
                 <div className={innerContainerClass}>
-                    <Button fontSize='XS' size='SQUARE_XS' rounded='ROUNDED' variant='PRIMARY' ><Icon variant='search' /></Button>
-                    <Button fontSize='SM' size='SQUARE_SM' rounded='ROUNDED' variant='SECONDARY' ><Icon variant='search' /></Button>
-                    <Button fontSize='BASE' size='SQUARE_BASE' rounded='ROUNDED' variant='INFO' ><Icon variant='search' /></Button>
-                    <Button fontSize='LG' size='SQUARE_LG' rounded='ROUNDED' variant='DARK' ><Icon variant='search' /></Button>
-                    <Button fontSize='XL' size='SQUARE_XL' rounded='ROUNDED' variant='DANGER' ><Icon variant='search' /></Button>
+                    <Button fontSize='XS' size='SQUARE_XS' rounded='ROUNDED' variant='PRIMARY' ><Icon variant='SEARCH' /></Button>
+                    <Button fontSize='SM' size='SQUARE_SM' rounded='ROUNDED' variant='SECONDARY' ><Icon variant='SEARCH' /></Button>
+                    <Button fontSize='BASE' size='SQUARE_BASE' rounded='ROUNDED' variant='INFO' ><Icon variant='SEARCH' /></Button>
+                    <Button fontSize='LG' size='SQUARE_LG' rounded='ROUNDED' variant='DARK' ><Icon variant='SEARCH' /></Button>
+                    <Button fontSize='XL' size='SQUARE_XL' rounded='ROUNDED' variant='DANGER' ><Icon variant='SEARCH' /></Button>
                 </div>
             </div>
 
             <div className={outContainerClass}>
                 <h1>Text With Icon</h1>
                 <div className={innerContainerClass}>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='PRIMARY' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='SECONDARY' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='INFO' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='DARK' >Настройки</Button>
-                    <Button leftIcon={<Icon variant='cart' right={true} />} rounded='ROUNDED' variant='DANGER' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='CART' right={true} />} rounded='ROUNDED' variant='PRIMARY' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='CART' right={true} />} rounded='ROUNDED' variant='SECONDARY' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='CART' right={true} />} rounded='ROUNDED' variant='INFO' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='CART' right={true} />} rounded='ROUNDED' variant='DARK' >Настройки</Button>
+                    <Button leftIcon={<Icon variant='CART' right={true} />} rounded='ROUNDED' variant='DANGER' >Настройки</Button>
                 </div>
             </div>
 
@@ -185,11 +185,11 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
             <div className={outContainerClass}>
                 <h1>Loading Buttons - Click To Try</h1>
                 <div className={innerContainerClass}>
-                    <Button1 leftIcon={<Icon variant='cart' right={true} />} fontSize='XS' size='XS' rounded='ROUNDED' variant='PRIMARY' >XS</Button1>
-                    <Button2 leftIcon={<Icon variant='cart' right={true} />} fontSize='SM' size='SM' rounded='ROUNDED' variant='SECONDARY' >SM</Button2>
-                    <Button3 leftIcon={<Icon variant='cart' right={true} />} fontSize='BASE' size='BASE' rounded='ROUNDED' variant='INFO' >BASE</Button3>
-                    <Button4 leftIcon={<Icon variant='cart' right={true} />} fontSize='LG' size='LG' rounded='ROUNDED' variant='DARK' >LG</Button4>
-                    <Button5 leftIcon={<Icon variant='cart' right={true} />} fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button5>
+                    <Button1 leftIcon={<Icon variant='CART' right={true} />} fontSize='XS' size='XS' rounded='ROUNDED' variant='PRIMARY' >XS</Button1>
+                    <Button2 leftIcon={<Icon variant='CART' right={true} />} fontSize='SM' size='SM' rounded='ROUNDED' variant='SECONDARY' >SM</Button2>
+                    <Button3 leftIcon={<Icon variant='CART' right={true} />} fontSize='BASE' size='BASE' rounded='ROUNDED' variant='INFO' >BASE</Button3>
+                    <Button4 leftIcon={<Icon variant='CART' right={true} />} fontSize='LG' size='LG' rounded='ROUNDED' variant='DARK' >LG</Button4>
+                    <Button5 leftIcon={<Icon variant='CART' right={true} />} fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button5>
                 </div>
             </div>
         </>

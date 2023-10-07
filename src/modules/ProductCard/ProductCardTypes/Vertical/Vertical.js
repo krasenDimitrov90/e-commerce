@@ -45,9 +45,8 @@ export const Vertical = React.memo((props) => {
                         <div className='add-to-cart-desctop-screen'>
                             <Button
                                 onClick={onAddToCart}
-                                variant='dark'
-                                size='lg'
-                                leftIcon={<Icon variant='cart' right={true} />}
+                                size='LG'
+                                leftIcon={<Icon variant='CART' right={true} />}
                             >
                                 Добави в кошницата
                             </Button>
@@ -55,10 +54,9 @@ export const Vertical = React.memo((props) => {
                         <div className='add-to-cart-small-screen'>
                             <Button
                                 onClick={onAddToCart}
-                                // variant='dark'
-                                size='square-lg'
+                                size='SQUARE_LG'
                             >
-                                {<Icon variant='cart' />}
+                                {<Icon variant='CART' />}
                             </Button>
                         </div>
                         <ProductTumbnails path={modalPath} onLike={onLike} variant='vertical' />
