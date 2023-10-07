@@ -15,7 +15,7 @@ import './Horizontal.styles.css';
 
 
 export const Horizontal = React.memo((props) => {
-    const {productPath, image, hasPromo, isNew, oldPrice, modalPath, onLike, title, price, onAddToCart} = props
+    const {productPath, image, hasPromo, isNew, oldPrice, modalPath, onLike, title, price, onAddToCart, reviews} = props
     return (
         <div className='product-container-horizontal'>
             <div className='flex relative'>
@@ -28,7 +28,7 @@ export const Horizontal = React.memo((props) => {
             <div className='product-description-container'>
                 <ProductDescription title={title} path={productPath} />
                 <ProductPrice price={price} oldPrice={oldPrice} />
-                <ProductRating reviews={10} />
+                <ProductRating reviews={reviews || 0} />
             </div>
 
             <div className='product-add-to-cart-btn-container'>
