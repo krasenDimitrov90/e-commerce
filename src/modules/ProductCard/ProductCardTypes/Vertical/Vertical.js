@@ -27,7 +27,7 @@ export const Vertical = React.memo((props) => {
 
             <div className="product-right-side">
                 <div className='product-description-container'>
-                    <ProductPrice price={price} oldPrice={oldPrice} cardVariant='vertical' />
+                    <ProductPrice price={price} oldPrice={oldPrice} variant='VERTICAL' />
                     <ProductRating reviews={reviews || 0} />
 
                     <div className='text-green-400 my-2'>
