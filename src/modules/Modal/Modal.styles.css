@@ -6,6 +6,18 @@
     }
 
     .modal-content {
-        @apply bg-white relative z-[1001]
+        animation: popout 400ms ease-in-out;
+    }
+    .modal-content {
+        @apply bg-white relative z-[1001] overflow-hidden;
+    }
+}
+
+@keyframes popout {
+    0% {
+        scale: 0;
+    } 
+    100% {
+       scale: 1;
     }
 }

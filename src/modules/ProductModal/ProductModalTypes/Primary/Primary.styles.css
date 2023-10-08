@@ -1,9 +1,17 @@
 .product-modal {
-    @apply flex p-[20px];
+    @apply flex p-[20px] ;
 
     
 
     .product-modal-right {
-        @apply flex-1;
+        @apply flex-1 pl-[20px] max-w-[400px];
+
+        .product-title-container-modal {
+            @apply flex flex-1 font-bold text-base text-gray-700 my-5 py-3 border-y border-y-gray-400;
+        }
+
+        .product-modal-buttons {
+            @apply flex mt-5 gap-2;
+        }
     }
 }

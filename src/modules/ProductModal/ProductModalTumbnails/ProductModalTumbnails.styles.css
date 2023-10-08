@@ -1,15 +1,15 @@
 .product-modal-left {
-    @apply flex flex-col gap-[10px];
+    @apply flex flex-col gap-[10px] 2xl:w-[40%] ;
 
     .product-modal-main-image {
-        @apply flex flex-1 w-[280px] cursor-pointer;
+        @apply flex h-[280px] w-[280px]  2xl:h-[560px] 2xl:w-[560px] cursor-pointer;
     }
 
     .product-modal-tumbnails {
         @apply flex flex-1 gap-[10px] ;
 
         .product-modal-tumbnail {
-            @apply flex w-[48px] cursor-pointer;
+            @apply flex w-[48px] 2xl:w-[96px]  cursor-pointer  transition-all duration-300;
         }
 
         .product-modal-tumbnail:hover,

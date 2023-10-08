@@ -1,7 +1,9 @@
 import React from 'react';
 import './Qauantity.styles.css';
 
-export const Qauantity = React.memo(({ quantity, setQuantity }) => {
+export const Qauantity = React.memo(() => {
+
+    const [quantity, setQuantity] = React.useState(1);
 
     const increaseQuantityHandler = () => updateInput(quantity + 1);
 
