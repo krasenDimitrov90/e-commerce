@@ -1,5 +1,5 @@
 .product-modal-left {
-    @apply flex flex-col w-[40%] gap-[10px];
+    @apply flex flex-col w-[100%]  sm:w-[40%] gap-[10px];
 
     .product-modal-main-image {
         @apply flex flex-1;
