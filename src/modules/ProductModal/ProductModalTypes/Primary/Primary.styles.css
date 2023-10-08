@@ -1,6 +1,5 @@
 .product-modal {
-    @apply flex p-[20px] w-[60vw] h-[66vh];
-
+    @apply flex p-[20px] w-[90vw] sm:w-[60vw] h-[66vh];
     
 
     .product-modal-right {

@@ -4,10 +4,20 @@ import { Modal } from '../Modal/Modal';
 
 import './ProductModal.styles.css';
 
-export const ProductModal = () => {
+export const ProductModal = (props) => {
+
+    const VariantComponent = React.useMemo(() => {
+        return props.variant ? Variants[props.variant] : Variants[ProductModal.variants.PRIMARY]
+    }, [props.variant]);
+
     return (
         <Modal>
-            {<Variants.Primary />}
+            {<VariantComponent {...props} />}
         </Modal>
     );
+};
+
+ProductModal.variants = {
+    PRIMARY: 'Primary',
+    SECONDARY: 'Secondary',
 };

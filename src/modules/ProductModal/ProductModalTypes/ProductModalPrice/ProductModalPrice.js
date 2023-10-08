@@ -2,7 +2,7 @@ import React from 'react';
 import './ProductModalPrice.styles.css';
 
 const ProductModalPrice = ({ price, oldPrice = null }) => {
-    console.log({price, oldPrice})
+    
     const [integer, decimal] = price.toFixed(2).toString().split('.');
     const [discountInt, discountDecimal] = oldPrice ? oldPrice.toFixed(2).toString().split('.') : [null, null];
 
