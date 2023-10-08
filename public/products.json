@@ -2,6 +2,7 @@
         {
             "id": "id1",
             "image": "/images/product.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 15.5,
             "oldPrice": 15.99,
             "isNew": true,
@@ -10,6 +11,7 @@
         {
             "id": "id2",
             "image": "/images/Coffie1.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 33.99,
             "oldPrice": 45.99,
             "isNew": true,
@@ -18,6 +20,7 @@
         {
             "id": "id3",
             "image": "/images/tenjera.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 45.98,
             "oldPrice": 55.99,
             "isNew": true,
@@ -26,6 +29,7 @@
         {
             "id": "id4",
             "image": "/images/kafevarka.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 33.50,
             "oldPrice": 45.99,
             "isNew": false,
@@ -34,6 +38,7 @@
         {
             "id": "id5",
             "image": "/images/cotlon.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 42.2,
             "oldPrice": 70.99,
             "isNew": false,
@@ -42,6 +47,7 @@
         {
             "id": "id6",
             "image": "/images/product.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 12.4,
             "oldPrice": 15.99,
             "isNew": true,
@@ -50,6 +56,7 @@
         {
             "id": "id7",
             "image": "/images/dispenser.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 109.43,
             "oldPrice": 115.99,
             "isNew": false,
@@ -58,6 +65,7 @@
         {
             "id": "id8",
             "image": "/images/frape.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 33.21,
             "oldPrice": 110.99,
             "isNew": true,
@@ -66,6 +74,7 @@
         {
             "id": "id9",
             "image": "/images/iutiq2.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 98.5,
             "oldPrice": 115.99,
             "isNew": true,
@@ -74,6 +83,7 @@
         {
             "id": "id10",
             "image": "/images/kartofki.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 77.43,
             "oldPrice": 85.99,
             "isNew": false,
@@ -82,6 +92,7 @@
         {
             "id": "id11",
             "image": "/images/kolona.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 40,
             "oldPrice": 55.99,
             "isNew": true,
@@ -90,6 +101,7 @@
         {
             "id": "id12",
             "image": "/images/kolona2.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 33.2,
             "oldPrice": 38.99,
             "isNew": false,
@@ -98,6 +110,7 @@
         {
             "id": "id13",
             "image": "/images/krem.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 98.99,
             "oldPrice": 110.99,
             "isNew": true,
@@ -106,6 +119,7 @@
         {
             "id": "id14",
             "image": "/images/krem2.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 12.2,
             "oldPrice": 15.99,
             "isNew": false,
@@ -114,6 +128,7 @@
         {
             "id": "id15",
             "image": "/images/melachka.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 44,
             "oldPrice": 55.99,
             "isNew": true,
@@ -122,6 +137,7 @@
         {
             "id": "id16",
             "image": "/images/utiq.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 50,
             "oldPrice": 65.99,
             "isNew": true,
@@ -130,6 +146,7 @@
         {
             "id": "id17",
             "image": "/images/dispenser.png",
+            "allImages": ["/images/product.png","/images/Coffie1.png","/images/cotlon.png","/images/kolona.png"],
             "price": 45.6,
             "oldPrice": 62.99,
             "isNew": false,

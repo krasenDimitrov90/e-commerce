@@ -1,0 +1,20 @@
+.product-modal-left {
+    @apply flex flex-col gap-[10px];
+
+    .product-modal-main-image {
+        @apply flex flex-1 w-[280px] cursor-pointer;
+    }
+
+    .product-modal-tumbnails {
+        @apply flex flex-1 gap-[10px] ;
+
+        .product-modal-tumbnail {
+            @apply flex w-[48px] cursor-pointer;
+        }
+
+        .product-modal-tumbnail:hover,
+        .product-modal-tumbnail.selected {
+            box-shadow: 0 0 10px rgba(0,0,0,.15);
+        }
+    }
+}
