@@ -15,7 +15,9 @@ import './Vertical.styles.css';
 
 
 export const Vertical = React.memo((props) => {
+    
     const {productPath, image, hasPromo, isNew, oldPrice, modalPath, onLike, title, price, onAddToCart, reviews} = props
+
     return (
         <div className='product-container-vertical'>
             <div className='product-image-wrap'>
@@ -32,9 +34,9 @@ export const Vertical = React.memo((props) => {
 
                     <div className='text-green-400 my-2'>
                         <span className='mr-1'>
-                            <i class="fa-regular fa-circle-check"></i>
+                            <i className="fa-regular fa-circle-check"></i>
                         </span>
-                        <spna>На склад</spna>
+                        <span>На склад</span>
                     </div>
 
                     <ProductDescription title={title} path={productPath} cardVariant='vertical' />

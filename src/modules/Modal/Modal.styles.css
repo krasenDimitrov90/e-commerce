@@ -1,7 +1,11 @@
 .modal-backdrop {
-    @apply w-full h-full fixed top-0 flex flex-col justify-center items-center bg-gray-700 opacity-70 z-[1000];
+    @apply w-[100vw] h-[100vh] fixed top-0 left-0 flex justify-center items-center z-[1000];
+
+    .modal-overlay {
+        @apply absolute inset-0 bg-gray-700 opacity-70;
+    }
 
     .modal-content {
-        @apply bg-white rounded
+        @apply bg-white relative z-[1001]
     }
 }

@@ -44,7 +44,7 @@ export const ProductCardType = () => {
                                 oldPrice={p.oldPrice}
                                 isNew={p.isNew}
                                 productPath='/images'
-                                modalPath='/price-slider'
+                                modalPath={`/product/modal/${p.id}`}
                                 title={p.title}
                             />
                         );

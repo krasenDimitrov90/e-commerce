@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         path: '/product',
         element: <ProductCardType />,
         children: [
-          { path: ':productId', element: <ProductModal /> }
+          { path: 'modal/:productId', element: <ProductModal /> }
         ],
       },
     ]

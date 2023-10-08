@@ -1,0 +1,9 @@
+.product-modal {
+    @apply flex p-[20px];
+
+    
+
+    .product-modal-right {
+        @apply flex-1;
+    }
+}
