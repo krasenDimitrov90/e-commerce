@@ -39,9 +39,9 @@ export const ProductCardType = () => {
                 <div className="flex items-start basis-1/4 bg-[#F1F1F1]">
                     <button onClick={handleHorizontal} className="bg-gray-500 m-4 text-white p-2 rounded hover:bg-green-500">Orientation: {variant}</button>
                 </div>
-                <div className={variant !== ProductCard.variants.HORIZONTAL ? 'flex flex-col' : 'flex basis-3/4 flex-wrap justify-between pr-4'}>
+                <div className={variant !== ProductCard.variants.HORIZONTAL ? 'flex flex-1 flex-col' : 'flex basis-3/4 flex-wrap justify-between pr-4'}>
                     <ProductCard variant={variant} image={productImage} price={15.5} oldPrice={15.99} isNew={true} productPath='/images' modalPath='/price-slider' title={'Дълбоко подхранваща маска за коса на LINEA BIO с натурално масло от Макадамия.'} />
-                    <ProductCard variant={variant} image={coffie} price={33.99} oldPrice={45.99} productPath='/images' modalPath='/price-slider' title={'Дълбоко подхранваща маска за коса на LINEA BIO с натурално масло от Макадамия.'} />
+                    <ProductCard variant={variant} image={coffie} price={33.99} oldPrice={45.99} isNew={true} productPath='/images' modalPath='/price-slider' title={'Дълбоко подхранваща маска за коса на LINEA BIO с натурално масло от Макадамия.'} />
                     <ProductCard variant={variant} image={tenjera} price={45.98} oldPrice={55.99} isNew={true} productPath='/images' modalPath='/price-slider' title={'Дълбоко подхранваща маска за коса на LINEA BIO с натурално масло от Макадамия.'} />
                     <ProductCard variant={variant} image={kafevarka} price={33.50} oldPrice={45.99} productPath='/images' modalPath='/price-slider' title={'Дълбоко подхранваща маска за коса на LINEA BIO с натурално масло от Макадамия.'} />
                     <ProductCard variant={variant} image={cotlon} price={42.2} oldPrice={70.99} productPath='/images' modalPath='/price-slider' title={'Дълбоко подхранваща маска за коса на LINEA BIO с натурално масло от Макадамия.'} />

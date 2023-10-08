@@ -151,7 +151,7 @@ export const PriceSlider = React.memo(({ minPrice, maxPrice, handlePriceSet }) =
                     }}
                 />
 
-                <Button onClick={handlePriceSet.bind(null, min, max)} size='SQUARE_SM' ><Icon variant='arrow-right' /></Button>
+                <Button onClick={handlePriceSet.bind(null, min, max)} size='SQUARE_SM' ><Icon variant='ARROW_RIGHT' /></Button>
             </div>
         </div>
     );
