@@ -1,17 +1,17 @@
 .product-modal {
-    @apply flex p-[20px] ;
+    @apply flex p-[20px] w-[60vw] h-[66vh];
 
     
 
     .product-modal-right {
-        @apply flex-1 pl-[20px] max-w-[400px];
+        @apply hidden sm:flex flex-col flex-1 pl-[20px] w-[60%] mb-[58px] 2xl:mb-[106px];
 
         .product-title-container-modal {
-            @apply flex flex-1 font-bold text-base text-gray-700 my-5 py-3 border-y border-y-gray-400;
+            @apply flex font-bold text-base text-gray-700 my-5 py-3 border-y border-y-gray-400;
         }
 
         .product-modal-buttons {
-            @apply flex mt-5 gap-2;
+            @apply flex flex-1 items-end mt-5 gap-2;
         }
     }
 }
