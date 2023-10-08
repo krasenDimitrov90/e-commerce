@@ -8,3 +8,5 @@ export * from './PriceSlider/PriceSlider';
 export * from './Contacts/Contacts';
 export * from './FilterCheckbox/FilterCheckbox';
 export * from './ProductCard/ProductCard';
+export * from './ProductModal/ProductModal';
+export * from './Modal/Modal';

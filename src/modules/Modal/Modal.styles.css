@@ -1,0 +1,7 @@
+.modal-backdrop {
+    @apply w-full h-full fixed top-0 flex flex-col justify-center items-center bg-gray-700 opacity-70 z-[1000];
+
+    .modal-content {
+        @apply bg-white rounded
+    }
+}

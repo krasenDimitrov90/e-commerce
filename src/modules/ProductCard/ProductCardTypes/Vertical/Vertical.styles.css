@@ -1,10 +1,10 @@
 /* <<<<<----VERICAL VARIANT---->>>>> */
 
 .product-container-vertical {
-    @apply flex mx-[15px] py-[30px] border-b-[1px] border-y-gray-400;
+    @apply flex flex-1 mx-[15px] py-[30px] border-b-[1px] border-y-gray-400;
 
     .product-image-wrap {
-        @apply flex w-[120px] sm:w-[280px] items-start relative rounded  transition-all duration-300 ease-linear overflow-hidden;
+        @apply flex flex-1 max-w-[31%] w-[120px] sm:w-[280px] items-start relative rounded  transition-all duration-300 ease-linear overflow-hidden;
 
         .product-image-container {
             @apply relative;
@@ -49,7 +49,7 @@
         }
 
         .product-add-to-cart-btn-container-vertical {
-            @apply flex flex-1 items-end gap-2;
+            @apply flex flex-1 items-end gap-2 2xl:items-center;
 
             .add-to-cart-desctop-screen {
                 @apply hidden sm:flex

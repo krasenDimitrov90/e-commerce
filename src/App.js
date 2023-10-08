@@ -11,6 +11,7 @@ import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSl
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
 import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
 import { ProductCardType } from './components-renderer/ProductCardType/ProductCardType';
+import { ProductModal } from './modules';
 
 const Layout = () => {
 
@@ -54,7 +55,7 @@ const router = createBrowserRouter([
         path: '/product',
         element: <ProductCardType />,
         children: [
-          { path: 'productId', element: <Modal /> }
+          { path: ':productId', element: <ProductModal /> }
         ],
       },
     ]
