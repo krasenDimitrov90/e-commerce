@@ -15,7 +15,7 @@
 
 @keyframes popout {
     0% {
-        scale: 0;
+        scale: 0.3;
     } 
     100% {
        scale: 1;

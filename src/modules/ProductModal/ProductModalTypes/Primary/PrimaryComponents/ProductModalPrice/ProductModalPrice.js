@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProductModalPrice.styles.css';
 
-const ProductModalPrice = ({ price, oldPrice = null }) => {
+export const ProductModalPrice = React.memo(({ price, oldPrice = null }) => {
     
     const [integer, decimal] = price.toFixed(2).toString().split('.');
     const [discountInt, discountDecimal] = oldPrice ? oldPrice.toFixed(2).toString().split('.') : [null, null];
@@ -24,6 +24,6 @@ const ProductModalPrice = ({ price, oldPrice = null }) => {
             }
         </div>
     );
-};
+});
 
-export default React.memo(ProductModalPrice);
+// export default React.memo(ProductModalPrice);
