@@ -17,5 +17,4 @@ export const ProductModal = (props) => {
 
 ProductModal.variants = {
     PRIMARY: 'Primary',
-    SECONDARY: 'Secondary',
 };
