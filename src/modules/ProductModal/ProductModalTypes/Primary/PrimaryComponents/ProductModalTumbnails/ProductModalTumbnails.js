@@ -1,8 +1,8 @@
 import React from 'react';
 import './ProductModalTumbnails.styles.css';
-import { Image } from '../../Image/Image';
+import {Image} from '../../../../../Image/Image';
 
-const ProductModalTumbnails = ({ allImages }) => {
+export const ProductModalTumbnails = React.memo(({ allImages }) => {
 
     const [index, setIndex] = React.useState(0);
 
@@ -29,6 +29,6 @@ const ProductModalTumbnails = ({ allImages }) => {
             </div>
         </>
     );
-};
+});
 
-export default React.memo(ProductModalTumbnails);
+// export default React.memo(ProductModalTumbnails);
