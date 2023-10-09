@@ -1,0 +1,4 @@
+.cart-popup-container {
+    @apply flex flex-col w-[300px] bg-white rounded-[3px] ;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .35);
+}

@@ -35,6 +35,8 @@ Icon.variants = {
     EMPTY_STAR: 'fa-regular fa-star',
     CALENDAR: 'fa-solid fa-calendar-days',
     CHECK: 'fa-regular fa-square-check',
+    CHECK_SQUARE: 'fa-solid fa-square-check',
+    CHECK_BOARD: 'fa-solid fa-calendar-check',
     PEN: 'fa-solid fa-pen',
     PLUS: 'fa-solid fa-plus',
     MINUS: 'fa-solid fa-minus',
