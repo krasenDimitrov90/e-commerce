@@ -12,6 +12,7 @@ import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes
 import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
 import { ProductCardType } from './components-renderer/ProductCardType/ProductCardType';
 import { ProductModal } from './modules';
+import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 
 const Layout = () => {
 
@@ -27,6 +28,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/contacts'>CONTACTS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/checkbox'>CECKBOX</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/product'>PRODUCT</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/cart'>CART</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -58,6 +60,7 @@ const router = createBrowserRouter([
           { path: 'modal/:productId', element: <ProductModal /> }
         ],
       },
+      { path: '/cart', element: <CartTypes /> },
     ]
   }
 ]);
