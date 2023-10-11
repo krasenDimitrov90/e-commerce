@@ -14,4 +14,5 @@ export const Cart = (props) => {
 
 Cart.variants = {
     POPUP: 'CartPopUp',
+    TABLE: 'CartTable',
 };

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Button } from '../../../../../Button/Button';
 import { Icon } from '../../../../../Icons/Icons';
-import './CartPopupButtons.styles.css';
 
 export const CartPopupButtons = React.memo(() => {
     return (
-        <div className="cart-popup-buttons-container">
+        <div className="flex flex-col pb-[20px] pl-[20px] gap-[6px] mr-[28px]">
             <Button
                 variant='DARK'
                 size='XL'

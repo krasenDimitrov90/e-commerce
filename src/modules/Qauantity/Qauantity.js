@@ -1,9 +1,9 @@
 import React from 'react';
 import './Qauantity.styles.css';
 
-export const Qauantity = React.memo(() => {
+export const Qauantity = React.memo((props) => {
 
-    const [quantity, setQuantity] = React.useState(1);
+    const [quantity, setQuantity] = React.useState(props.quantity || 1);
 
     const increaseQuantityHandler = () => updateInput(quantity + 1);
 
