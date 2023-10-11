@@ -1,11 +1,11 @@
 import React from 'react';
-import './CartPopupTotal.styles.css';
 
-export const CartPopupTotal = React.memo(() => {
+
+export const CartPopupTotal = React.memo(({ total }) => {
     return (
-        <div className="cart-popup-total-price">
+        <div className="py-[20px] flex justify-between font-bold ml-[20px] mr-[28px] border-t border-t-black">
             <span className='uppercase'>Общо</span>
-            <span>82.50лв</span>
+            <span>{total}лв</span>
         </div>
     );
 });

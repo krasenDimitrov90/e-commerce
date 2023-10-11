@@ -34,16 +34,14 @@
 }
 
 .cart-popup-products-container::-webkit-scrollbar {
-    width: 8px;
+    @apply w-[8px];
 }
 .cart-popup-products-container::-webkit-scrollbar-track {
-    background: #eaeaea;
-    border-radius: 10px;
+    @apply bg-[#eaeaea] rounded-[10px];
 }
 .cart-popup-products-container::-webkit-scrollbar-thumb {
-    background: #49ad00;
-    border-radius: 10px;
+    @apply bg-[#49ad00] rounded-[10px];
 }
 .cart-popup-products-container::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
+    @apply bg-[#b30000];
 }

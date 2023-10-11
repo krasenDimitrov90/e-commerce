@@ -1,6 +1,7 @@
 import React from 'react';
-import { CartPopUpProduct, CartPopupTotal, CartPopupButtons } from './CartPopUpComponents';
-import './CartPopUp.styles.css';
+import { CartTableProduct } from './CartTableProduct/CartTableProduct';
+import { CartTableTitle } from './CartTableTitle/CartTableTitle';
+import './CartTable.styles.css';
 
 const cart = [
     { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 133.4, quantity: 2 },
@@ -9,27 +10,27 @@ const cart = [
     { id: 'id4', image: '/images/krem.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 589.43, quantity: 3 },
 ];
 
-export const CartPopUp = React.memo(() => {
+export const CartTable = React.memo(() => {
     return (
-        <div className='cart-popup-container'>
-            
-            <div className='cart-popup-products-container'>
+        <div className='cart-table-container'>
+            <CartTableTitle />
+            <div className='cart-table-products-container'>
                 {cart.map(product => {
                     return (
-                        <CartPopUpProduct
+                        <CartTableProduct
                             id={product.id}
                             image={product.image}
                             title={product.title}
-                            price={product.price.toFixed(2)}
+                            price={product.price}
                             quantity={product.quantity}
                         />
                     );
                 })}
             </div>
-            <CartPopupTotal 
+            {/* <CartPopupTotal 
                 total={cart.reduce((total, p)=> total + p.price,0).toFixed(2)}
             />
-            <CartPopupButtons />
+            <CartPopupButtons /> */}
         </div>
     );
 });
