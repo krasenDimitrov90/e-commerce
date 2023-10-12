@@ -1,7 +1,7 @@
 import React from 'react';
-import { Image } from '../../../../../Image/Image';
-import { Icon } from '../../../../../Icons/Icons';
-import { Button } from '../../../../../Button/Button';
+import { Image } from '../../../../Image/Image';
+import { Icon } from '../../../../Icons/Icons';
+import { Button } from '../../../../Button/Button';
 import './CartPopUpProduct.styles.css';
 
 export const CartPopUpProduct = React.memo(({

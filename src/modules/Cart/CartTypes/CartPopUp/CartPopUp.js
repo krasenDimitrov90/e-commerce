@@ -1,5 +1,8 @@
 import React from 'react';
-import { CartPopUpProduct, CartPopupTotal, CartPopupButtons } from './CartPopUpComponents';
+import { CartPopUpProduct } from './CartPopUpProduct/CartPopUpProduct';
+import { CartPopupButtons } from './CartPopupButtons/CartPopupButtons';
+import { CartPopupTotal } from './CartPopupTotal/CartPopupTotal';
+
 import './CartPopUp.styles.css';
 
 const cart = [
