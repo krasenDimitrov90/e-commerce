@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../../../../../Button/Button';
-import { Icon } from '../../../../../Icons/Icons';
+import { Button } from '../../../../Button/Button';
+import { Icon } from '../../../../Icons/Icons';
 
 export const CartPopupButtons = React.memo(() => {
     return (

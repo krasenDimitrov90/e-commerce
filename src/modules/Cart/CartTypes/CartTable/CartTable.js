@@ -27,10 +27,6 @@ export const CartTable = React.memo(() => {
                     );
                 })}
             </div>
-            {/* <CartPopupTotal 
-                total={cart.reduce((total, p)=> total + p.price,0).toFixed(2)}
-            />
-            <CartPopupButtons /> */}
         </div>
     );
 });
