@@ -5,7 +5,7 @@ import { CartTotal } from './CartTotal/CartTotal';
 import './CartTable.styles.css';
 
 const cart = [
-    { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 133.4, quantity: 2 },
+    { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 999.4, quantity: 2 },
     { id: 'id2', image: '/images/Cotlon.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 23.55, quantity: 4 },
     { id: 'id3', image: '/images/frape.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 18.43, quantity: 2 },
     { id: 'id4', image: '/images/krem.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 589.43, quantity: 3 },
