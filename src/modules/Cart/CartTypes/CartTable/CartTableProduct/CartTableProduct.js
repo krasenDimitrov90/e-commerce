@@ -4,6 +4,8 @@ import { Icon } from '../../../../Icons/Icons';
 import { Qauantity } from '../../../../Qauantity/Qauantity';
 import { Image } from '../../../../Image/Image';
 
+import './CartTableProduct.styles.css';
+
 
 export const CartTableProduct = React.memo(({ id, image, title, price, quantity }) => {
 
@@ -13,16 +15,21 @@ export const CartTableProduct = React.memo(({ id, image, title, price, quantity 
                 <div className='flex w-[90px] h-[90px] rounded overflow-hidden border border-gray-400'>
                     <Image src={image} />
                 </div>
-                <span className='max-w-[calc(100%_-_90px)] pl-[20px] text-gray-700 text-base'>
-                    {title}
-                </span>
+                <div className='max-w-[calc(100%_-_90px)] pl-[20px] text-gray-700 text-base'>
+                    <span className='product-text-ellipsis' >
+                        {title}
+                    </span>
+                </div>
             </div>
-            <div className='flex flex-1 justify-between items-center max-w-[41%] px-[15px]'>
-                <span className='font-bold text-[14px]'>
-                    {price.toFixed(2)}лв
-                </span>
+            <div className='flex flex-1 justify-between items-center max-w-[41%] pr-[15px]'>
+                <div className='flex flex-1 pr-[20px] justify-between'>
+                    <span>2453</span>
+                    <span className='flex justify-center font-bold text-[14px] w-[100px]'>
+                        {price.toFixed(2)}лв
+                    </span>
+                </div>
                 <div className='flex justify-center w-[110px]'>
-                    <Qauantity quantity={quantity}/>
+                    <Qauantity quantity={quantity} />
                 </div>
             </div>
             <div className='flex flex-1 justify-between items-center max-w-[16%] pl-[15px]'>
