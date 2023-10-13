@@ -1,4 +1,4 @@
 .cart-table-container {
-    @apply flex flex-col w-[66%] px-[15px];
+    @apply flex flex-col w-[calc(66%_-_15px)] px-[15px];
 
 }
