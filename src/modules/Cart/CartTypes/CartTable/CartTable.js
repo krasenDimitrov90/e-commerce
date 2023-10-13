@@ -46,7 +46,11 @@ export const CartTable = React.memo(() => {
                             })}
                         </div>
                     </div>
-                    <CartTotal />
+                    <CartTotal 
+                        productsCount={cart.length}
+                        totalPrice={cart.reduce((total, product) => total + product.price,0)}
+                        deliveryPrice={5.99}
+                    />
                 </div>
             }
         </>
