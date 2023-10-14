@@ -7,7 +7,7 @@ import { Image } from '../../../../Image/Image';
 import './CartTableProduct.styles.css';
 
 
-export const CartTableProduct = React.memo(({ id, image, title, price, quantity }) => {
+export const CartTableProduct = React.memo(({ id, image, title, code, price, quantity }) => {
 
     return (
         <div className="flex border-b border-dashed border-b-gray-400 py-[20px]">
@@ -23,7 +23,7 @@ export const CartTableProduct = React.memo(({ id, image, title, price, quantity 
             </div>
             <div className='flex flex-1 justify-between items-center max-w-[41%] pr-[15px]'>
                 <div className='flex flex-1 pr-[20px] justify-between'>
-                    <span>2453</span>
+                    <span>{code}</span>
                     <span className='flex justify-center font-bold text-[14px] w-[100px]'>
                         {price.toFixed(2)}лв
                     </span>
