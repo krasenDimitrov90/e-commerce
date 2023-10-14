@@ -3,17 +3,18 @@ import { CartTableProduct } from './CartTableProduct/CartTableProduct';
 import { CartTableTitle } from './CartTableTitle/CartTableTitle';
 import { CartTotal } from './CartTotal/CartTotal';
 import './CartTable.styles.css';
+import { Button } from '../../../Button/Button';
 
 const cart = [
-    { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 999.4, quantity: 2 },
-    { id: 'id2', image: '/images/Cotlon.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 23.55, quantity: 4 },
-    { id: 'id3', image: '/images/frape.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 18.43, quantity: 2 },
-    { id: 'id4', image: '/images/krem.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 589.43, quantity: 3 },
+    { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 999.4, quantity: 2 },
+    { id: 'id2', image: '/images/Cotlon.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 23.55, quantity: 4 },
+    { id: 'id3', image: '/images/frape.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 18.43, quantity: 2 },
+    { id: 'id4', image: '/images/krem.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 589.43, quantity: 3 },
 
-    { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 133.4, quantity: 2 },
-    { id: 'id2', image: '/images/Cotlon.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 23.55, quantity: 4 },
-    { id: 'id3', image: '/images/frape.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 18.43, quantity: 2 },
-    { id: 'id4', image: '/images/krem.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', price: 589.43, quantity: 3 },
+    { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 133.4, quantity: 2 },
+    { id: 'id2', image: '/images/Cotlon.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 23.55, quantity: 4 },
+    { id: 'id3', image: '/images/frape.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 18.43, quantity: 2 },
+    { id: 'id4', image: '/images/krem.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 589.43, quantity: 3 },
 ];
 
 // const cart = [];
@@ -39,6 +40,7 @@ export const CartTable = React.memo(() => {
                                         id={product.id}
                                         image={product.image}
                                         title={product.title}
+                                        code={product.code}
                                         price={product.price}
                                         quantity={product.quantity}
                                     />
@@ -46,13 +48,23 @@ export const CartTable = React.memo(() => {
                             })}
                         </div>
                     </div>
-                    <CartTotal 
+                    <CartTotal
                         productsCount={cart.length}
-                        totalPrice={cart.reduce((total, product) => total + product.price,0)}
+                        totalPrice={cart.reduce((total, product) => total + product.price, 0)}
                         deliveryPrice={5.99}
                     />
                 </div>
             }
+
+            <div className='flex h-[50px] my-[20px] ml-[15px]'>
+                <Button
+                    upperCase={true}
+                    size="XL"
+                    fontWeight='BOLD'
+                >
+                    Към пазаруването
+                </Button>
+            </div>
         </>
     );
 });
