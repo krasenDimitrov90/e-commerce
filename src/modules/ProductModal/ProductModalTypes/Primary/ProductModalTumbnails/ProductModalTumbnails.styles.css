@@ -1,16 +1,15 @@
 .product-modal-left {
-    @apply flex flex-col w-[100%]  sm:w-[40%] gap-[10px];
+    @apply flex flex-col w-[100%]  sm:w-[40%] 2xl:w-[50%] gap-[10px];
 
     .product-modal-main-image {
-        @apply flex flex-1;
-        /* @apply flex h-[280px] w-[280px]  2xl:h-[560px] 2xl:w-[560px] cursor-pointer; */
+        @apply flex flex-1 h-[300px];
     }
 
     .product-modal-tumbnails {
         @apply flex gap-[10px] ;
 
         .product-modal-tumbnail {
-            @apply flex w-[48px] 2xl:w-[96px]  cursor-pointer  transition-all duration-300;
+            @apply flex w-[48px] h-[48px] 2xl:w-[96px] 2xl:h-[96px]  cursor-pointer  transition-all duration-300;
         }
 
         .product-modal-tumbnail:hover,

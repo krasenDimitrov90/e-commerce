@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cart } from '../../modules/Cart/Cart';
+import { Cart } from '../../modules';
 
 export const CartTypes = React.memo(() => {
 

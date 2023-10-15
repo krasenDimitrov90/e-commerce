@@ -1,7 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Qauantity } from '../../../Qauantity/Qauantity';
-import { ProductModalInfo, ProductModalPrice, ProductModalTumbnails, ProductModalButtons } from './PrimaryComponents/index';
+import { ProductModalInfo } from './ProductModalInfo/ProductModalInfo';
+import { ProductModalPrice } from './ProductModalPrice/ProductModalPrice';
+import { ProductModalTumbnails } from './ProductModalTumbnails/ProductModalTumbnails';
+import { ProductModalButtons } from './ProductModalButtons/ProductModalButtons';
+
 import './Primary.styles.css';
 
 export const Primary = React.memo(({ onAddToCart, onLike }) => {

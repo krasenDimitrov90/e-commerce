@@ -10,7 +10,7 @@ export const CartTotal = React.memo(({
                 <div className='border-b border-b-gray-400 pb-[10px]'>
                     <span className='uppercase text-lg font-bold text-gray-600'>
                         В количката има
-                        <span className='text-red-500 text-[20px] px-[8px]'>
+                        <span className='text-red-500 text-[20px] px-[10px]'>
                             {productsCount}
                         </span>
                         продукта
