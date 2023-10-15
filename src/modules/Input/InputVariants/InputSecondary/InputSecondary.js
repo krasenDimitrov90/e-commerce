@@ -8,7 +8,7 @@ export const InputSecondary = React.memo(({ type, icon }) => {
             <div className='input-secondary-icon'>
                 <Icon variant={icon} />
                 <div className='input-secondary-arrow'>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <Icon variant='ARROW_RIGHT' />
                 </div>
             </div>
             <input className='input-secondary' type={type || 'text'} />
