@@ -19,7 +19,7 @@ export const InputSecondaryPassword = React.memo(() => {
             <div className='input-secondary-password-icon'>
                 <Icon variant='UNLOCK' />
                 <div className='input-secondary-password-arrow'>
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <Icon variant='ARROW_RIGHT' />
                 </div>
             </div>
             <input className='input-secondary-password' type={type || 'text'} />
