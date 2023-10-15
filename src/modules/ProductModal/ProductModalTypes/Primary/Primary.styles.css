@@ -1,9 +1,9 @@
 .product-modal {
-    @apply flex p-[20px] w-[90vw] sm:w-[60vw] h-[66vh];
+    @apply flex p-[20px] w-[300px] h-[400px] sm:w-[900px] 2xl:h-[600px] ;
     
 
     .product-modal-right {
-        @apply hidden sm:flex flex-col flex-1 pl-[20px] w-[60%] mb-[58px] 2xl:mb-[106px];
+        @apply hidden sm:flex flex-col flex-1 max-h-[300px] pl-[20px] w-[60%] 2xl:w-[50%] mb-[58px] 2xl:mb-[106px];
 
         .product-description-container-modal {
             @apply flex font-bold text-base text-gray-700 my-5 py-3 border-y border-y-gray-400;

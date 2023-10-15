@@ -1,0 +1,8 @@
+.input-primary-container {
+    @apply flex flex-1;
+
+    .input-primary {
+        @apply w-full h-[45px] px-[20px] py-[5px] rounded-[2px] text-gray-700 text-base outline-none border border-gray-400 hover:border-green-300 focus:border-green-300 transition-all duration-150 ease-linear;
+    }
+
+}

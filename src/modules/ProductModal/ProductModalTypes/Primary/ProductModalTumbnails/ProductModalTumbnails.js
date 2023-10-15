@@ -1,6 +1,6 @@
 import React from 'react';
+import {Image} from '../../../../Image/Image';
 import './ProductModalTumbnails.styles.css';
-import {Image} from '../../../../../Image/Image';
 
 export const ProductModalTumbnails = React.memo(({ allImages }) => {
 

@@ -29,6 +29,8 @@ Icon.variants = {
     USER_GROUP: 'fa-solid fa-user-group',
     PHONE: 'fa-solid fa-phone-volume',
     MAIL: 'fa-solid fa-envelope',
+    EYE: 'fa-solid fa-eye',
+    EYE_SLAHED: 'fa-solid fa-eye-slash',
     CLIPBOARD: 'fa-regular fa-clipboard',
     ARROW_UP: 'fa-solid fa-arrow-up',
     FULL_STAR: 'fa-solid fa-star',
