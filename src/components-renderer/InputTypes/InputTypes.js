@@ -11,6 +11,8 @@ export const InputTypes = () => {
             <Input variant={Input.variants.PRIMARY_PASSWORD} />
             <span className="text-xs" >SECONDARY</span>
             <Input variant={Input.variants.SECONDARY} icon='MAIL' />
+            <span className="text-xs" >SECONDARY_PASSWORD</span>
+            <Input variant={Input.variants.SECONDARY_PASSWORD}/>
         </div>
     );
 };

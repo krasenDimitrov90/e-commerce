@@ -57,4 +57,5 @@ Icon.variants = {
     HIKING: 'fa-solid fa-person-hiking',
     SPORT: 'fa-solid fa-volleyball',
     DROP: 'fa-solid fa-droplet',
+    UNLOCK: 'fa-solid fa-unlock',
 };
