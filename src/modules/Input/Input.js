@@ -16,5 +16,5 @@ Input.variants = {
     PRIMARY: 'InputPrimary',
     PRIMARY_PASSWORD: 'InputPrimaryPassword',
     SECONDARY: 'InputSecondary',
-    SECONDARY_PASSWORD: 'SecondaryPassword',
+    SECONDARY_PASSWORD: 'InputSecondaryPassword',
 };
