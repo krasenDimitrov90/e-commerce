@@ -15,4 +15,6 @@ export const Input = React.memo((props) => {
 Input.variants = {
     PRIMARY: 'InputPrimary',
     PRIMARY_PASSWORD: 'InputPrimaryPassword',
+    SECONDARY: 'InputSecondary',
+    SECONDARY_PASSWORD: 'SecondaryPassword',
 };
