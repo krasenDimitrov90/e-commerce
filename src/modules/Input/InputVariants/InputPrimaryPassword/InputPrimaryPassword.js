@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '../../../Icons/Icons';
 import './InputPrimaryPassword.styles.css';
 
-export const InputPrimaryPassword = React.memo(() => {
+export const InputPrimaryPassword = React.memo(({ value, onChange }) => {
 
     const [type, setType] = React.useState('password');
     const [icontVariant, setIcontVariant] = React.useState('EYE_SLAHED');
@@ -16,7 +16,12 @@ export const InputPrimaryPassword = React.memo(() => {
 
     return (
         <div className='input-primary-password-container'>
-            <input className='input-primary-password' type={type} />
+            <input
+                className='input-primary-password'
+                type={type}
+                onChange={onChange}
+                value={value}
+            />
             <button className='input-primary-password-eye'
                 onClick={typeHandler}
             >
