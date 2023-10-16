@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '../../../Icons/Icons';
 import './InputSecondary.styles.css';
 
-export const InputSecondary = React.memo(({ type, icon, value, onChange }) => {
+export const InputSecondary = React.memo(({ type, icon, value, onChange, placeholder }) => {
     return (
         <div className='input-secondary-container'>
             <div className='input-secondary-icon'>
@@ -16,6 +16,7 @@ export const InputSecondary = React.memo(({ type, icon, value, onChange }) => {
                 type={type || 'text'}
                 onChange={onChange}
                 value={value}
+                placeholder={placeholder}
             />
         </div>
     );
