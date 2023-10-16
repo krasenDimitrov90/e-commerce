@@ -1,0 +1,13 @@
+.checkout-banner-primary-arrow {
+    @apply text-gray-400 absolute left-[47px] top-[16px] w-[10px] h-[10px] text-[10px]; 
+}
+
+.checkout-banner-primary-arrow::after {
+    @apply absolute w-[1px] h-[7px] bg-white top-[4px] left-[1px] z-10;
+    content: "";
+}
+
+.checkout-banner-primary-arrow::before {
+    @apply bg-gray-400 absolute left-[1px] top-[-16px] h-[49px] w-[1px];
+    content: "";
+}
