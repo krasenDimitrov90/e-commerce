@@ -13,14 +13,15 @@ import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/F
 import { ProductCardType } from './components-renderer/ProductCardType/ProductCardType';
 import { ProductModal } from './modules';
 import { CartTypes } from './components-renderer/CartTypes/CartTypes';
-import {InputTypes} from './components-renderer/InputTypes/InputTypes';
+import { InputTypes } from './components-renderer/InputTypes/InputTypes';
+import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
 
 const Layout = () => {
 
   return (
     <>
       <div className='p-4 bg-blue-500 fixed top-0 w-full z-10'>
-        <nav className='flex justify-between w-6/12'>
+        <nav className='flex justify-between w-full'>
           <LinkButton variant='secondary' font='xl' path='/buttons'>BUTTONS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/links'>LINKS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/images'>IMAGES</LinkButton>
@@ -31,6 +32,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/product'>PRODUCT</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/cart'>CART</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/input'>INPUT</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/check-banner'>CHECK-BANNER</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -64,6 +66,7 @@ const router = createBrowserRouter([
       },
       { path: '/cart', element: <CartTypes /> },
       { path: '/input', element: <InputTypes /> },
+      { path: '/check-banner', element: <CheckoutStepBannerTypes /> },
     ]
   }
 ]);
