@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '../../../Icons/Icons';
 import './InputSecondaryPassword.styles.css';
 
-export const InputSecondaryPassword = React.memo(({ value, onChange }) => {
+export const InputSecondaryPassword = React.memo(({ value, onChange, placeholder }) => {
 
     const [type, setType] = React.useState('password');
     const [icontVariant, setIcontVariant] = React.useState('EYE_SLAHED');
@@ -27,6 +27,7 @@ export const InputSecondaryPassword = React.memo(({ value, onChange }) => {
                 type={type || 'text'}
                 onChange={onChange}
                 value={value}
+                placeholder={placeholder}
             />
             <button className='input-secondary-password-eye'
                 onClick={typeHandler}
