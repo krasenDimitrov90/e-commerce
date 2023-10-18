@@ -15,6 +15,7 @@ import { ProductModal } from './modules';
 import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 import { InputTypes } from './components-renderer/InputTypes/InputTypes';
 import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
+import { TumbnailsType } from './components-renderer/TumbnailsTypes/TumbnailsType';
 
 const Layout = () => {
 
@@ -33,6 +34,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/cart'>CART</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/input'>INPUT</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/check-banner'>CHECK-BANNER</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/tumbnails'>TUMBNAILS</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -67,6 +69,7 @@ const router = createBrowserRouter([
       { path: '/cart', element: <CartTypes /> },
       { path: '/input', element: <InputTypes /> },
       { path: '/check-banner', element: <CheckoutStepBannerTypes /> },
+      { path: '/tumbnails', element: <TumbnailsType /> },
     ]
   }
 ]);

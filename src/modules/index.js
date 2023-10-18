@@ -13,3 +13,4 @@ export * from './ProductCard/ProductCard';
 export * from './ProductModal/ProductModal';
 export * from './Qauantity/Qauantity';
 export * from './Spinner/Spinner';
+export * from './Tumbnails/Tumbnails';

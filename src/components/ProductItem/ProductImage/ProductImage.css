@@ -1,7 +1,0 @@
-.product-image-container {
-    @apply p-[4px] flex-1 h-[250px]
-}
-
-.product-image {
-    @apply  object-fill 
-}
