@@ -9,7 +9,7 @@ export const VerticalLeftTumbnail = React.memo(({ src, onClick, selected }) => {
                 className={`vertical-left-image-container ${selected ? 'selected' : ''}`}
                 onClick={onClick}
             >
-                <Image src={src} variant='SECONDARY' />
+                <Image src={src} />
             </div>
         </div>
     );
