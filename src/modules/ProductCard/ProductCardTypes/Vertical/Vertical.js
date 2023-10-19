@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import ProductPrice from '../../ProductPrice/ProductPrice';
-import ProductRating from '../../ProductRating/ProductRating';
-import ProductDescription from '../../ProductDescription/ProductDescription';
-import ProductTumbnails from '../../ProductTumbnails/ProductTumbnails';
-import ProductLabel from '../../ProductLabel/ProductLabel';
+import ProductDescription from './ProductDescription/ProductDescription';
+import ProductLabel from './ProductLabel/ProductLabel';
+import ProductPrice from './ProductPrice/ProductPrice';
+import ProductRating from './ProductRating/ProductRating';
+import ProductTumbnails from './ProductTumbnails/ProductTumbnails';
 
 import { Image } from '../../../Image/Image';
 import { Button } from '../../../Button/Button';
@@ -29,7 +29,7 @@ export const Vertical = React.memo((props) => {
 
             <div className="product-right-side">
                 <div className='product-description-container'>
-                    <ProductPrice price={price} oldPrice={oldPrice} variant='VERTICAL' />
+                    <ProductPrice price={price} oldPrice={oldPrice} />
                     <ProductRating reviews={reviews || 0} />
 
                     <div className='text-green-400 my-2'>
@@ -39,7 +39,7 @@ export const Vertical = React.memo((props) => {
                         <span>На склад</span>
                     </div>
 
-                    <ProductDescription title={title} path={productPath} cardVariant='vertical' />
+                    <ProductDescription title={title} path={productPath} />
                 </div>
 
                 <div className='product-add-to-cart-btn-container-vertical'>
@@ -61,7 +61,7 @@ export const Vertical = React.memo((props) => {
                                 {<Icon variant='CART' />}
                             </Button>
                         </div>
-                        <ProductTumbnails path={modalPath} onLike={onLike} variant='VERTICAL' />
+                        <ProductTumbnails path={modalPath} onLike={onLike} />
                     </div>
                 </div>
             </div>
