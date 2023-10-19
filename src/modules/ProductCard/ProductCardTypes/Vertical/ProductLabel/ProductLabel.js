@@ -9,7 +9,7 @@ const ProductLabel = React.memo(({ hasPromo, isNew, price, oldPrice }) => {
     }
 
     return (
-        <div className='product-labels-container'>
+        <div className='product-labels-container-vertical'>
             {hasPromo &&
                 <div className='product-label-promo'>
                     <p>-{discount.current}%</p>
