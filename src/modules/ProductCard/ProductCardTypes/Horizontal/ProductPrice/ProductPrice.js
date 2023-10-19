@@ -1,15 +1,14 @@
 import React from 'react';
 import './ProductPrice.styles.css';
 
-const ProductPrice = ({ price, oldPrice = null, variant = 'HORIZONTAL' }) => {
+const ProductPrice = ({ price, oldPrice = null }) => {
 
     const [integer, decimal] = price.toFixed(2).toString().split('.');
     const [discountInt, discountDecimal] = oldPrice ? oldPrice.toFixed(2).toString().split('.') : [null, null];
 
-    const classes = ProductPrice.variants[variant];
         
     return (
-        <div className={classes}>
+        <div className='product-price-container-horizontal'>
             <p className='product-price'>
                 {integer}
                 <span className='price-decimal'>{decimal}</span>
@@ -27,8 +26,3 @@ const ProductPrice = ({ price, oldPrice = null, variant = 'HORIZONTAL' }) => {
 };
 
 export default React.memo(ProductPrice);
-
-ProductPrice.variants = {
-    HORIZONTAL: 'product-price-container-horizontal',
-    VERTICAL: 'product-price-container-vertical',
-};

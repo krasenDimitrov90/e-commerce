@@ -5,16 +5,13 @@ import { Icon } from '../../../../Icons/Icons';
 
 import './ProductTumbnails.styles.css';
 
-const ProductTumbnails = ({ path, onLike, variant }) => {
-
-    const classes = ProductTumbnails.variants.variant[variant];
-    const btnVariant = variant === 'HORIZONTAL' ? 'TUMBNAIL' : 'INFO';
+const ProductTumbnails = ({ path, onLike }) => {
 
     return (
-        <div className={classes} >
+        <div className='product-tumbnail-btns-container' >
             <Button
                 onClick={onLike}
-                variant={btnVariant}
+                variant='TUMBNAIL'
                 rounded='ROUNDED'
                 size='SQUARE_LG'
                 fontSize='LG'
@@ -23,7 +20,7 @@ const ProductTumbnails = ({ path, onLike, variant }) => {
             </Button>
             <LinkButton path={path}>
                 <Button
-                    variant={btnVariant}
+                    variant='TUMBNAIL'
                     rounded='ROUNDED'
                     size='SQUARE_LG'
                 >
@@ -35,14 +32,3 @@ const ProductTumbnails = ({ path, onLike, variant }) => {
 };
 
 export default React.memo(ProductTumbnails);
-
-ProductTumbnails.defaultProps = {
-    variant: 'HORIZONTAL',
-};
-
-ProductTumbnails.variants = {
-    variant: {
-        HORIZONTAL: 'product-tumbnail-btns-container',
-        VERTICAL: 'product-tumbnail-btns-container-vertical',
-    },
-};

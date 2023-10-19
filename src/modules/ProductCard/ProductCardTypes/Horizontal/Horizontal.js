@@ -23,11 +23,11 @@ export const Horizontal = React.memo((props) => {
                     <Image src={image} />
                     <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                 </NavLink>
-                <ProductTumbnails path={modalPath} onLike={onLike} variant='HORIZONTAL' />
+                <ProductTumbnails path={modalPath} onLike={onLike} />
             </div>
             <div className='product-description-container'>
                 <ProductDescription title={title} path={productPath} />
-                <ProductPrice price={price} oldPrice={oldPrice} variant='HORIZONTAL' />
+                <ProductPrice price={price} oldPrice={oldPrice} />
                 <ProductRating reviews={reviews || 0} />
             </div>
 
