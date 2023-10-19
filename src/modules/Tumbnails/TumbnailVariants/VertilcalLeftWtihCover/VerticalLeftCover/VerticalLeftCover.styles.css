@@ -1,5 +1,5 @@
 .vertical-cover-image-container {
-    @apply flex h-[625px] border border-gray-300 bg-gray-300;
+    @apply flex h-[625px] border border-[#e6e6e6] bg-gray-300;
     box-shadow: 7px 7px 6px 0 rgba(0,0,0,.05);
 }
 

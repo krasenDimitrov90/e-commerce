@@ -9,7 +9,6 @@ export const Image = React.memo(({ variant, src, alt }) => {
 
     return (
         <div className={classes}>
-            {/* <div className={'image-container'} style={{backgroundImage: `url(/static/media/product.70fc2ae69e275e556fd3.png)`}}> */}
             <img className='image-item' src={src} alt={alt}
                 onError={({ currentTarget }) => {
                     currentTarget.onerror = null; // prevents looping
