@@ -1,0 +1,5 @@
+/* <<<<<<<-----VERTICAL----->>>>>>  */
+
+.product-tumbnail-btns-container-vertical {
+    @apply flex gap-2 items-center;
+}

@@ -1,7 +1,0 @@
-.toggle-btn {
-    @apply w-4 h-4 rounded flex justify-center items-center bg-green-300 text-white transition-all duration-150 ease-linear
-}
-
-.toggle-btn:hover {
-    @apply bg-green-400 cursor-pointer
-}

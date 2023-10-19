@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import ProductPrice from '../../ProductPrice/ProductPrice';
-import ProductRating from '../../ProductRating/ProductRating';
-import ProductDescription from '../../ProductDescription/ProductDescription';
-import ProductTumbnails from '../../ProductTumbnails/ProductTumbnails';
-import ProductLabel from '../../ProductLabel/ProductLabel';
+import ProductDescription from './ProductDescription/ProductDescription';
+import ProductLabel from './ProductLabel/ProductLabel';
+import ProductPrice from './ProductPrice/ProductPrice';
+import ProductRating from './ProductRating/ProductRating';
+import ProductTumbnails from './ProductTumbnails/ProductTumbnails';
 
 import { Image } from '../../../Image/Image';
 import { Button } from '../../../Button/Button';
