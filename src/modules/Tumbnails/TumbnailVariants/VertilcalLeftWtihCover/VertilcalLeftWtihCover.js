@@ -1,7 +1,6 @@
 import React from 'react';
 import { VerticalLeftTumbnail } from './VerticalLeftTumbnail/VerticalLeftTumbnail';
 import { VerticalLeftCover } from './VerticalLeftCover/VerticalLeftCover';
-import './VertilcalLeftWtihCover.styles.css';
 
 const images = [
     '/images/Coffie1.png',
