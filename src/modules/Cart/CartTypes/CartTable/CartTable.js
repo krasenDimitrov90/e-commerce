@@ -29,9 +29,9 @@ export const CartTable = React.memo(() => {
                 </div>
             }
             {cart.length > 0 &&
-                <div className='flex w-full flex-col sm:flex-row'>
+                <div className='flex w-full flex-col sm:flex-row sm:justify-between'>
                     <div className='flex flex-col w-full sm:w-[calc(66%_-_15px)] px-[15px]'>
-                        <div className='hidden sm:flex'>
+                        <div className='hidden sm:flex sm:flex-1'>
                             <TableTitle variant={TableTitle.variants.CART} />
                         </div>
                         <div className='hidden sm:flex sm:flex-col'>
@@ -49,6 +49,9 @@ export const CartTable = React.memo(() => {
                                 );
                             })}
                         </div>
+                    </div>
+                    <div className='flex sm:hidden'>
+
                     </div>
                     <div className='flex flex-col w-full sm:w-[calc(34%_-_15px)]'>
                         <div className='sticky top-[60px] ' >
