@@ -7,3 +7,4 @@ export * from './Default';
 export * from './Card/Card';
 export * from './Modal/Modal';
 export * from './Row/Row';
+export * from './TableRow/TableRow';

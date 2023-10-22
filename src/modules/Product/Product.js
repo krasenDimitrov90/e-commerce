@@ -26,6 +26,7 @@ Product.variants = {
     CARD: 'Card',
     MODAL: 'Modal',
     ROW: 'Row',
+    TABLE_ROW: 'TableRow',
 }
 
 Product.defaultProps = {
