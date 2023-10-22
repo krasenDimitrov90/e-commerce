@@ -24,6 +24,7 @@ export const Product = React.memo((props) => {
 /* Defines Different constants for named export components in Product Card Types */
 Product.variants = {
     CARD: 'Card',
+    CART_ROW: 'CartRow',
     MODAL: 'Modal',
     ROW: 'Row',
     TABLE_ROW: 'TableRow',
