@@ -1,8 +1,8 @@
 import React from 'react';
-import { Product } from '../../../Product/Product';
-import { Summary } from '../../../Summary/Summary';
-import { TableTitle } from '../../../TableTitle/TableTitle';
-import { Button } from '../../../Button/Button';
+import { Product } from '../../modules';
+import { Summary } from '../../modules';
+import { TableTitle } from '../../modules';
+import { Button } from '../../modules';
 
 const cart = [
     { id: 'id1', image: '/images/Coffie1.png', title: 'Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши Кафемашина ЕLEKOM ЕК 6826 за еспресо и капучино, 2 чаши', code: 2345, price: 999.4, quantity: 2 },
@@ -31,10 +31,8 @@ export const CartTable = React.memo(() => {
             {cart.length > 0 &&
                 <div className='flex w-full flex-col sm:flex-row'>
                     <div className='flex flex-col w-full sm:w-[calc(66%_-_15px)] px-[15px]'>
-                        <div className='hidden sm:flex'>
-                            <TableTitle variant={TableTitle.variants.CART} />
-                        </div>
-                        <div className='hidden sm:flex sm:flex-col'>
+                        <TableTitle variant={TableTitle.variants.CART} />
+                        <div>
                             {cart.map(product => {
                                 return (
                                     <Product
