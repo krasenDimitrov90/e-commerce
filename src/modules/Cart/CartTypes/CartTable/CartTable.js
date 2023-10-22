@@ -50,10 +50,22 @@ export const CartTable = React.memo(() => {
                             })}
                         </div>
                     </div>
-                    <div className='flex sm:hidden'>
-
+                    <div className='flex flex-col sm:hidden'>
+                        {cart.map(product => {
+                            return (
+                                <Product
+                                    variant={Product.variants.CART_ROW}
+                                    id={product.id}
+                                    image={product.image}
+                                    title={product.title}
+                                    code={product.code}
+                                    price={product.price}
+                                    quantity={product.quantity}
+                                />
+                            );
+                        })}
                     </div>
-                    <div className='flex flex-col w-full sm:w-[calc(34%_-_15px)]'>
+                    <div className='flex flex-col w-full sm:w-[calc(34%_-_15px)] mt-[20px] sm:mt-0'>
                         <div className='sticky top-[60px] ' >
                             <Summary
                                 variant={Summary.variants.CART}
