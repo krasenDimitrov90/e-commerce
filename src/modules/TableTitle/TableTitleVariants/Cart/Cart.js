@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-export const CartTableTitle = React.memo(() => {
+export const Cart = React.memo(() => {
     return (
         <div className="flex border-y border-y-gray-400 mb-[20px] py-[16px] font-bold text-base">
             <div className='flex-1 max-w-[58%]'>

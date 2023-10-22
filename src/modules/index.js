@@ -12,4 +12,6 @@ export * from './PriceSlider/PriceSlider';
 export * from './Product/Product';
 export * from './Qauantity/Qauantity';
 export * from './Spinner/Spinner';
+export * from './Summary/Summary';
+export * from './TableTitle/TableTitle';
 export * from './Tumbnails/Tumbnails';
