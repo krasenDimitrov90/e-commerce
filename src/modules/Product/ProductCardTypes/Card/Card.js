@@ -11,10 +11,10 @@ import { Image } from '../../../Image/Image';
 import { Button } from '../../../Button/Button';
 import { Icon } from '../../../Icons/Icons';
 
-import './Horizontal.styles.css';
+import './Card.styles.css';
 
 
-export const Horizontal = React.memo((props) => {
+export const Card = React.memo((props) => {
     const {productPath, image, hasPromo, isNew, oldPrice, modalPath, onLike, title, price, onAddToCart, reviews} = props
     return (
         <div className='product-container-horizontal'>
