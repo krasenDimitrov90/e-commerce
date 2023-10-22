@@ -5,7 +5,7 @@ export const Cart = React.memo(({
     productsCount, totalPrice, deliveryPrice
 }) => {
     return (
-        <div className='flex flex-col w-full p-[30px] mx-[15px] border border-gray-400'>
+        <div className='flex flex-col flex-1 p-[30px] mx-[15px] border border-gray-400'>
             <div className='border-b border-b-gray-400 pb-[10px]'>
                 <span className='uppercase text-lg font-bold text-gray-600'>
                     В количката има

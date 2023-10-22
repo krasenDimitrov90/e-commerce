@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Cart = React.memo(() => {
     return (
-        <div className="flex border-y border-y-gray-400 mb-[20px] py-[16px] font-bold text-base">
+        <div className="flex flex-1 border-y border-y-gray-400 mb-[20px] py-[16px] font-bold text-base">
             <div className='flex-1 max-w-[58%]'>
                 <span>Продукт</span>
             </div>
