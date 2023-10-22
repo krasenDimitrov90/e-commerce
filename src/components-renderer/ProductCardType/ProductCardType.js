@@ -1,19 +1,22 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { ProductCard } from "../../modules";
+import { Product } from "../../modules";
+import { Link } from "react-router-dom";
 
 
 export const ProductCardType = () => {
 
     const initialState = React.useMemo(() => {
-        return localStorage.getItem('product-variant') || ProductCard.variants.HORIZONTAL;
+        return localStorage.getItem('product-variant') || Product.variants.CARD;
     }, [])
 
     const [variant, setVariant] = React.useState(initialState);
     const [products, setProducts] = React.useState([]);
 
-    const handleHorizontal = React.useCallback(() => {
-        const newState = variant === ProductCard.variants.HORIZONTAL ? ProductCard.variants.VERTICAL : ProductCard.variants.HORIZONTAL;
+    const handleHorizontal = React.useCallback((variant) => {
+        // const newState = variant === ProductCard.variants.CARD ? ProductCard.variants.ROW : ProductCard.variants.CARD;
+        const newState = Product.variants[variant];
+
         localStorage.setItem('product-variant', newState);
         setVariant(newState);
     }, [variant]);
@@ -29,14 +32,20 @@ export const ProductCardType = () => {
     return (
         <>
             <div className="flex max-[640px]:flex-col">
-                <div className="flex items-start basis-1/4 bg-[#F1F1F1]">
-                    <button onClick={handleHorizontal} className="bg-gray-500 m-4 text-white p-2 rounded hover:bg-green-500">Orientation: {variant}</button>
+
+                <div className="flex flex-col items-start basis-1/4 bg-[#F1F1F1]">
+                    <div className="m-4">
+                        <span>Orientation: {variant}</span>
+                    </div>
+                    <button onClick={() => handleHorizontal('CARD')} className="bg-gray-500 m-4 text-white p-2 rounded hover:bg-green-500">CARD</button>
+                    <Link to={'/product/modal/id1'} className="bg-gray-500 m-4 text-white p-2 rounded hover:bg-green-500">MODAL</Link>
+                    <button onClick={() => handleHorizontal('ROW')} className="bg-gray-500 m-4 text-white p-2 rounded hover:bg-green-500">ROW</button>
                 </div>
-                <div className={variant !== ProductCard.variants.HORIZONTAL ? 'flex flex-1 flex-col' : 'flex basis-3/4 flex-wrap justify-between pr-4'}>
+                <div className={variant !== Product.variants.CARD ? 'flex flex-1 flex-col' : 'flex basis-3/4 flex-wrap justify-between pr-4'}>
 
                     {products.map(p => {
                         return (
-                            <ProductCard
+                            <Product
                                 key={p.id}
                                 variant={variant}
                                 image={p.image}

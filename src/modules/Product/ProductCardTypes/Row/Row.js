@@ -11,10 +11,10 @@ import { Image } from '../../../Image/Image';
 import { Button } from '../../../Button/Button';
 import { Icon } from '../../../Icons/Icons';
 
-import './Vertical.styles.css';
+import './Row.styles.css';
 
 
-export const Vertical = React.memo((props) => {
+export const Row = React.memo((props) => {
     
     const {productPath, image, hasPromo, isNew, oldPrice, modalPath, onLike, title, price, onAddToCart, reviews} = props
 

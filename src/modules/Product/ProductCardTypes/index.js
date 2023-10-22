@@ -4,5 +4,6 @@
  **/
 
 export * from './Default';
-export * from './Horizontal/Horizontal';
-export * from './Vertical/Vertical';
+export * from './Card/Card';
+export * from './Modal/Modal';
+export * from './Row/Row';

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Variants from './ProductCardTypes'
 
-export const ProductCard = React.memo((props) => {
+export const Product = React.memo((props) => {
     let hasPromo = !!props.oldPrice;
  
     /**
@@ -22,11 +22,12 @@ export const ProductCard = React.memo((props) => {
 
 
 /* Defines Different constants for named export components in Product Card Types */
-ProductCard.variants = {
-    HORIZONTAL: 'Horizontal',
-    VERTICAL: 'Vertical',
+Product.variants = {
+    CARD: 'Card',
+    MODAL: 'Modal',
+    ROW: 'Row',
 }
 
-ProductCard.defaultProps = {
-    variant: 'Horizontal',
+Product.defaultProps = {
+    variant: 'Card',
 };

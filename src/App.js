@@ -11,7 +11,7 @@ import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSl
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
 import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
 import { ProductCardType } from './components-renderer/ProductCardType/ProductCardType';
-import { ProductModal } from './modules';
+import { ModalTypes } from './components-renderer/ModalTypes/ModalTypes';
 import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 import { InputTypes } from './components-renderer/InputTypes/InputTypes';
 import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
@@ -63,7 +63,8 @@ const router = createBrowserRouter([
         path: '/product',
         element: <ProductCardType />,
         children: [
-          { path: 'modal/:productId', element: <ProductModal /> }
+          // { path: 'modal/:productId', element: <ProductModal /> }
+          { path: 'modal/:productId', element: <ModalTypes /> }
         ],
       },
       { path: '/cart', element: <CartTypes /> },
