@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button } from '../../../../Button/Button';
-import { Icon } from '../../../../Icons/Icons';
-import { Qauantity } from '../../../../Qauantity/Qauantity';
-import { Image } from '../../../../Image/Image';
+import { Button } from '../../../Button/Button';
+import { Icon } from '../../../Icons/Icons';
+import { Image } from '../../../Image/Image';
+import { Qauantity } from '../../../Qauantity/Qauantity';
 
-import './CartTableProduct.styles.css';
+import './TableRow.styles.css';
 
 
-export const CartTableProduct = React.memo(({ id, image, title, code, price, quantity }) => {
+export const TableRow = React.memo(({ id, image, title, code, price, quantity }) => {
 
     return (
         <div className="flex border-b border-dashed border-b-gray-400 py-[20px]">

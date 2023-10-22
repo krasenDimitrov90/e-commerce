@@ -1,5 +1,5 @@
 import React from 'react';
-import { CartTableProduct } from './CartTableProduct/CartTableProduct';
+import { Product } from '../../../Product/Product';
 import { CartTableTitle } from './CartTableTitle/CartTableTitle';
 import { CartTotal } from './CartTotal/CartTotal';
 import './CartTable.styles.css';
@@ -36,7 +36,8 @@ export const CartTable = React.memo(() => {
                         <div className='cart-table-products-container'>
                             {cart.map(product => {
                                 return (
-                                    <CartTableProduct
+                                    <Product
+                                        variant={Product.variants.TABLE_ROW}
                                         id={product.id}
                                         image={product.image}
                                         title={product.title}
