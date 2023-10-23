@@ -11,7 +11,7 @@ export const CartTypes = React.memo(() => {
     },[type]);
 
     return (
-        <div className='w-[100vw]'>
+        <div className='mt-10 w-[100vw]'>
             <div>
                 <button onClick={handleType} className='bg-green-200 m-2 rounded p-1 text-white'>Cart Type: {type}</button>
             </div>

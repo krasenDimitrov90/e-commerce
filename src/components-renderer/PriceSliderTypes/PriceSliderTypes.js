@@ -8,7 +8,7 @@ export const PriceSliderTypes = () => {
     };
 
     return (
-        <div className="w-[300px] m-auto p-5 bg-gray-200 flex justify-center">
+        <div className="mt-10 w-[300px] m-auto p-5 bg-gray-200 flex justify-center">
             <PriceSlider
                 minPrice={0}
                 maxPrice={1000}

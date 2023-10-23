@@ -2,7 +2,7 @@ import { Contacts } from "../../modules";
 
 export const ContactsTypes = () => {
     return (
-        <div className="[w-500px] flex p-4 bg-blue-500">
+        <div className="mt-10 [w-500px] flex p-4 bg-blue-500">
             <Contacts
                 variant='MAIL'
                 info='contacts@shik.bg'

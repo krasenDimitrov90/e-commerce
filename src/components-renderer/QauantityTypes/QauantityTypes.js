@@ -8,7 +8,7 @@ export const QauantityTypes = () => {
     const setQuantityHandler = (newValue) => setQuantity(newValue);
 
     return (
-        <div className="flex justify-center items-center">
+        <div className="mt-10 flex justify-center items-center">
             <Qauantity quantity={quantity} setQuantity={setQuantityHandler} />
         </div>
     );
