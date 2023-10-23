@@ -1,0 +1,8 @@
+.categorie-icon-expand i {
+    transition: 0.2s;
+}
+
+.categorie-icon-expand.rotate i {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}

@@ -16,6 +16,7 @@ import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 import { InputTypes } from './components-renderer/InputTypes/InputTypes';
 import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
 import { TumbnailsType } from './components-renderer/TumbnailsTypes/TumbnailsType';
+import { CategoriesTypes } from './components-renderer/CategoriesTypes/CategoriesTypes';
 
 const Layout = () => {
 
@@ -35,6 +36,9 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/input'>INPUT</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/check-banner'>CHECK-BANNER</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/tumbnails'>TUMBNAILS</LinkButton>
+        </nav>
+        <nav className='flex justify-between w-full mt-5'>
+          <LinkButton variant='secondary' font='xl' path='/categories'>CATEGORIES</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -71,6 +75,7 @@ const router = createBrowserRouter([
       { path: '/input', element: <InputTypes /> },
       { path: '/check-banner', element: <CheckoutStepBannerTypes /> },
       { path: '/tumbnails', element: <TumbnailsType /> },
+      { path: '/categories', element: <CategoriesTypes /> },
     ]
   }
 ]);

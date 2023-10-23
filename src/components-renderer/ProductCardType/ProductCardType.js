@@ -31,7 +31,7 @@ export const ProductCardType = () => {
 
     return (
         <>
-            <div className="flex max-[640px]:flex-col">
+            <div className="mt-10 flex max-[640px]:flex-col">
 
                 <div className="flex flex-col items-start basis-1/4 bg-[#F1F1F1]">
                     <div className="m-4">

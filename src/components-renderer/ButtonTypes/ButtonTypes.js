@@ -46,7 +46,7 @@ const Button4 = wrapper(Button);
 const Button5 = wrapper(Button);
 
 export const ButtonTypes = ({ onClick, isLoading }) => {
-    const outContainerClass = 'm-4 border-2 border-black p-4';
+    const outContainerClass = 'm-10 border-2 border-black p-4';
     const innerContainerClass = 'flex justify-between items-baseline m-4';
 
     return (

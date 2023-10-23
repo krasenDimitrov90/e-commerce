@@ -5,7 +5,7 @@ export const ImageTypes = () => {
 
     return (
         <>
-            <div className="flex justify-center items-center bg-gray-500">
+            <div className="mt-10 flex justify-center items-center bg-gray-500">
                 <div className="flex p-2 justify-center w-[200px] h-[150px] bg-white">
                     <Image src={product} />
                 </div>

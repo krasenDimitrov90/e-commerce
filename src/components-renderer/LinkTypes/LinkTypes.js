@@ -2,7 +2,7 @@ import { LinkButton } from "../../modules";
 
 export const LinkTypes = () => {
 
-    const outContainerClass = 'm-4 border-2 border-black p-4';
+    const outContainerClass = 'm-4 mt-10 border-2 border-black p-4';
     const innerContainerClass = 'flex justify-between items-baseline m-4 bg-gray-200';
 
     return (
