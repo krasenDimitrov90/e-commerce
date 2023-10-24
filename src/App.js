@@ -6,7 +6,7 @@ import { LinkButton } from './modules';
 import { ButtonTypes } from './components-renderer/ButtonTypes/ButtonTypes';
 import { LinkTypes } from './components-renderer/LinkTypes/LinkTypes';
 import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
-import { QauantityTypes } from './components-renderer/QauantityTypes/QauantityTypes';
+import { QuantityTypes } from './components-renderer/QuantityTypes/QuantityTypes';
 import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
 import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       { path: '/buttons', element: <ButtonTypes /> },
       { path: '/links', element: <LinkTypes /> },
       { path: '/images', element: <ImageTypes /> },
-      { path: '/quantity', element: <QauantityTypes /> },
+      { path: '/quantity', element: <QuantityTypes /> },
       { path: '/price-slider', element: <PriceSliderTypes /> },
       { path: '/contacts', element: <ContactsTypes /> },
       { path: '/checkbox', element: <FilterCheckboxTypes /> },

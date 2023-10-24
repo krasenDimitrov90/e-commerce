@@ -1,7 +1,7 @@
 import React from "react";
-import { Qauantity } from "../../modules";
+import { Quantity } from "../../modules";
 
-export const QauantityTypes = () => {
+export const QuantityTypes = () => {
 
     const [quantity, setQuantity] = React.useState(1);
 
@@ -9,7 +9,7 @@ export const QauantityTypes = () => {
 
     return (
         <div className="mt-10 flex justify-center items-center">
-            <Qauantity quantity={quantity} setQuantity={setQuantityHandler} />
+            <Quantity variant={Quantity.variants.PRIMARY} quantity={quantity} setQuantity={setQuantityHandler} />
         </div>
     );
 };

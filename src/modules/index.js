@@ -12,7 +12,7 @@ export * from './LinkButton/LinkButton';
 export * from './Modal/Modal';
 export * from './PriceSlider/PriceSlider';
 export * from './Product/Product';
-export * from './Qauantity/Qauantity';
+export * from './Quantity/Quantity';
 export * from './Spinner/Spinner';
 export * from './Summary/Summary';
 export * from './TableTitle/TableTitle';
