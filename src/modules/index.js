@@ -1,6 +1,7 @@
 export * from './Button/Button';
 export * from './Cart/Cart';
 export * from './Categorie/Categorie';
+export * from './CategorieList/CategorieList';
 export * from './CheckoutStepBanner/CheckoutStepBanner';
 export * from './Contacts/Contacts';
 export * from './FilterCheckbox/FilterCheckbox';
