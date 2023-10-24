@@ -1,28 +1,23 @@
 import React from 'react';
-import { Icon } from '../Icons/Icons';
+import * as Variants from './ContactsVariants/index';
 import './Contacts.styles.css';
 
-export const Contacts = React.memo(({ variant, info }) => {
+export const Contacts = React.memo((props) => {
 
-    const { title, icon, href } = Contacts.variants[variant];
+    const VariantComponent = React.useMemo(() => {
+        return Variants[props.variant] || <div>There is missing variant for ${props.variant}</div>;
+    }, [props.variant]);
 
     return (
-        <div className='contacts'>
-            <div className='contacts-icon'>
-                <Icon variant={icon} />
-            </div>
-            <div className='contacts-content'>
-                <span className='contacts-content-title'>{title} :&nbsp;</span>
-                <div>
-                    <a className='contacts-content-info' href={`${href}:${info}`}>{info}</a>
-
-                </div>
-            </div>
-        </div>
+        <VariantComponent {...props} properties={props.properties} />
     );
 });
 
 Contacts.variants = {
+    PRIMARY: 'Primary',
+};
+
+Contacts.properties = {
     MAIL: {
         title: 'Имейл',
         icon: 'mail',
