@@ -1,9 +1,9 @@
 import React from 'react';
-import * as Variants from './ProductCardTypes'
+import * as Variants from './ProductTypes'
 
 export const Product = React.memo((props) => {
     let hasPromo = !!props.oldPrice;
- 
+
     /**
      *  
      * Constructs the proper component
@@ -25,7 +25,7 @@ export const Product = React.memo((props) => {
 Product.variants = {
     CARD: 'Card',
     CART_ROW: 'CartRow',
-    MODAL: 'Modal',
+    MODAL: 'ProductModal',
     ROW: 'Row',
     TABLE_ROW: 'TableRow',
 }

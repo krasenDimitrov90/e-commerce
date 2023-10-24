@@ -1,17 +1,19 @@
 import React from 'react';
-import { Modal as ModalWraper } from '../../../Modal/Modal';
+import { Modal } from '../../../Modal/Modal';
 import { Quantity } from '../../../Quantity/Quantity';
 import { ProductModalInfo } from './ProductModalInfo/ProductModalInfo';
 import { ProductModalPrice } from './ProductModalPrice/ProductModalPrice';
 import { ProductModalTumbnails } from './ProductModalTumbnails/ProductModalTumbnails';
 import { ProductModalButtons } from './ProductModalButtons/ProductModalButtons';
 
-import './Modal.styles.css';
+import './ProductModal.styles.css';
 
-export const Modal = React.memo(({ product, onAddToCart, onLike }) => {
+export const ProductModal = React.memo(({ product, onAddToCart, onLike }) => {
 
+    console.log({product})
+    
     return product && (
-        <ModalWraper >
+        <Modal >
             <div className='product-modal'>
                 <div className='product-modal-left'>
                     <ProductModalTumbnails allImages={[product.image, ...(product?.allImages?.slice(1) || [])]} />
@@ -24,11 +26,11 @@ export const Modal = React.memo(({ product, onAddToCart, onLike }) => {
                         <p>{product.title}</p>
                     </div>
 
-                    <Quantity />
+                    <Quantity variant={Quantity.variants.PRIMARY} />
 
                     <ProductModalButtons onAddToCart={onAddToCart} onLike={onLike} />
                 </div>
             </div>
-        </ModalWraper>
+        </Modal>
     );
 });
