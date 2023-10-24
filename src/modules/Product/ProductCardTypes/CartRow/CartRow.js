@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../../../Button/Button';
 import { Icon } from '../../../Icons/Icons';
 import { Image } from '../../../Image/Image';
-import { Qauantity } from '../../../Qauantity/Qauantity';
+import { Quantity } from '../../../Quantity/Quantity';
 
 import './CartRow.styles.css';
 
@@ -31,7 +31,7 @@ export const CartRow = React.memo(({
                     </span>
                 </div>
                 <div className='flex justify-center w-[110px]'>
-                    <Qauantity quantity={quantity} />
+                    <Quantity quantity={quantity} />
                 </div>
             </div>
             <div className='flex flex-1 justify-between items-center mt-[16px]'>
