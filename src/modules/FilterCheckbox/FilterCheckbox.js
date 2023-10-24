@@ -1,14 +1,18 @@
 import React from 'react';
+import * as Variants from './FIlterCheckboxVariants/index'
 import './FilterCheckbox.styles.css';
 
-export const FilterCheckbox = React.memo(({ label }) => {
+export const FilterCheckbox = React.memo((props) => {
+
+    const VariantsComponent = React.useMemo(() => {
+        return Variants[props.variant] || <div>There is missing variant for {props.variant}</div>;
+    }, [props.variant]);
 
     return (
-        <div className='filter-checkbox'>
-            <label class="container">{label}
-                <input type="checkbox" />
-                    <span class="checkmark"></span>
-            </label>
-        </div>
+        <VariantsComponent {...props} />
     );
 });
+
+FilterCheckbox.variants = {
+    PRIMARY: 'Primary',
+};
