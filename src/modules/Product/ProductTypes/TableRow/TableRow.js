@@ -13,7 +13,7 @@ export const TableRow = React.memo(({ id, image, title, code, price, quantity })
         <div className="flex border-b border-dashed border-b-gray-400 py-[20px]">
             <div className='flex flex-1 items-center max-w-[58%] pr-[15px]'>
                 <div className='flex w-[90px] h-[90px] rounded overflow-hidden border border-gray-400'>
-                    <Image src={image} />
+                    <Image variant={Image.variants.PRIMARY} src={image} />
                 </div>
                 <div className='max-w-[calc(100%_-_90px)] pl-[20px] text-gray-700 text-base'>
                     <span className='product-text-ellipsis' >
@@ -29,7 +29,7 @@ export const TableRow = React.memo(({ id, image, title, code, price, quantity })
                     </span>
                 </div>
                 <div className='flex justify-center w-[110px]'>
-                    <Quantity quantity={quantity} />
+                    <Quantity variant={Quantity.variants.PRIMARY} quantity={quantity} />
                 </div>
             </div>
             <div className='flex flex-1 justify-between items-center max-w-[16%] pl-[15px]'>

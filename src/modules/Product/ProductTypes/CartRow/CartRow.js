@@ -13,7 +13,7 @@ export const CartRow = React.memo(({
         <div className="flex flex-col flex-1 border-b border-dashed border-b-gray-400 mx-[20px] py-[20px]">
             <div className='flex flex-1 items-center'>
                 <div className='flex flex-1 max-w-[90px] h-[90px] rounded overflow-hidden border border-gray-400'>
-                    <Image src={image} />
+                    <Image variant={Image.variants.PRIMARY} src={image} />
                 </div>
                 <div className='flex-1 pl-[20px] text-gray-700 text-base'>
                     <span className='product-title-text-ellipsis' >
@@ -31,7 +31,7 @@ export const CartRow = React.memo(({
                     </span>
                 </div>
                 <div className='flex justify-center w-[110px]'>
-                    <Quantity quantity={quantity} />
+                    <Quantity variant={Quantity.variants.PRIMARY} quantity={quantity} />
                 </div>
             </div>
             <div className='flex flex-1 justify-between items-center mt-[16px]'>
