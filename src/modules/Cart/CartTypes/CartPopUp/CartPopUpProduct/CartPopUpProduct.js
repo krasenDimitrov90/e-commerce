@@ -10,7 +10,7 @@ export const CartPopUpProduct = React.memo(({
     return (
         <div className="cart-popup-product">
             <div className="cart-popup-product-image-wrap">
-                <Image src={image} />
+                <Image variant={Image.variants.PRIMARY} src={image} />
                 <div className='image-delete-item'>
                     <Button
                         variant='INFO'

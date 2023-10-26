@@ -1,4 +1,5 @@
 export * from './Button/Button';
+export * from './Button2/Button2';
 export * from './Cart/Cart';
 export * from './Categorie/Categorie';
 export * from './CategorieList/CategorieList';

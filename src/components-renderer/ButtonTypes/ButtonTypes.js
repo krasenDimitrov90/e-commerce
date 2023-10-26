@@ -2,16 +2,7 @@ import React from "react";
 import { Button, Icon } from "../../modules";
 
 const wrapper = (WrappedComponent) => {
-    const NewComponent = ({
-        variant,
-        rounded,
-        size,
-        fontSize,
-        expand,
-        leftIcon,
-        rightIcon,
-        children
-    }) => {
+    const NewComponent = (props) => {
         const [isLoading, setIsLoading] = React.useState(false);
 
         const clickHandler = React.useCallback(() => {
@@ -22,16 +13,9 @@ const wrapper = (WrappedComponent) => {
         });
         return (
             <WrappedComponent onClick={clickHandler}
-                isLoading={isLoading}
-                variant={variant}
-                size={size}
-                fontSize={fontSize}
-                expand={expand}
-                rounded={rounded}
-                leftIcon={leftIcon}
-                rightIcon={rightIcon}
+                {...props} isLoading={isLoading}
             >
-                {children}
+                {props.children}
             </WrappedComponent>
         );
     };

@@ -22,7 +22,7 @@ export const Row = React.memo((props) => {
         <div className='product-container-vertical'>
             <div className='product-image-wrap'>
                 <NavLink to={productPath} className='product-image-container'>
-                    <Image src={image} variant='SECONDARY' />
+                    <Image src={image} variant={Image.variants.SECONDARY} />
                     <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                 </NavLink>
             </div>
