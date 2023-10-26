@@ -6,7 +6,7 @@ export const VerticalLeftCover = React.memo(({ src }) => {
     return (
         <div className='vertical-cover-image-container'>
             <div className='flex w-[460px] h-[460px]'>
-                <Image src={src} />
+                <Image variant={Image.variants.PRIMARY} src={src} />
             </div>
         </div>
     );

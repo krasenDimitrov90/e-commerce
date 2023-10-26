@@ -20,7 +20,7 @@ export const Card = React.memo((props) => {
         <div className='product-container-horizontal'>
             <div className='flex relative'>
                 <NavLink to={productPath} className='product-image-container'>
-                    <Image src={image} />
+                    <Image variant={Image.variants.PRIMARY} src={image} />
                     <ProductLabel hasPromo={hasPromo} isNew={isNew} price={price} oldPrice={oldPrice} />
                 </NavLink>
                 <ProductTumbnails path={modalPath} onLike={onLike} />

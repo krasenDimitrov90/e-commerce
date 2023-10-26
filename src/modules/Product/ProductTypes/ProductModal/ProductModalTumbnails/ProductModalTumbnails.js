@@ -13,7 +13,7 @@ export const ProductModalTumbnails = React.memo(({ allImages }) => {
     return (
         <>
             <div className='product-modal-main-image'>
-                <Image src={allImages[index]} />
+                <Image variant={Image.variants.PRIMARY} src={allImages[index]} />
             </div>
             <div className='product-modal-tumbnails'>
                 {allImages.map((img, i) => {
@@ -22,7 +22,7 @@ export const ProductModalTumbnails = React.memo(({ allImages }) => {
                             className={`product-modal-tumbnail ${index === i ? 'selected' : ''}`}
                             onClick={handleIndex.bind(null, i)} key={img + i}
                         >
-                            <Image src={img} />
+                            <Image variant={Image.variants.PRIMARY} src={img} />
                         </div>
                     );
                 })}
