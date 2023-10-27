@@ -15,10 +15,9 @@ import { ProductCardType } from './components-renderer/ProductCardType/ProductCa
 import { ModalTypes } from './components-renderer/ModalTypes/ModalTypes';
 import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 import { InputTypes } from './components-renderer/InputTypes/InputTypes';
-import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
+import { WizrardStepTypes } from './components-renderer/WizrardStepTypes/WizrardStepTypes';
 import { SlideTypes } from './components-renderer/SlideTypes/SlideTypes';
 import { AccordionTypes } from './components-renderer/AccordionTypes/AccordionTypes';
-// import { CategoriesTypes } from './components-renderer/CategoriesTypes/CategoriesTypes';
 
 const Layout = () => {
 
@@ -36,7 +35,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/product'>PRODUCT</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/cart'>CART</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/input'>INPUT</LinkButton>
-          <LinkButton variant='secondary' font='xl' path='/check-banner'>CHECK-BANNER</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/wizard-step'>WIZARD_STEP</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/slides'>SLIDES</LinkButton>
         </nav>
         <nav className='flex justify-between w-full mt-5'>
@@ -76,7 +75,7 @@ const router = createBrowserRouter([
       },
       { path: '/cart', element: <CartTypes /> },
       { path: '/input', element: <InputTypes /> },
-      { path: '/check-banner', element: <CheckoutStepBannerTypes /> },
+      { path: '/wizard-step', element: <WizrardStepTypes /> },
       { path: '/slides', element: <SlideTypes /> },
       { path: '/accordion', element: <AccordionTypes /> },
       { path: '/buttons2', element: <Button2Types /> },
