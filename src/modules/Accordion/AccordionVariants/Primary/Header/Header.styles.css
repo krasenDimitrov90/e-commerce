@@ -1,0 +1,8 @@
+.accordion-primary-icon-expand i {
+    transition: 0.2s;
+}
+
+.accordion-primary-icon-expand.rotate i {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}

@@ -17,7 +17,8 @@ import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 import { InputTypes } from './components-renderer/InputTypes/InputTypes';
 import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
 import { SlideTypes } from './components-renderer/SlideTypes/SlideTypes';
-import { CategoriesTypes } from './components-renderer/CategoriesTypes/CategoriesTypes';
+import { AccordionTypes } from './components-renderer/AccordionTypes/AccordionTypes';
+// import { CategoriesTypes } from './components-renderer/CategoriesTypes/CategoriesTypes';
 
 const Layout = () => {
 
@@ -39,7 +40,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/slides'>SLIDES</LinkButton>
         </nav>
         <nav className='flex justify-between w-full mt-5'>
-          <LinkButton variant='secondary' font='xl' path='/categories'>CATEGORIES</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/accordion'>ACCORDION</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/buttons2'>BUTTONS 2</LinkButton>
         </nav>
       </div>
@@ -77,7 +78,7 @@ const router = createBrowserRouter([
       { path: '/input', element: <InputTypes /> },
       { path: '/check-banner', element: <CheckoutStepBannerTypes /> },
       { path: '/slides', element: <SlideTypes /> },
-      { path: '/categories', element: <CategoriesTypes /> },
+      { path: '/accordion', element: <AccordionTypes /> },
       { path: '/buttons2', element: <Button2Types /> },
     ]
   }

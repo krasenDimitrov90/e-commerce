@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Primary.styles.css';
+import './Body.styles.css';
 
-export const Primary = React.memo(({ subCategories }) => {
+export const Body = React.memo(({ subCategories }) => {
     return (
         <ul className='categorie-list-primary'>
             {subCategories.map(subCat => {
