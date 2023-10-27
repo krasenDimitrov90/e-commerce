@@ -1,9 +1,8 @@
 import React from 'react';
-import {Image} from '../../../../Image/Image';
-import './ProductModalTumbnails.styles.css';
+import { Image } from '../../../Image/Image';
+import './ThumbnailBottom.styles.css';
 
-export const ProductModalTumbnails = React.memo(({ allImages }) => {
-
+export const ThumbnailBottom = React.memo(({ images = []}) => {
     const [index, setIndex] = React.useState(0);
 
     const handleIndex = React.useCallback((newIndex) => {
@@ -12,14 +11,14 @@ export const ProductModalTumbnails = React.memo(({ allImages }) => {
 
     return (
         <>
-            <div className='product-modal-main-image'>
-                <Image variant={Image.variants.PRIMARY} src={allImages[index]} />
+            <div className='thumbnail-bottom-main-image'>
+                <Image variant={Image.variants.PRIMARY} src={images[index]} />
             </div>
-            <div className='product-modal-tumbnails'>
-                {allImages.map((img, i) => {
+            <div className='thumbnail-bottom-sliders'>
+                {images.map((img, i) => {
                     return (
                         <div
-                            className={`product-modal-tumbnail ${index === i ? 'selected' : ''}`}
+                            className={`thumbnail-bottom-slide ${index === i ? 'selected' : ''}`}
                             onClick={handleIndex.bind(null, i)} key={img + i}
                         >
                             <Image variant={Image.variants.PRIMARY} src={img} />
@@ -30,5 +29,3 @@ export const ProductModalTumbnails = React.memo(({ allImages }) => {
         </>
     );
 });
-
-// export default React.memo(ProductModalTumbnails);

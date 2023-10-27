@@ -1,16 +1,9 @@
 import React from 'react';
-import { VerticalLeftTumbnail } from './VerticalLeftTumbnail/VerticalLeftTumbnail';
-import { VerticalLeftCover } from './VerticalLeftCover/VerticalLeftCover';
+import { TumbnailSlide } from './TumbnailSlide/TumbnailSlide';
+import { MainImage } from './MainImage/MainImage';
 
-const images = [
-    '/images/Coffie1.png',
-    '/images/Cotlon.png',
-    '/images/frape.png',
-    '/images/krem.png',
-    '/images/krem.png',
-];
 
-export const VertilcalLeftWtihCover = React.memo(() => {
+export const ThumbnailLeft = React.memo(({ images }) => {
 
     const [index, setIndex] = React.useState(0);
 
@@ -23,7 +16,7 @@ export const VertilcalLeftWtihCover = React.memo(() => {
             <div className='flex flex-col'>
                 {images.map((img, i) => {
                     return (
-                        <VerticalLeftTumbnail
+                        <TumbnailSlide
                             src={img} key={'TumbnailVertical' + img}
                             onClick={handleIndex.bind(null, i)}
                             selected={i === index}
@@ -31,7 +24,7 @@ export const VertilcalLeftWtihCover = React.memo(() => {
                     );
                 })}
             </div>
-            <VerticalLeftCover src={images[index]} />
+            <MainImage src={images[index]} />
         </div>
     );
 });
