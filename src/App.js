@@ -10,7 +10,7 @@ import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
 import { QuantityTypes } from './components-renderer/QuantityTypes/QuantityTypes';
 import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
-import { FilterCheckboxTypes } from './components-renderer/FilterCheckboxTypes/FilterCheckboxTypes';
+import { CheckboxTypes } from './components-renderer/CheckboxTypes/CheckboxTypes';
 import { ProductCardType } from './components-renderer/ProductCardType/ProductCardType';
 import { ModalTypes } from './components-renderer/ModalTypes/ModalTypes';
 import { CartTypes } from './components-renderer/CartTypes/CartTypes';
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
       { path: '/quantity', element: <QuantityTypes /> },
       { path: '/price-slider', element: <PriceSliderTypes /> },
       { path: '/contacts', element: <ContactsTypes /> },
-      { path: '/checkbox', element: <FilterCheckboxTypes /> },
+      { path: '/checkbox', element: <CheckboxTypes /> },
       {
         path: '/product',
         element: <ProductCardType />,

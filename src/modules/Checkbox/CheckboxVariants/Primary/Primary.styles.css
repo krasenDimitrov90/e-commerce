@@ -1,7 +1,7 @@
-.filter-checkbox-primary-wraper {
+.checkbox-primary-wraper {
 
 
-    .filter-checkbox-primary-container {
+    .checkbox-primary-container {
         display: flex;
         position: relative;
         padding-left: 28px;
@@ -16,7 +16,7 @@
     }
 
 
-    .filter-checkbox-primary-container input {
+    .checkbox-primary-container input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
@@ -45,13 +45,13 @@
     }
 
 
-    .filter-checkbox-primary-container input:checked~.checkmark:after,
-    .filter-checkbox-primary-container input:checked~.checkmark::before {
+    .checkbox-primary-container input:checked~.checkmark:after,
+    .checkbox-primary-container input:checked~.checkmark::before {
         display: block;
     }
 
 
-    .filter-checkbox-primary-container .checkmark:after {
+    .checkbox-primary-container .checkmark:after {
         left: 5px;
         top: 1px;
         width: 4px;
@@ -63,7 +63,7 @@
         -ms-transform: rotate(40deg);
     }
 
-    .filter-checkbox-primary-container .checkmark:before {
+    .checkbox-primary-container .checkmark:before {
         width: 0px;
         height: 12px;
         top: 1px;
