@@ -1,7 +1,7 @@
 import React from 'react';
-import * as Variants from './CategoriesVariants/index';
+import * as Variants from './AccordionVariants/index';
 
-export const Categorie = React.memo((props) => {
+export const Accordion = React.memo((props) => {
 
     const VariantComponent = React.useMemo(() => {
         return Variants[props.variant] || <div>There is missing variant for {props.variant}</div>;
@@ -12,6 +12,6 @@ export const Categorie = React.memo((props) => {
     );
 });
 
-Categorie.variants = {
+Accordion.variants = {
     PRIMARY: 'Primary',
 };

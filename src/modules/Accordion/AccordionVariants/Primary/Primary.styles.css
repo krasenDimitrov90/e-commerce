@@ -1,13 +1,4 @@
-.categorie-icon-primary-expand i {
-    transition: 0.2s;
-}
-
-.categorie-icon-primary-expand.rotate i {
-    transform: rotate(180deg);
-    transition: 0.2s;
-}
-
-.categorie-list-primary-container {
+.accordion-list-primary-container {
     @apply pt-[10px] h-0 overflow-hidden border-b border-b-gray-400;
     -moz-transition: height .5s;
     -ms-transition: height .5s;
