@@ -1,0 +1,16 @@
+.thumbnail-bottom-main-image {
+    @apply flex flex-1 h-[300px];
+}
+
+.thumbnail-bottom-sliders {
+    @apply flex gap-[10px] ;
+
+    .thumbnail-bottom-slide {
+        @apply flex w-[48px] h-[48px] 2xl:w-[96px] 2xl:h-[96px]  cursor-pointer  transition-all duration-300;
+    }
+
+    .thumbnail-bottom-slide:hover,
+    .thumbnail-bottom-slide.selected {
+        box-shadow: 0 0 10px rgba(0,0,0,.15);
+    }
+}

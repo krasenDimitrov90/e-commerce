@@ -16,7 +16,7 @@ import { ModalTypes } from './components-renderer/ModalTypes/ModalTypes';
 import { CartTypes } from './components-renderer/CartTypes/CartTypes';
 import { InputTypes } from './components-renderer/InputTypes/InputTypes';
 import { CheckoutStepBannerTypes } from './components-renderer/CheckoutStepBannerTypes/CheckoutStepBannerTypes';
-import { TumbnailsType } from './components-renderer/TumbnailsTypes/TumbnailsType';
+import { SlideTypes } from './components-renderer/SlideTypes/SlideTypes';
 import { CategoriesTypes } from './components-renderer/CategoriesTypes/CategoriesTypes';
 
 const Layout = () => {
@@ -36,7 +36,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/cart'>CART</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/input'>INPUT</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/check-banner'>CHECK-BANNER</LinkButton>
-          <LinkButton variant='secondary' font='xl' path='/tumbnails'>TUMBNAILS</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/slides'>SLIDES</LinkButton>
         </nav>
         <nav className='flex justify-between w-full mt-5'>
           <LinkButton variant='secondary' font='xl' path='/categories'>CATEGORIES</LinkButton>
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
       { path: '/cart', element: <CartTypes /> },
       { path: '/input', element: <InputTypes /> },
       { path: '/check-banner', element: <CheckoutStepBannerTypes /> },
-      { path: '/tumbnails', element: <TumbnailsType /> },
+      { path: '/slides', element: <SlideTypes /> },
       { path: '/categories', element: <CategoriesTypes /> },
       { path: '/buttons2', element: <Button2Types /> },
     ]

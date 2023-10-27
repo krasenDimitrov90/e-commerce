@@ -1,6 +1,9 @@
 .product-modal {
     @apply flex p-[20px] w-[300px] h-[400px] sm:w-[900px] 2xl:h-[600px] ;
     
+    .product-modal-left {
+        @apply flex flex-col w-[100%]  sm:w-[40%] 2xl:w-[50%] gap-[10px];
+    }
 
     .product-modal-right {
         @apply hidden sm:flex flex-col flex-1 max-h-[300px] pl-[20px] w-[60%] 2xl:w-[50%] mb-[58px] 2xl:mb-[106px];

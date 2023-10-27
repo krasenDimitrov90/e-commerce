@@ -1,7 +1,7 @@
 import React from 'react';
-import * as Variants from './TumbnailVariants/index';
+import * as Variants from './SlideVariants/index';
 
-export const Tumbnails = React.memo((props) => {
+export const Slide = React.memo((props) => {
 
     const VariantComponent = React.useMemo(() => {
         return Variants[props.variant] || <div>There is no {props.variant} Tumbnail Variant</div>
@@ -12,6 +12,7 @@ export const Tumbnails = React.memo((props) => {
     );
 });
 
-Tumbnails.variants = {
-    VERTICAL_LEFT_WITH_COVER: 'VertilcalLeftWtihCover',
+Slide.variants = {
+    THUMBNAIL_LEFT: 'ThumbnailLeft',
+    THUMBNAIL_BOTTOM: 'ThumbnailBottom',
 };
