@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../../../Button/Button';
 import { Icon } from '../../../Icons/Icons';
 import { Image } from '../../../Image/Image';
-import { Quantity } from '../../../Quantity/Quantity';
+import { TouchSpin } from '../../../TouchSpin/TouchSpin';
 
 import './TableRow.styles.css';
 
@@ -29,7 +29,7 @@ export const TableRow = React.memo(({ id, image, title, code, price, quantity })
                     </span>
                 </div>
                 <div className='flex justify-center w-[110px]'>
-                    <Quantity variant={Quantity.variants.PRIMARY} quantity={quantity} />
+                    <TouchSpin variant={TouchSpin.variants.PRIMARY} quantity={quantity} />
                 </div>
             </div>
             <div className='flex flex-1 justify-between items-center max-w-[16%] pl-[15px]'>

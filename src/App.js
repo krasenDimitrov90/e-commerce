@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { RouterProvider, createBrowserRouter, NavLink, Outlet } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 
 import { LinkButton } from './modules';
 import { ButtonTypes } from './components-renderer/ButtonTypes/ButtonTypes';
 import { Button2Types } from './components-renderer/Button2Types/Button2Types';
 import { LinkTypes } from './components-renderer/LinkTypes/LinkTypes';
 import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
-import { QuantityTypes } from './components-renderer/QuantityTypes/QuantityTypes';
+import { TouchSpinTypes } from './components-renderer/TouchSpinTypes/TouchSpinTypes';
 import { PriceSliderTypes } from './components-renderer/PriceSliderTypes/PriceSliderTypes';
 import { ContactsTypes } from './components-renderer/ContactsTypes/ContactsTypes';
 import { CheckboxTypes } from './components-renderer/CheckboxTypes/CheckboxTypes';
@@ -28,7 +28,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/buttons'>BUTTONS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/links'>LINKS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/images'>IMAGES</LinkButton>
-          <LinkButton variant='secondary' font='xl' path='/quantity'>QUANTITY</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/touch-spin'>TOUCH_SPIN</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/price-slider'>PRICE-SLIDER</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/contacts'>CONTACTS</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/checkbox'>CECKBOX</LinkButton>
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
       { path: '/buttons', element: <ButtonTypes /> },
       { path: '/links', element: <LinkTypes /> },
       { path: '/images', element: <ImageTypes /> },
-      { path: '/quantity', element: <QuantityTypes /> },
+      { path: '/touch-spin', element: <TouchSpinTypes /> },
       { path: '/price-slider', element: <PriceSliderTypes /> },
       { path: '/contacts', element: <ContactsTypes /> },
       { path: '/checkbox', element: <CheckboxTypes /> },
