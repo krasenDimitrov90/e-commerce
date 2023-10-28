@@ -1,0 +1,19 @@
+.touch-spin-primary-container {
+
+    .touch-spin-primary-minus-container,
+    .touch-spin-primary-plus-container {
+        @apply flex justify-center items-center;
+    }
+
+    .touch-spin-primary-minus-container {
+        @apply basis-1/4 flex rounded-l border-[1px] border-gray-500 text-gray-500 hover:bg-gray-200 cursor-pointer;
+    }
+
+    .touch-spin-primary-plus-container {
+        @apply basis-1/4 flex rounded-r border-[1px] border-gray-500 text-gray-500 hover:bg-gray-200 cursor-pointer;
+    }
+
+    .touch-spin-primary-btn {
+        @apply w-full h-full;
+    }
+}

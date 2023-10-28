@@ -1,26 +1,30 @@
 import React from 'react';
+import { Button } from './Button';
 import './Primary.styles.css';
 
+const quantityReducer = (state, action) => {
+    switch (action) {
+        case 'increment':
+            return state + 1;
+        case 'decrement':
+            return state - 1 <= 1 ? 1 : state - 1;
+    }
+};
+
 export const Primary = React.memo((props) => {
-    const [quantity, setQuantity] = React.useState(props.quantity || 1);
+    const [quantity, dispatch] = React.useReducer(quantityReducer, props.quantity || 1);
 
-    const updateInput = React.useCallback((quantity) => {
-        if (quantity <= 1) quantity = 1;
+    const increaseQuantityHandler = React.useCallback(() => dispatch('increment'), []);
 
-        setQuantity(quantity);
-    }, []);
-
-    const increaseQuantityHandler = React.useCallback(() => (updateInput(quantity + 1)), [updateInput]);
-
-    const decreseQuantityHandler = () => updateInput(quantity - 1);
-
-    
+    const decreseQuantityHandler = React.useCallback(() => dispatch('decrement'), []);
 
     return (
         <div className='touch-spin-primary-container'>
-            <div className='touch-spin-primary-minus-container'>
-                <button className='touch-spin-primary-btn' onClick={decreseQuantityHandler}>-</button>
-            </div>
+            <Button
+                variant={Button.variants.MINUS}
+                onClick={decreseQuantityHandler}
+                content={Button.content.MINUS}
+            />
             <div className='touch-spin-primary-input-container'>
                 <input className='touch-spin-primary-input'
                     readOnly
@@ -29,9 +33,11 @@ export const Primary = React.memo((props) => {
                     value={quantity}
                 />
             </div>
-            <div className='touch-spin-primary-plus-container'>
-                <button className='touch-spin-primary-btn' onClick={increaseQuantityHandler} >+</button>
-            </div>
+            <Button
+                variant={Button.variants.PLUS}
+                onClick={increaseQuantityHandler}
+                content={Button.content.PLUS}
+            />
         </div>
     );
 });
