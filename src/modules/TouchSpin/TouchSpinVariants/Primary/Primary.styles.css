@@ -2,30 +2,16 @@
     @apply flex w-[100px] h-[40px];
 
 
-    .touch-spin-primary-minus-container,
-    .touch-spin-primary-input-container,
-    .touch-spin-primary-plus-container {
+    .touch-spin-primary-input-container {
         @apply flex justify-center items-center;
-    }
-
-    .touch-spin-primary-minus-container {
-        @apply basis-1/4 flex rounded-l border-[1px] border-gray-500 text-gray-500 hover:bg-gray-200 cursor-pointer;
     }
 
     .touch-spin-primary-input-container {
         @apply flex-1 flex border-t-[1px] border-b-[1px] border-gray-500;
     }
 
-    .touch-spin-primary-plus-container {
-        @apply basis-1/4 flex rounded-r border-[1px] border-gray-500 text-gray-500 hover:bg-gray-200 cursor-pointer;
-    }
-
     .touch-spin-primary-input {
         @apply outline-none w-full text-center appearance-none;
-    }
-
-    .touch-spin-primary-btn {
-        @apply w-full h-full;
     }
 
     .touch-spin-primary-input-container>input[type="number"]::-webkit-inner-spin-button,
