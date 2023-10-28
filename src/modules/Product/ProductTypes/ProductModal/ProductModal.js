@@ -1,6 +1,6 @@
 import React from 'react';
 import { Modal } from '../../../Modal/Modal';
-import { Quantity } from '../../../Quantity/Quantity';
+import { TouchSpin } from '../../../TouchSpin/TouchSpin';
 import { ProductModalInfo } from './ProductModalInfo/ProductModalInfo';
 import { ProductModalPrice } from './ProductModalPrice/ProductModalPrice';
 import { ProductModalButtons } from './ProductModalButtons/ProductModalButtons';
@@ -25,7 +25,7 @@ export const ProductModal = React.memo(({ product, onAddToCart, onLike }) => {
                         <p>{product.title}</p>
                     </div>
 
-                    <Quantity variant={Quantity.variants.PRIMARY} />
+                    <TouchSpin variant={TouchSpin.variants.PRIMARY} />
 
                     <ProductModalButtons onAddToCart={onAddToCart} onLike={onLike} />
                 </div>
