@@ -4,10 +4,10 @@ import './Body.styles.css';
 
 export const Body = React.memo(({ subCategories }) => {
     return (
-        <ul className='categorie-list-primary'>
+        <ul className='accordion-primary-list'>
             {subCategories.map(subCat => {
                 return (
-                    <li className='categorie-list-primary-item'>
+                    <li className='accordion-primary-list-item'>
                         <NavLink to={`/products/${subCat}`} >{subCat}</NavLink>
                     </li>
                 );

@@ -1,11 +1,11 @@
-.categorie-list-primary {
+.accordion-primary-list {
     @apply text-base pt-[10px] pl-[10px] pb-[5px];
 
-    .categorie-list-primary-item {
+    .accordion-primary-list-item {
         @apply relative pl-[20px] mb-[9px] hover:text-green-300;
     }
     
-    .categorie-list-primary-item::before {
+    .accordion-primary-list-item::before {
         content: "";
         width: 4px;
         height: 4px;
