@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion } from '../../modules';
 
-const subCat1 = ['Тигани', 'Тигани', 'Тигани']
+const subCat1 = ['Тигани', 'Тигани', ' Тигани  Тигани Тигани Тигани Тигани Тигани Тигани Тигани Тигани']
 const subCat2 = ['Тигани', 'Тигани', 'Тигани','Тигани','Тигани','Тигани','Тигани','Тигани','Тигани','Тигани','Тигани','Тигани']
 
 export const AccordionTypes = React.memo(() => {
