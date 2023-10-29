@@ -33,7 +33,7 @@ export const Primary = React.memo(({ categorie, subCategories }) => {
                 categorie={categorie}
                 expand={expand}
             />
-            <div ref={listWapperRef} className={'accordion-list-primary-container'}>
+            <div ref={listWapperRef} className={'accordion-primary-list-container'}>
                 <div ref={listContainerRef}>
                     <Body
                         subCategories={subCategories}
