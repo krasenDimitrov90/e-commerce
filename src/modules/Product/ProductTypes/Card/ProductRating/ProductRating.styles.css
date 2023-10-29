@@ -1,0 +1,13 @@
+.product-container-horizontal {
+    .product-rating-container-horizontal {
+        @apply flex font-medium my-4 text-xs;
+    }
+    
+    .product-rating-stars {
+        @apply text-orange-300 mr-4;
+    }
+    
+    .product-rating-reviews {
+        @apply text-gray-500;
+    }
+}

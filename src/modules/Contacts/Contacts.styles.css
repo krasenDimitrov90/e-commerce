@@ -1,0 +1,30 @@
+/* .contacts {
+    @apply flex items-center text-white text-base
+}
+
+.contacts i {
+    @apply text-green-500 text-lg mr-[4px]
+}
+
+.contacts-content {
+    @apply flex font-extrabold text-base
+}
+
+.contacts-content-info {
+    @apply font-semibold text-base
+}
+
+.contacts-content-info:after {
+    @apply flex relative top-[4px] border-b-[2px] border-b-green-500
+}
+
+.contacts-content-info:after {
+    content: '';
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.contacts-content-info:hover:after { transform: scaleX(1); }
+.contacts-content-info:after {
+    transform-origin: 0% 50%;
+} */

@@ -1,0 +1,16 @@
+
+.product-container-horizontal {
+    @apply relative flex flex-col w-[calc(25%_-_20px)] max-[640px]:w-[calc(50%_-_20px)] mx-[10px] rounded border-[1px] border-gray-200 my-2 transition-all duration-300 ease-linear overflow-hidden;
+
+    .product-image-container {
+        @apply relative flex flex-1 p-1 h-[250px] ;
+    }
+
+    .product-description-container {
+        @apply px-2 flex flex-col flex-1 justify-end mt-2;
+    }
+}
+
+.product-container-horizontal:hover {
+    @apply shadow-[0_-4px_30px_-12px_rgba(0_0_0_.15)] shadow-gray-600;
+}

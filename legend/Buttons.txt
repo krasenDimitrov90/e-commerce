@@ -1,22 +1,22 @@
-Styles
+Variants
     USE THIS WITH <variant> prop 
-    When the color is only one (e.g green) the background is one color and there is no hover
-    When the color is from two colors (e.g gray-green) first is for default color, second is for 
-    hover effect color
 
-    green
-    dark-green
-    white-green
-    gray-green
-    gray-blue
-    blue
-    dark-blue
+    primary - default
+    secondary
+    info
+    dark
+    danger
+    outline-primary
+    outline-secondary
+    outline-info
+    outline-dark
+    outline-danger
 
 Rounded
-    USE THIS WITH <rounded> prop
+    USE THIS WITH <rounded> prop,  default is rounded
 
-    half-rounded - only the top corners are rounded
-    rounded - all corners are rounded
+    not-rounded - withouth border radius
+    top-rounded - only the top corners are rounded
     circle - border is circled
 
 
@@ -24,14 +24,29 @@ Rounded
 Size
     USE THIS WITH <size> prop
 
-    The <btn-mid> className is for button height - 46px
-    The <btn-small> className is for button height - 32px and width 32px (Use this for ICON buttons)
+    xs
+    sm
+    base - default
+    lg
+    xl
+    square
 
-Content Size
-    USE THIS WITH <contentSize> prop
-    The <btn-content-mid> className is for fontSize - 14px
-    The <btn-content-small> className is for fontSize - 10px
+ FontSize
+    USE THIS WITH <fontSize> prop
 
+    xs
+    sm
+    base - default
+    lg
+    xl
+
+FontWeight
+    USE THIS WITH <fontWeight> prop
+
+    sm
+    base - default
+    bold
+    xl
 
 If <isLoading>  prop is set to true the spinner will pop up in the left of the content
 
@@ -45,8 +60,6 @@ Type
     For changing the type of the button (e.g button, submit, etc) set the <type> prop
     By default it is 'button'
     
-For CUSTOM styles use <custom> prop
-
 For Icons 
     <leftIcon> prop - for icon on the left side
     <rightIcon> prop - for icon on the right side

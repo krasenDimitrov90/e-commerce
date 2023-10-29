@@ -1,0 +1,153 @@
+.btn:disabled {
+    @apply opacity-50 cursor-no-drop
+}
+
+.btn {
+    @apply transition-all duration-150 ease-linear;
+}
+
+.btn-rounded {
+    @apply rounded
+}
+
+.btn-circled {
+    @apply rounded-full
+}
+
+.btn-top-rounded {
+    @apply rounded-t
+}
+
+/* <<<<< BUTTON VARIANTS >>>>> */
+
+.btn-primary {
+    @apply bg-blue-500 text-white hover:bg-green-300
+}
+
+.btn-secondary {
+    @apply bg-gray-400 text-dark-800 hover:bg-blue-500 hover:text-white
+}
+
+.btn-tumbnail {
+    @apply bg-white text-dark-800 hover:bg-green-300 hover:text-white
+}
+
+
+.btn-info {
+    @apply bg-gray-400 text-dark-800 hover:bg-green-300 hover:text-white
+}
+
+.btn-dark {
+    @apply bg-dark-800 text-white hover:bg-green-300
+}
+
+.btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-700
+}
+
+
+
+/* <<<<< OTLINE BUTONS >>>>> */
+
+.btn-outline-primary {
+    @apply border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white
+}
+
+.btn-outline-secondary {
+    @apply border-2 border-gray-400 text-gray-400 hover:bg-green-300 hover:border-green-300 hover:text-white
+}
+
+.btn-outline-info {
+    @apply border-2 border-green-300 text-green-300 hover:bg-green-300 hover:text-white
+}
+
+.btn-outline-dark {
+    @apply border-2 border-dark-800 text-dark-800 hover:bg-dark-800 hover:text-white
+}
+
+.btn-outline-danger {
+    @apply border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white
+}
+
+/* <<<<< BUTTON SIZES >>>>> */
+.btn-xs {
+    @apply h-[22px] px-2
+}
+
+.btn-sm {
+    @apply h-[26px] px-2
+}
+
+.btn-base {
+    @apply h-[32px] px-3
+}
+
+.btn-lg {
+    @apply h-[38px] px-3
+}
+
+.btn-xl {
+    @apply h-[46px] px-4
+}
+
+/* <<<<< SQUARE BUTTONS SIZES >>>>> */
+
+.btn-square-xs {
+    @apply h-[28px] w-[28px]
+}
+
+.btn-square-sm {
+    @apply h-[30px] w-[30px]
+}
+
+.btn-square-base {
+    @apply h-[32px] w-[32px]
+}
+
+.btn-square-lg {
+    @apply h-[36px] w-[36px]
+}
+
+.btn-square-xl {
+    @apply h-[40px] w-[40px]
+}
+
+/* <<<<< BUTTON FONT SIZES >>>>> */
+
+.btn-font-xs {
+    @apply text-xs
+}
+
+.btn-font-sm {
+    @apply text-sm
+}
+
+.btn-font-base {
+    @apply text-base
+}
+
+.btn-font-lg {
+    @apply text-lg
+}
+
+.btn-font-xl {
+    @apply text-xl
+}
+
+/* <<<<< BUTTON FONTS >>>>>*/
+
+.btn-font-wieght-sm {
+    @apply font-light
+}
+
+.btn-font-wieght-base {
+    @apply font-normal
+}
+
+.btn-font-wieght-bold {
+    @apply font-bold
+}
+
+.btn-font-wieght-xl {
+    @apply font-extrabold
+}

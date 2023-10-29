@@ -1,0 +1,24 @@
+.touch-spin-primary-container {
+    @apply flex w-[100px] h-[40px];
+
+
+    .touch-spin-primary-input-container {
+        @apply flex justify-center items-center;
+    }
+
+    .touch-spin-primary-input-container {
+        @apply flex-1 flex border-t-[1px] border-b-[1px] border-gray-500;
+    }
+
+    .touch-spin-primary-input {
+        @apply outline-none w-full text-center appearance-none;
+    }
+
+    .touch-spin-primary-input-container>input[type="number"]::-webkit-inner-spin-button,
+    .touch-spin-primary-input-container>input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        display: none;
+    }
+
+}

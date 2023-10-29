@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          '300': '#4dac1d',
+          '200': '#4dac1d',
+          '300': '#49ad00',
           '400': '#308605',
         },
         blue: {
@@ -18,20 +19,28 @@ module.exports = {
           '800': '#292B2C',
         },
         gray: {
+          200: '#F3F3F3',
+          300: '#F5F5F5',
           400: '#E0E0E0',
           500: '#BDBDBD',
+          600: '#727272',
+          700: '#464a4c',
         },
         orange: {
           300: '#F7C360',
         },
         red: {
+          400: '#c64e4e',
+          500: '#e85b40',
           600: '#E95028',
         }
       },
       fontSize: {
-        'xs': '10px',
-        'sm': '12px',
-        'md': '14px'
+        xs: ['8px', '8px'],
+        sm: ['10px', '10px'],
+        base: ['12px', '12px'],
+        lg: ['14px', '14px'],
+        xl: ['16px', '16px'],
       },
       height: {
         '12': '46px',

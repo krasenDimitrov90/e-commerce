@@ -1,0 +1,9 @@
+.thumbnail-slide-image-container {
+    @apply flex w-[145px] h-[145px] border border-[#e6e6e6] transition-all duration-150 ease-linear;
+    box-shadow: 7px 7px 6px 0 rgba(0, 0, 0, .05);
+}
+
+.thumbnail-slide-image-container:hover,
+.thumbnail-slide-image-container.selected {
+    @apply border-green-300;
+}

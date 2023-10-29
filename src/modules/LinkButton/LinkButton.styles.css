@@ -1,0 +1,50 @@
+.link-btn-container {
+    @apply flex justify-center cursor-pointer
+}
+
+.link-primary {
+    @apply text-gray-600  hover:text-green-300
+}
+
+.link-secondary {
+    @apply text-white hover:text-green-300
+}
+
+.link-dark {
+    @apply text-dark-800 hover:text-green-300
+}
+
+/* <<<<< LINK SIZES >>>>> */
+
+.link-xs {
+    @apply text-xs
+}
+.link-sm {
+    @apply text-sm
+}
+.link-base {
+    @apply text-base
+}
+.link-lg {
+    @apply text-lg
+}
+.link-xl {
+    @apply text-xl
+}
+
+/* <<<<< LINK FONTS >>>>> */
+
+.link-font-wieght-sm {
+    @apply font-light
+}
+
+.link-font-wieght-base {
+    @apply font-normal
+}
+.link-font-wieght-bold {
+    @apply font-bold
+}
+
+.link-font-wieght-xl {
+    @apply font-extrabold
+}

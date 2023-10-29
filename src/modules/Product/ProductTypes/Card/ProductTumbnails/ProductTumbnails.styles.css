@@ -1,0 +1,41 @@
+/* <<<<<<<-----HORIZONTAL----->>>>>>  */
+
+.product-container-horizontal {
+
+    .product-tumbnail-btns-container {
+        @apply hidden sm:flex absolute bottom-5 justify-center w-full opacity-0;
+    }
+    .product-tumbnail-btns-container button {
+        @apply shadow-[0_0px_20px_0px_rgba(0,_0,_0,_.15)] shadow-gray-500;
+    }
+    .product-tumbnail-btns-container>button:nth-child(1) {
+        @apply mr-2 translate-y-[16px];
+    }
+
+    .product-add-to-cart-btn-container {
+        @apply flex absolute w-full bottom-0 opacity-100  translate-y-0 sm:opacity-0;
+    }
+    
+    .product-tumbnail-btns-container,
+    .product-add-to-cart-btn-container {
+        @apply transition-all duration-300 ease-linear sm:translate-y-1/2 ;
+    }
+}
+.product-container-horizontal:hover {
+
+    .product-tumbnail-btns-container,
+    .product-add-to-cart-btn-container {
+        @apply opacity-100 translate-y-0 transition-all duration-150 ease-linear;
+
+    }
+}
+.product-container-horizontal:hover {
+    .product-tumbnail-btns-container > button:nth-child(1) {
+        @apply opacity-100 translate-y-0 transition-all duration-300 ease-linear;
+    }
+}
+.product-container-horizontal:not(:hover) {
+    .product-tumbnail-btns-container {
+        @apply transition-none;
+    }
+}

@@ -1,0 +1,13 @@
+.image-container.image-primary {
+    @apply bg-gray-300
+}
+.image-container.image-secondary {
+    @apply bg-white
+}
+
+.image-container {
+    @apply flex flex-1;
+    .image-item {
+        @apply w-full h-full object-contain
+    }
+}

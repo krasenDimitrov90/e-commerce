@@ -1,0 +1,17 @@
+.product-labels-container-vertical {
+    @apply absolute flex top-5 px-5 justify-between w-full text-white text-base;
+    @apply px-0 top-[20%] text-xs sm:px-5 sm:top-5 sm:text-base;
+
+    .product-label-promo,
+    .product-label-new {
+        @apply  px-3 py-1 rounded-tr-lg rounded-bl-lg font-bold;
+    }
+
+    .product-label-promo {
+        @apply bg-red-500;
+    }
+
+    .product-label-new {
+        @apply bg-[#56cb82];
+    }
+}

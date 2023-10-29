@@ -1,0 +1,30 @@
+.contacts-primary {
+    @apply flex items-center text-white text-base
+}
+
+.contacts-primary i {
+    @apply text-green-500 text-lg mr-[4px]
+}
+
+.contacts-primary-content {
+    @apply flex font-extrabold text-base
+}
+
+.contacts-primary-content-info {
+    @apply font-semibold text-base
+}
+
+.contacts-primary-content-info:after {
+    @apply flex relative top-[4px] border-b-[2px] border-b-green-500
+}
+
+.contacts-primary-content-info:after {
+    content: '';
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.contacts-primary-content-info:hover:after { transform: scaleX(1); }
+.contacts-primary-content-info:after {
+    transform-origin: 0% 50%;
+}
