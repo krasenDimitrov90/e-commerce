@@ -56,7 +56,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
-    // errorElement: <ErrorPage />,
     children: [
       { path: '/buttons', element: <ButtonTypes /> },
       { path: '/links', element: <LinkTypes /> },
@@ -67,9 +66,12 @@ const router = createBrowserRouter([
       { path: '/checkbox', element: <CheckboxTypes /> },
       {
         path: '/product',
-        element: <ProductCardType />,
+        element:
+          <>
+            <ProductCardType />,
+            <Outlet />
+          </>,
         children: [
-          // { path: 'modal/:productId', element: <ProductModal /> }
           { path: 'modal/:productId', element: <ModalTypes /> }
         ],
       },

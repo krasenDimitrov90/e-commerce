@@ -1,5 +1,5 @@
 .categorie-list-primary {
-    @apply text-base pt-[10px] pl-[10px] mb-[5px];
+    @apply text-base pt-[10px] pl-[10px] pb-[5px];
 
     .categorie-list-primary-item {
         @apply relative pl-[20px] mb-[9px] hover:text-green-300;
@@ -12,7 +12,8 @@
         background: #666;
         position: absolute;
         left: 0;
-        top: 50%;
+        /* top: 50%; */
+        top: 6px;
         transform: translate(0, -50%) rotate(45deg);
         -ms-transform: translate(0, -50%) rotate(45deg);
         -webkit-transform: translate(0, -50%) rotate(45deg);

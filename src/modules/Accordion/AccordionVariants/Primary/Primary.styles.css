@@ -1,5 +1,5 @@
 .accordion-list-primary-container {
-    @apply pt-[10px] h-0 overflow-hidden border-b border-b-gray-400;
+    @apply mt-[10px] h-0 overflow-hidden border-b border-b-gray-400;
     -moz-transition: height .5s;
     -ms-transition: height .5s;
     -o-transition: height .5s;
