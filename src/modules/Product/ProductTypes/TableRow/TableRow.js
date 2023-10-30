@@ -7,7 +7,7 @@ import { TouchSpin } from '../../../TouchSpin/TouchSpin';
 import './TableRow.styles.css';
 
 
-export const TableRow = React.memo(({ id, image, title, code, price, quantity }) => {
+export const TableRow = React.memo(({ id, image, title, code, price, quantity, onQuantityChange }) => {
 
     return (
         <div className="flex border-b border-dashed border-b-gray-400 py-[20px]">
@@ -29,7 +29,11 @@ export const TableRow = React.memo(({ id, image, title, code, price, quantity })
                     </span>
                 </div>
                 <div className='flex justify-center w-[110px]'>
-                    <TouchSpin variant={TouchSpin.variants.PRIMARY} quantity={quantity} />
+                    <TouchSpin
+                        variant={TouchSpin.variants.PRIMARY}
+                        onQuantityChange={onQuantityChange}
+                        quantity={quantity}
+                    />
                 </div>
             </div>
             <div className='flex flex-1 justify-between items-center max-w-[16%] pl-[15px]'>

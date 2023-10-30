@@ -18,7 +18,7 @@ const cart = [
 
 // const cart = [];
 
-export const CartTable = React.memo(() => {
+export const CartTable = React.memo(({ onQuantityChange }) => {
     return (
         <>
             {cart.length === 0 &&
@@ -45,6 +45,7 @@ export const CartTable = React.memo(() => {
                                         code={product.code}
                                         price={product.price}
                                         quantity={product.quantity}
+                                        onQuantityChange={onQuantityChange}
                                     />
                                 );
                             })}
@@ -61,6 +62,7 @@ export const CartTable = React.memo(() => {
                                     code={product.code}
                                     price={product.price}
                                     quantity={product.quantity}
+                                    onQuantityChange={onQuantityChange}
                                 />
                             );
                         })}

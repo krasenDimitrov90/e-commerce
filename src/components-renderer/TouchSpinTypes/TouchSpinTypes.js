@@ -3,7 +3,7 @@ import { TouchSpin } from "../../modules";
 
 export const TouchSpinTypes = () => {
 
-    const onQuantityChange = (value) => console.log(value);
+    const onQuantityChange = React.useCallback((value) => console.log(value), []);
 
     return (
         <div className="mt-10 flex justify-center items-center">

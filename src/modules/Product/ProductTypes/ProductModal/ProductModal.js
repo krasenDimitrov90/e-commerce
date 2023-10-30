@@ -9,7 +9,7 @@ import { Slide } from '../../../Slide/Slide';
 
 import './ProductModal.styles.css';
 
-export const ProductModal = React.memo(({ product, onAddToCart, onLike }) => {
+export const ProductModal = React.memo(({ product, onAddToCart, onLike, onQuantityChange }) => {
     
     return product && (
         <Modal >
@@ -25,7 +25,7 @@ export const ProductModal = React.memo(({ product, onAddToCart, onLike }) => {
                         <p>{product.title}</p>
                     </div>
 
-                    <TouchSpin variant={TouchSpin.variants.PRIMARY} />
+                    <TouchSpin variant={TouchSpin.variants.PRIMARY} onQuantityChange={onQuantityChange} />
 
                     <ProductModalButtons onAddToCart={onAddToCart} onLike={onLike} />
                 </div>

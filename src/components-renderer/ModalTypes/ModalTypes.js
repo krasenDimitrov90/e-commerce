@@ -7,6 +7,8 @@ export const ModalTypes = React.memo(() => {
     const { productId } = useParams();
     const [product, setProduct] = React.useState(null);
 
+    const onQuantityChange = React.useCallback((value) => console.log(value), []);
+
     React.useEffect(() => {
         fetch('/products.json')
             .then(prods => prods.json())
@@ -17,6 +19,6 @@ export const ModalTypes = React.memo(() => {
     }, []);
 
     return (
-        <Product product={product} variant={Product.variants.MODAL} />
+        <Product product={product} variant={Product.variants.MODAL} onQuantityChange={onQuantityChange} />
     );
 });
