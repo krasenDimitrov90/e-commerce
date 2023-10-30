@@ -13,10 +13,18 @@ const quantityReducer = (state, action) => {
 
 export const Primary = React.memo((props) => {
     const [quantity, dispatch] = React.useReducer(quantityReducer, props.quantity || 1);
+    const [initial, setInitial] = React.useState(true);
 
     const increaseQuantityHandler = React.useCallback(() => dispatch('increment'), []);
-
     const decreseQuantityHandler = React.useCallback(() => dispatch('decrement'), []);
+
+    React.useEffect(() => {
+        if (initial) {
+            setInitial(false);
+        } else {
+            props.onQuantityChange(quantity);
+        }
+    }, [quantity]);
 
     return (
         <div className='touch-spin-primary-container'>
