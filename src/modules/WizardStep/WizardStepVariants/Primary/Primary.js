@@ -2,7 +2,7 @@ import React from 'react';
 import './Primary.styles.css';
 import { Icon } from '../../../Icons/Icons';
 
-export const Primary = React.memo(({ order, title, completed }) => {
+export const Primary = React.memo(({ order, title, completed, onEdit }) => {
     return (
         <div className='flex w-full h-[50px] border border-gray-400'>
             <div className='flex flex-1'>
@@ -24,7 +24,7 @@ export const Primary = React.memo(({ order, title, completed }) => {
                     <div className='flex flex-1 justify-end items-center px-[15px] gap-[10px] text-base text-gray-700'>
                         <Icon variant='PEN' />
                         <div className='h-full'>
-                            <button className='h-full flex justify-center items-center font-bold hover:text-green-400'>Редактирай</button>
+                            <button onClick={onEdit} className='h-full flex justify-center items-center font-bold hover:text-green-400'>Редактирай</button>
                         </div>
                     </div>
                 }
