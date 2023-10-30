@@ -5,7 +5,7 @@
 
 export * from './Default';
 export * from './Card/Card';
-export * from './CartRow/CartRow';
+export * from './TableRowSmallScreen/TableRowSmallScreen';
 export * from './ProductModal/ProductModal';
 export * from './ProductModal/ProductModal';
 export * from './Row/Row';

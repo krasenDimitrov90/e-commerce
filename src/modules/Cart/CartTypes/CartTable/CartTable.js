@@ -55,7 +55,7 @@ export const CartTable = React.memo(({ onQuantityChange }) => {
                         {cart.map(product => {
                             return (
                                 <Product
-                                    variant={Product.variants.CART_ROW}
+                                    variant={Product.variants.TABLE_ROW_SMALL_SCREEN}
                                     id={product.id}
                                     image={product.image}
                                     title={product.title}

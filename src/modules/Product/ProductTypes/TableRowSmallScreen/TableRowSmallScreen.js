@@ -4,11 +4,12 @@ import { Icon } from '../../../Icons/Icons';
 import { Image } from '../../../Image/Image';
 import { TouchSpin } from '../../../TouchSpin/TouchSpin';
 
-import './CartRow.styles.css';
+import './TableRowSmallScreen.styles.css';
 
-export const CartRow = React.memo(({
+export const TableRowSmallScreen = React.memo(({
     id, image, title, code, price, quantity, onQuantityChange,
 }) => {
+
     return (
         <div className="flex flex-col flex-1 border-b border-dashed border-b-gray-400 mx-[20px] py-[20px]">
             <div className='flex flex-1 items-center'>
