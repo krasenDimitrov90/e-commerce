@@ -1,3 +1,4 @@
+import React from "react";
 import { Checkbox } from "../../modules";
 
 export const CheckboxTypes = () => {

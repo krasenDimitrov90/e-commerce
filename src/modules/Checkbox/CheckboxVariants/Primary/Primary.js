@@ -1,12 +1,13 @@
 import React from 'react';
 import './Primary.styles.css';
 
-export const Primary = React.memo(({label}) => {
+export const Primary = React.memo(({ label }) => {
+
     return (
         <div className='checkbox-primary-wraper'>
-            <label class="checkbox-primary-container">{label}
+            <label className="checkbox-primary-container">{label}
                 <input type="checkbox" />
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
             </label>
         </div>
     );
