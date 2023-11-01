@@ -1,0 +1,6 @@
+.carousel-primary-bullet {
+    @apply w-[15px] h-[15px] rounded-full cursor-pointer bg-[rgba(73,_173,_0,_0.5)] hover:bg-[rgba(73,_173,_0,_1)];
+}
+.carousel-primary-bullet.selected {
+    @apply bg-[rgba(73,_173,_0,_1)];
+}
