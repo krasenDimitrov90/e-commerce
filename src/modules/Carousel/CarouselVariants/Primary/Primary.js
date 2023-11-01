@@ -38,31 +38,29 @@ export const Primary = React.memo(({ images }) => {
 
 
     return (
-        <div className='flex flex-col'>
-            <div className='flex w-[1200px] h-[400px]'>
-                <div ref={galeryRef} className='carousel-primary-galery'>
-                    {images.map((img, idx) => {
+        <div className='flex flex-1'>
+            <div ref={galeryRef} className='carousel-primary-galery'>
+                {images.map((img, idx) => {
+                    return (
+                        <div
+                            key={`carousel-image-${img}`}
+                            className='carousel-primary-image'
+                            style={(idx === 0) ? { transform: "translateX(0%)" } : { transform: "translateX(100%)" }}
+                        >
+                            <Image variant={Image.variants.PRIMARY} src={images[idx]} />
+                        </div>
+                    );
+                })}
+                <div className='absolute bottom-[10px] w-full flex justify-center gap-2'>
+                    {images.map((img, i) => {
                         return (
-                            <div
-                                key={`carousel-image-${img}`}
-                                className='carousel-primary-image'
-                                style={(idx === 0) ? { transform: "translateX(0%)" } : { transform: "translateX(100%)" }}
-                            >
-                                <Image variant={Image.variants.PRIMARY} src={images[idx]} />
-                            </div>
+                            <Bullet
+                                key={`carousel-image-${img}-${i}`}
+                                selected={i === current.current}
+                                onClick={handleSlide.bind(null, i)}
+                            />
                         );
                     })}
-                    <div className='absolute bottom-[10px] w-full flex justify-center gap-2'>
-                        {images.map((img, i) => {
-                            return (
-                                <Bullet
-                                    key={`carousel-image-${img}-${i}`}
-                                    selected={i === current.current}
-                                    onClick={handleSlide.bind(null, i)}
-                                />
-                            );
-                        })}
-                    </div>
                 </div>
             </div>
         </div>

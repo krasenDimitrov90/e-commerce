@@ -14,7 +14,7 @@ const images = [
 
 export const CarouselTypes = React.memo(() => {
     return (
-        <div className='mt-10 flex justify-center'>
+        <div className='mt-10 mx-auto flex justify-center w-[1200px] h-[400px]'>
             <Carousel variant={Carousel.variants.PRIMARY} images={images} />
         </div>
     );
