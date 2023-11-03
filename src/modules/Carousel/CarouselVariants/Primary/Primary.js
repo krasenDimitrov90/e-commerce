@@ -38,17 +38,26 @@ export const Primary = React.memo(({ images }) => {
 
 
     return (
-        <div className='flex flex-1'>
+        <div className='gallery-container'>
             <div ref={galeryRef} className='carousel-primary-galery'>
-                {images.map((img, idx) => {
+                {/* {images.map((img, idx) => {
+                    const URL = 'http://localhost:3000'
                     return (
-                        <div
-                            key={`carousel-image-${img}`}
-                            className='carousel-primary-image'
-                            style={(idx === 0) ? { transform: "translateX(0%)" } : { transform: "translateX(100%)" }}
-                        >
-                            <Image variant={Image.variants.PRIMARY} src={images[idx]} />
-                        </div>
+                        <div className="carousel-primary-image"
+                            style={(idx === 0)
+                                ? { backgroundImage: `url(${URL + img})`, transform: "translateX(0%)" }
+                                : { backgroundImage: `url(${URL + img})`, transform: "translateX(100%)" }}></div>
+                    );
+                })} */}
+                {images.map((img, idx) => {
+                    const URL = 'http://localhost:3000'
+                    return (
+                        <img className="carousel-primary-image"
+                            src={images[idx]}
+                            style={(idx === 0)
+                                ? { transform: "translateX(0%)" }
+                                : { transform: "translateX(100%)" }}
+                        />
                     );
                 })}
                 <div className='absolute bottom-[10px] w-full flex justify-center gap-2'>

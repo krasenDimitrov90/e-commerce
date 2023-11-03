@@ -1,10 +1,28 @@
+.gallery-container {
+    @apply relative bg-white;
+  }
+
 .carousel-primary-galery {
-    @apply flex flex-1 relative overflow-hidden;
+    aspect-ratio: 7/2.5;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .carousel-primary-image {
-    @apply flex w-full h-full absolute;
+    aspect-ratio: 7/2.5;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
 }
+/* .carousel-primary-image {
+    aspect-ratio: 7/2.5;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+} */
 
 @keyframes slide-right-in {
     from {
@@ -14,6 +32,7 @@
         -o-transform: translateX(-100%);
         transform: translateX(-100%);
     }
+
     to {
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
@@ -31,6 +50,7 @@
         -o-transform: translateX(100%);
         transform: translateX(100%);
     }
+
     to {
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
@@ -48,6 +68,7 @@
         -o-transform: translateX(0%);
         transform: translateX(0%);
     }
+
     to {
         -webkit-transform: translateX(100%);
         -moz-transform: translateX(100%);
@@ -65,6 +86,7 @@
         -o-transform: translateX(0%);
         transform: translateX(0%);
     }
+
     to {
         -webkit-transform: translateX(-100%);
         -moz-transform: translateX(-100%);
@@ -98,7 +120,7 @@
     animation: slide-right-out .5s 1 forwards;
 }
 
-.leftOut{
+.leftOut {
     -webkit-animation: slide-left-out .5s 1 forwards;
     -moz-animation: slide-left-out .5s 1 forwards;
     -ms-animation: slide-left-out .5s 1 forwards;
