@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from '../../../Image/Image';
 import { Bullet } from './Bullet';
 import './Primary.styles.css';
 
@@ -40,17 +39,7 @@ export const Primary = React.memo(({ images }) => {
     return (
         <div className='gallery-container'>
             <div ref={galeryRef} className='carousel-primary-galery'>
-                {/* {images.map((img, idx) => {
-                    const URL = 'http://localhost:3000'
-                    return (
-                        <div className="carousel-primary-image"
-                            style={(idx === 0)
-                                ? { backgroundImage: `url(${URL + img})`, transform: "translateX(0%)" }
-                                : { backgroundImage: `url(${URL + img})`, transform: "translateX(100%)" }}></div>
-                    );
-                })} */}
                 {images.map((img, idx) => {
-                    const URL = 'http://localhost:3000'
                     return (
                         <img className="carousel-primary-image"
                             src={images[idx]}
