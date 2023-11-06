@@ -15,6 +15,20 @@ export const Primary = React.memo(({ images }) => {
         bullets = galeryRef.current.querySelectorAll('.carousel-primary-bullet');
     }, [galeryRef.current]);
 
+    React.useEffect(() => {
+        if (!galeryRef.current) return;
+
+        const timer = setInterval(() => {
+            let newIndex = current.current === images.length - 1
+                ? 0
+                : Math.min(current.current + 1, images.length - 1);
+            handleSlide(newIndex);
+        }, 5000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+
     const handleSlide = React.useCallback((idx) => {
 
         if (idx === current.current) return;
@@ -28,12 +42,12 @@ export const Primary = React.memo(({ images }) => {
         updateBullet(current.current, idx);
         current.current = idx;
 
-    }, [])
+    }, [current, imageSlides])
 
     const updateBullet = React.useCallback((current, newIndex) => {
         bullets[current].className = 'carousel-primary-bullet';
         bullets[newIndex].className = 'carousel-primary-bullet selected';
-    }, []);
+    }, [bullets]);
 
 
     return (
@@ -42,6 +56,7 @@ export const Primary = React.memo(({ images }) => {
                 {images.map((img, idx) => {
                     return (
                         <img className="carousel-primary-image"
+                            key={`carousel-primary-image-${img}-${idx}`}
                             src={images[idx]}
                             style={(idx === 0)
                                 ? { transform: "translateX(0%)" }
@@ -53,7 +68,7 @@ export const Primary = React.memo(({ images }) => {
                     {images.map((img, i) => {
                         return (
                             <Bullet
-                                key={`carousel-image-${img}-${i}`}
+                                key={`carousel-primary-bullet-${img}-${i}`}
                                 selected={i === current.current}
                                 onClick={handleSlide.bind(null, i)}
                             />
