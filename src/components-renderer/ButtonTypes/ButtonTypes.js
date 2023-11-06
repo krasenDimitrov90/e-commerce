@@ -173,7 +173,7 @@ export const ButtonTypes = ({ onClick, isLoading }) => {
                     <Button2 leftIcon={<Icon variant='CART' right={true} />} fontSize='SM' size='SM' rounded='ROUNDED' variant='SECONDARY' >SM</Button2>
                     <Button3 leftIcon={<Icon variant='CART' right={true} />} fontSize='BASE' size='BASE' rounded='ROUNDED' variant='INFO' >BASE</Button3>
                     <Button4 leftIcon={<Icon variant='CART' right={true} />} fontSize='LG' size='LG' rounded='ROUNDED' variant='DARK' >LG</Button4>
-                    <Button5 leftIcon={<Icon variant='CART' right={true} />} fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button5>
+                    <Button5 leftIcon={<Icon variant='GRID' right={true} />} fontSize='XL' size='XL' rounded='ROUNDED' variant='DANGER' >XL</Button5>
                 </div>
             </div>
         </>
