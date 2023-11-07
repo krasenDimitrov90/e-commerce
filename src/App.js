@@ -4,7 +4,6 @@ import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
 
 import { LinkButton } from './modules';
 import { ButtonTypes } from './components-renderer/ButtonTypes/ButtonTypes';
-import { Button2Types } from './components-renderer/Button2Types/Button2Types';
 import { LinkTypes } from './components-renderer/LinkTypes/LinkTypes';
 import { ImageTypes } from './components-renderer/ImageTypes/ImageTypes';
 import { TouchSpinTypes } from './components-renderer/TouchSpinTypes/TouchSpinTypes';
@@ -42,7 +41,6 @@ const Layout = () => {
         <nav className='flex justify-between w-full mt-5'>
           <LinkButton variant='secondary' font='xl' path='/accordion'>ACCORDION</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/carousel'>CAROUSEL</LinkButton>
-          <LinkButton variant='secondary' font='xl' path='/buttons2'>BUTTONS 2</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -83,7 +81,6 @@ const router = createBrowserRouter([
       { path: '/slides', element: <SlideTypes /> },
       { path: '/accordion', element: <AccordionTypes /> },
       { path: '/carousel', element: <CarouselTypes /> },
-      { path: '/buttons2', element: <Button2Types /> },
     ]
   }
 ]);
