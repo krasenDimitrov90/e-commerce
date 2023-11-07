@@ -3,14 +3,14 @@
   }
 
 .carousel-primary-galery {
-    aspect-ratio: 7/2.5;
+    aspect-ratio: 1200/450;
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 .carousel-primary-image {
-    aspect-ratio: 7/2.5;
+    aspect-ratio: 1200/450;
     position: absolute;
     object-fit: cover;
     width: 100%;
