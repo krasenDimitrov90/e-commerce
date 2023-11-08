@@ -18,6 +18,7 @@ import { WizrardStepTypes } from './components-renderer/WizrardStepTypes/Wizrard
 import { SlideTypes } from './components-renderer/SlideTypes/SlideTypes';
 import { AccordionTypes } from './components-renderer/AccordionTypes/AccordionTypes';
 import { CarouselTypes } from './components-renderer/CarouselTypes/CarouselTypes';
+import { BreadcrumbTypes } from './components-renderer/BreadcrumbTypes/BreadcrumbTypes';
 
 const Layout = () => {
 
@@ -41,6 +42,7 @@ const Layout = () => {
         <nav className='flex justify-between w-full mt-5'>
           <LinkButton variant='secondary' font='xl' path='/accordion'>ACCORDION</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/carousel'>CAROUSEL</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/breadcrumb'>BREADCRUMB</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -81,6 +83,7 @@ const router = createBrowserRouter([
       { path: '/slides', element: <SlideTypes /> },
       { path: '/accordion', element: <AccordionTypes /> },
       { path: '/carousel', element: <CarouselTypes /> },
+      { path: '/breadcrumb', element: <BreadcrumbTypes /> },
     ]
   }
 ]);

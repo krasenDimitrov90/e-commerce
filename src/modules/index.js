@@ -1,4 +1,5 @@
 export * from './Accordion/Accordion';
+export * from './Breadcrumb/Breadcrumb';
 export * from './Button/Button';
 export * from './Carousel/Carousel';
 export * from './Cart/Cart';

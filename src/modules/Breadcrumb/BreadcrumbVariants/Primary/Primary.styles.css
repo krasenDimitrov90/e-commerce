@@ -1,0 +1,30 @@
+.breadcrumb-primary-container {
+    @apply flex flex-1 bg-[#f3f3f3];
+
+    .breadcrumb-primary-list {
+        @apply flex flex-1 p-[16px];
+
+        .breadcrumb-primary-item-first {
+            @apply pr-[15px] uppercase;
+        }
+
+        .breadcrumb-primary-item {
+            @apply relative px-[15px] uppercase;
+        }
+
+        .breadcrumb-primary-item::before {
+            content: "";
+            position: absolute;
+            left: -2px;
+            top: calc(50% - 2px);
+            font-size: 1.6rem;
+            width: 4px;
+            height: 4px;
+            background: #666;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            line-height: 1.6rem;
+        }
+    }
+}
