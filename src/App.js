@@ -46,7 +46,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/carousel'>CAROUSEL</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/breadcrumb'>BREADCRUMB</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/icons'>ICONS</LinkButton>
-          <LinkButton variant='secondary' font='xl' path='/pagination'>PAGINATION</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/pagination/1'>PAGINATION</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
       { path: '/carousel', element: <CarouselTypes /> },
       { path: '/breadcrumb', element: <BreadcrumbTypes /> },
       { path: '/icons', element: <IconsTypes /> },
-      { path: '/pagination', element: <PaginationTypes /> },
+      { path: '/pagination/:page', element: <PaginationTypes /> },
     ]
   }
 ]);
