@@ -20,6 +20,7 @@ import { AccordionTypes } from './components-renderer/AccordionTypes/AccordionTy
 import { CarouselTypes } from './components-renderer/CarouselTypes/CarouselTypes';
 import { BreadcrumbTypes } from './components-renderer/BreadcrumbTypes/BreadcrumbTypes';
 import { IconsTypes } from './components-renderer/IconsTypes/IconsTypes';
+import { PaginationTypes } from './components-renderer/PaginationTypes/PaginationTypes';
 
 const Layout = () => {
 
@@ -45,6 +46,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/carousel'>CAROUSEL</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/breadcrumb'>BREADCRUMB</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/icons'>ICONS</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/pagination'>PAGINATION</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -87,6 +89,7 @@ const router = createBrowserRouter([
       { path: '/carousel', element: <CarouselTypes /> },
       { path: '/breadcrumb', element: <BreadcrumbTypes /> },
       { path: '/icons', element: <IconsTypes /> },
+      { path: '/pagination', element: <PaginationTypes /> },
     ]
   }
 ]);

@@ -20,6 +20,7 @@ export const Icon = React.memo(({
 });
 
 Icon.variants = {
+    ARROW_LEFT: 'fa-solid fa-chevron-left',
     ARROW_DOWN: "fa-solid fa-chevron-down",
     ARROW_RIGHT: "fa-solid fa-chevron-right",
     ARROW_UP: "fa-solid fa-arrow-up",

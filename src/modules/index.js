@@ -10,6 +10,7 @@ export * from './Image/Image';
 export * from './Input/Input';
 export * from './LinkButton/LinkButton';
 export * from './Modal/Modal';
+export * from './Pagination/Pagination';
 export * from './PriceSlider/PriceSlider';
 export * from './Product/Product';
 export * from './Slide/Slide';
