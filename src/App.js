@@ -19,6 +19,7 @@ import { SlideTypes } from './components-renderer/SlideTypes/SlideTypes';
 import { AccordionTypes } from './components-renderer/AccordionTypes/AccordionTypes';
 import { CarouselTypes } from './components-renderer/CarouselTypes/CarouselTypes';
 import { BreadcrumbTypes } from './components-renderer/BreadcrumbTypes/BreadcrumbTypes';
+import { IconsTypes } from './components-renderer/IconsTypes/IconsTypes';
 
 const Layout = () => {
 
@@ -43,6 +44,7 @@ const Layout = () => {
           <LinkButton variant='secondary' font='xl' path='/accordion'>ACCORDION</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/carousel'>CAROUSEL</LinkButton>
           <LinkButton variant='secondary' font='xl' path='/breadcrumb'>BREADCRUMB</LinkButton>
+          <LinkButton variant='secondary' font='xl' path='/icons'>ICONS</LinkButton>
         </nav>
       </div>
       <Outlet />
@@ -84,6 +86,7 @@ const router = createBrowserRouter([
       { path: '/accordion', element: <AccordionTypes /> },
       { path: '/carousel', element: <CarouselTypes /> },
       { path: '/breadcrumb', element: <BreadcrumbTypes /> },
+      { path: '/icons', element: <IconsTypes /> },
     ]
   }
 ]);

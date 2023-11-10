@@ -59,6 +59,7 @@ Button.variants = {
     INFO: 'btn-info',
     DARK: 'btn-dark',
     DANGER: 'btn-danger',
+    PAGINATION: 'btn-pagination',
     OUTLINE_PRIMARY: 'btn-outline-primary',
     OUTLINE_SECONDARY: 'btn-outline-secondary',
     OUTLINE_INFO: 'btn-outline-info',
