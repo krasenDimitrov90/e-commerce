@@ -26,25 +26,25 @@ const Layout = () => {
         <>
             <div className='p-4 bg-blue-500 fixed top-0 w-full z-10'>
                 <nav className='flex justify-between w-full'>
-                    <LinkButton variant='secondary' font='xl' path='/buttons'>BUTTONS</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/links'>LINKS</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/images'>IMAGES</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/touch-spin'>TOUCH_SPIN</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/price-slider'>PRICE-SLIDER</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/contacts'>CONTACTS</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/checkbox'>CECKBOX</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/product'>PRODUCT</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/cart'>CART</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/input'>INPUT</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/wizard-step'>WIZARD_STEP</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/slides'>SLIDES</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/buttons'>BUTTONS</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/links'>LINKS</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/images'>IMAGES</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/touch-spin'>TOUCH_SPIN</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/price-slider'>PRICE-SLIDER</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/contacts'>CONTACTS</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/checkbox'>CECKBOX</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/product'>PRODUCT</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/cart'>CART</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/input'>INPUT</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/wizard-step'>WIZARD_STEP</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/slides'>SLIDES</LinkButton>
                 </nav>
                 <nav className='flex justify-between w-full mt-5'>
-                    <LinkButton variant='secondary' font='xl' path='/accordion'>ACCORDION</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/carousel'>CAROUSEL</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/breadcrumb'>BREADCRUMB</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/icons'>ICONS</LinkButton>
-                    <LinkButton variant='secondary' font='xl' path='/pagination/1'>PAGINATION</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/accordion'>ACCORDION</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/carousel'>CAROUSEL</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/breadcrumb'>BREADCRUMB</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/icons'>ICONS</LinkButton>
+                    <LinkButton variant='secondary' font='xl' path='/ui/pagination/1'>PAGINATION</LinkButton>
                 </nav>
             </div>
             <Outlet />
@@ -55,35 +55,40 @@ const Layout = () => {
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <Layout />,
         children: [
-            { path: '/buttons', element: <ButtonTypes /> },
-            { path: '/links', element: <LinkTypes /> },
-            { path: '/images', element: <ImageTypes /> },
-            { path: '/touch-spin', element: <TouchSpinTypes /> },
-            { path: '/price-slider', element: <PriceSliderTypes /> },
-            { path: '/contacts', element: <ContactsTypes /> },
-            { path: '/checkbox', element: <CheckboxTypes /> },
             {
-                path: '/product',
-                element:
-                    <>
-                        <ProductCardType />,
-                        <Outlet />
-                    </>,
+                path: '/ui',
+                element: <Layout />,
                 children: [
-                    { path: 'modal/:productId', element: <ModalTypes /> }
-                ],
-            },
-            { path: '/cart', element: <CartTypes /> },
-            { path: '/input', element: <InputTypes /> },
-            { path: '/wizard-step', element: <WizrardStepTypes /> },
-            { path: '/slides', element: <SlideTypes /> },
-            { path: '/accordion', element: <AccordionTypes /> },
-            { path: '/carousel', element: <CarouselTypes /> },
-            { path: '/breadcrumb', element: <BreadcrumbTypes /> },
-            { path: '/icons', element: <IconsTypes /> },
-            { path: '/pagination/:page', element: <PaginationTypes /> },
+                    { path: 'buttons', element: <ButtonTypes /> },
+                    { path: 'links', element: <LinkTypes /> },
+                    { path: 'images', element: <ImageTypes /> },
+                    { path: 'touch-spin', element: <TouchSpinTypes /> },
+                    { path: 'price-slider', element: <PriceSliderTypes /> },
+                    { path: 'contacts', element: <ContactsTypes /> },
+                    { path: 'checkbox', element: <CheckboxTypes /> },
+                    {
+                        path: 'product',
+                        element:
+                            <>
+                                <ProductCardType />,
+                                <Outlet />
+                            </>,
+                        children: [
+                            { path: 'modal/:productId', element: <ModalTypes /> }
+                        ],
+                    },
+                    { path: 'cart', element: <CartTypes /> },
+                    { path: 'input', element: <InputTypes /> },
+                    { path: 'wizard-step', element: <WizrardStepTypes /> },
+                    { path: 'slides', element: <SlideTypes /> },
+                    { path: 'accordion', element: <AccordionTypes /> },
+                    { path: 'carousel', element: <CarouselTypes /> },
+                    { path: 'breadcrumb', element: <BreadcrumbTypes /> },
+                    { path: 'icons', element: <IconsTypes /> },
+                    { path: 'pagination/:page', element: <PaginationTypes /> },
+                ]
+            }
         ]
     }
 ]);
