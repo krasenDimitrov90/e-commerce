@@ -1,0 +1,1812 @@
+[
+    {
+        "_id": "60a7d64e9e5cce069018785a",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Бутик ШИК",
+        "filters": [],
+        "priority": 50,
+        "created_at": "2021-05-21T15:48:30.933Z",
+        "updated_at": "2021-05-21T15:48:46.056Z",
+        "children": [
+            {
+                "_id": "60a7d6759e5cce069018785b",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Поли",
+                "filters": [
+                    {
+                        "name": "Кожени поли"
+                    },
+                    {
+                        "name": "Кадифе"
+                    }
+                ],
+                "priority": 50,
+                "parent": "60a7d64e9e5cce069018785a",
+                "created_at": "2021-05-21T15:49:09.963Z",
+                "updated_at": "2021-05-21T15:52:01.610Z"
+            },
+            {
+                "_id": "60a7d68e9e5cce069018785c",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Къси панталони",
+                "filters": [
+                    {
+                        "name": "Кожени"
+                    }
+                ],
+                "priority": 0,
+                "parent": "60a7d64e9e5cce069018785a",
+                "created_at": "2021-05-21T15:49:34.685Z",
+                "updated_at": "2021-05-21T15:52:22.425Z"
+            },
+            {
+                "_id": "62c0b85630ab386096a09cb6",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Плетиво",
+                "filters": [],
+                "priority": 0,
+                "parent": "60a7d64e9e5cce069018785a",
+                "created_at": "2022-07-02T21:27:50.301Z",
+                "updated_at": "2022-07-02T21:27:50.301Z"
+            }
+        ]
+    },
+    {
+        "_id": "604d08fe9e5cce06901874ee",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Здраве и красота",
+        "filters": [],
+        "priority": 10,
+        "created_at": "2021-03-13T18:48:30.157Z",
+        "updated_at": "2021-06-21T10:32:31.531Z",
+        "children": [
+            {
+                "_id": "604d0a279e5cce06901874f2",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Преси за коса",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:53:27.828Z",
+                "updated_at": "2021-03-13T18:53:27.828Z"
+            },
+            {
+                "_id": "604d0a379e5cce06901874f3",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Маши за коса",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:53:43.639Z",
+                "updated_at": "2021-03-13T18:53:43.639Z"
+            },
+            {
+                "_id": "604d0a539e5cce06901874f4",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Електически четки за коса",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:54:11.084Z",
+                "updated_at": "2021-03-13T18:54:11.084Z"
+            },
+            {
+                "_id": "604d0a8e9e5cce06901874f5",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Сешоари",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:55:10.990Z",
+                "updated_at": "2021-03-13T18:55:10.990Z"
+            },
+            {
+                "_id": "604d0aad9e5cce06901874f6",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Машинки за подстригване",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:55:41.033Z",
+                "updated_at": "2021-03-13T18:55:41.033Z"
+            },
+            {
+                "_id": "604d0b1a9e5cce06901874f7",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Машинки за бръснене",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:57:30.178Z",
+                "updated_at": "2021-03-13T18:57:30.178Z"
+            },
+            {
+                "_id": "604d0b3a9e5cce06901874f8",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Тримери",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:58:02.926Z",
+                "updated_at": "2021-03-13T18:58:02.926Z"
+            },
+            {
+                "_id": "604d0b4b9e5cce06901874f9",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кухненски везни и кантари",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:58:19.496Z",
+                "updated_at": "2022-11-03T16:17:07.367Z"
+            },
+            {
+                "_id": "604d0ba79e5cce06901874fa",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Маникюр ",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T18:59:51.612Z",
+                "updated_at": "2021-03-13T19:53:28.745Z"
+            },
+            {
+                "_id": "604d0c4a9e5cce06901874fb",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Ел. самобръсначки",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T19:02:34.965Z",
+                "updated_at": "2021-03-13T19:02:34.965Z"
+            },
+            {
+                "_id": "604d0c739e5cce06901874fc",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Грим",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T19:03:15.104Z",
+                "updated_at": "2021-03-13T19:03:15.104Z"
+            },
+            {
+                "_id": "604d15949e5cce0690187502",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кантари",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T19:42:12.033Z",
+                "updated_at": "2021-03-13T19:42:12.033Z"
+            },
+            {
+                "_id": "604d184f9e5cce0690187506",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Педикюр",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T19:53:51.674Z",
+                "updated_at": "2021-03-13T19:53:51.674Z"
+            },
+            {
+                "_id": "604d1acc9e5cce0690187507",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Боя за коса за мъже",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T20:04:28.646Z",
+                "updated_at": "2021-03-13T20:04:28.646Z"
+            },
+            {
+                "_id": "604d1ae09e5cce0690187508",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Боя за брада и мустаци",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T20:04:48.842Z",
+                "updated_at": "2021-03-13T20:05:41.440Z"
+            },
+            {
+                "_id": "604d1d549e5cce0690187509",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Почистване на лице",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T20:15:16.842Z",
+                "updated_at": "2021-03-13T20:15:16.842Z"
+            },
+            {
+                "_id": "604d1eb19e5cce069018750a",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Грижа за лице",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T20:21:05.700Z",
+                "updated_at": "2021-03-13T20:21:05.700Z"
+            },
+            {
+                "_id": "604d1f189e5cce069018750b",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Вежди",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T20:22:48.320Z",
+                "updated_at": "2021-03-13T20:22:48.320Z"
+            },
+            {
+                "_id": "604d1f669e5cce069018750c",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Крем за лице",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T20:24:06.727Z",
+                "updated_at": "2021-03-13T20:24:06.727Z"
+            },
+            {
+                "_id": "604d28dd9e5cce0690187519",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Депилация",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T21:04:29.037Z",
+                "updated_at": "2021-03-13T21:04:29.037Z"
+            },
+            {
+                "_id": "604d2b189e5cce069018751a",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Крем за ръце",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T21:14:00.342Z",
+                "updated_at": "2021-03-13T21:14:00.342Z"
+            },
+            {
+                "_id": "604d2b269e5cce069018751b",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Крем за крака",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T21:14:14.333Z",
+                "updated_at": "2021-03-13T21:14:14.333Z"
+            },
+            {
+                "_id": "604d2c219e5cce069018751c",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Анти целулит",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T21:18:25.970Z",
+                "updated_at": "2021-03-13T21:18:25.970Z"
+            },
+            {
+                "_id": "604d2d059e5cce069018751d",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Грижа за тялото ",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-03-13T21:22:13.618Z",
+                "updated_at": "2021-12-06T14:43:52.605Z"
+            },
+            {
+                "_id": "60d06acd9e5cce069018797c",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Душ гел,интимна грижа",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d08fe9e5cce06901874ee",
+                "created_at": "2021-06-21T10:32:45.867Z",
+                "updated_at": "2023-08-10T09:54:36.840Z"
+            }
+        ]
+    },
+    {
+        "_id": "604d09109e5cce06901874ef",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Малки електроуреди",
+        "filters": [],
+        "priority": 9,
+        "created_at": "2021-03-13T18:48:48.648Z",
+        "updated_at": "2021-03-13T23:01:05.105Z",
+        "children": [
+            {
+                "_id": "604d2f699e5cce069018751e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Ел. котлони",
+                "filters": [],
+                "priority": 200,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:32:25.161Z",
+                "updated_at": "2021-03-18T15:20:34.024Z"
+            },
+            {
+                "_id": "604d2f8a9e5cce069018751f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кани за гореща вода",
+                "filters": [],
+                "priority": 110,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:32:58.024Z",
+                "updated_at": "2021-03-18T15:10:10.568Z"
+            },
+            {
+                "_id": "604d2fa29e5cce0690187520",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кафемашини",
+                "filters": [],
+                "priority": 115,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:33:22.257Z",
+                "updated_at": "2021-03-18T15:10:22.727Z"
+            },
+            {
+                "_id": "604d2faf9e5cce0690187521",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Ютии",
+                "filters": [],
+                "priority": 40,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:33:35.792Z",
+                "updated_at": "2021-03-18T15:20:49.678Z"
+            },
+            {
+                "_id": "604d2fbf9e5cce0690187522",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Фритюрници",
+                "filters": [],
+                "priority": 172,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:33:51.009Z",
+                "updated_at": "2021-03-18T15:10:33.939Z"
+            },
+            {
+                "_id": "604d2fcc9e5cce0690187523",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Чопъри",
+                "filters": [],
+                "priority": 135,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:34:04.895Z",
+                "updated_at": "2021-03-18T15:10:44.567Z"
+            },
+            {
+                "_id": "604d2fd79e5cce0690187524",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Пасатори",
+                "filters": [],
+                "priority": 140,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:34:15.032Z",
+                "updated_at": "2021-03-18T15:10:57.077Z"
+            },
+            {
+                "_id": "604d2fe79e5cce0690187525",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Блендери",
+                "filters": [],
+                "priority": 130,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:34:31.894Z",
+                "updated_at": "2021-03-18T15:11:07.449Z"
+            },
+            {
+                "_id": "604d30059e5cce0690187526",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Тостери",
+                "filters": [],
+                "priority": 150,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:35:01.318Z",
+                "updated_at": "2021-03-18T15:14:33.418Z"
+            },
+            {
+                "_id": "604d30189e5cce0690187527",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Прахосмукачки",
+                "filters": [],
+                "priority": 50,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:35:20.256Z",
+                "updated_at": "2021-03-18T15:14:43.729Z"
+            },
+            {
+                "_id": "604d302d9e5cce0690187528",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Диспенсъри за вода",
+                "filters": [],
+                "priority": 105,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:35:41.305Z",
+                "updated_at": "2021-03-18T15:14:53.959Z"
+            },
+            {
+                "_id": "604d30479e5cce0690187529",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Мини фурни",
+                "filters": [],
+                "priority": 175,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:36:07.551Z",
+                "updated_at": "2021-03-18T15:15:00.894Z"
+            },
+            {
+                "_id": "604d305a9e5cce069018752a",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Скари",
+                "filters": [],
+                "priority": 165,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:36:26.015Z",
+                "updated_at": "2021-03-18T15:15:09.058Z"
+            },
+            {
+                "_id": "604d30909e5cce069018752b",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Моментно нагряващи бойлери",
+                "filters": [],
+                "priority": 45,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:37:20.972Z",
+                "updated_at": "2021-03-18T15:15:23.559Z"
+            },
+            {
+                "_id": "604d30bf9e5cce069018752c",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Вентилаторни печки",
+                "filters": [],
+                "priority": 85,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:38:07.455Z",
+                "updated_at": "2021-03-18T15:15:32.302Z"
+            },
+            {
+                "_id": "604d30cc9e5cce069018752d",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Конвекторни печки",
+                "filters": [],
+                "priority": 80,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:38:20.487Z",
+                "updated_at": "2021-03-18T15:15:40.433Z"
+            },
+            {
+                "_id": "604d30f09e5cce069018752e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Печки за баня",
+                "filters": [],
+                "priority": 75,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:38:56.528Z",
+                "updated_at": "2021-03-18T15:15:47.650Z"
+            },
+            {
+                "_id": "604d31029e5cce069018752f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Вентилатори",
+                "filters": [],
+                "priority": 70,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:39:14.052Z",
+                "updated_at": "2021-03-18T15:15:54.901Z"
+            },
+            {
+                "_id": "604d31279e5cce0690187530",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Охладители",
+                "filters": [],
+                "priority": 65,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:39:51.496Z",
+                "updated_at": "2021-03-18T15:16:05.927Z"
+            },
+            {
+                "_id": "604d31439e5cce0690187531",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Въздухопречистватели",
+                "filters": [],
+                "priority": 60,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:40:19.357Z",
+                "updated_at": "2021-03-18T15:16:14.103Z"
+            },
+            {
+                "_id": "604d31a59e5cce0690187532",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Месомелачки",
+                "filters": [],
+                "priority": 95,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:41:57.803Z",
+                "updated_at": "2021-03-18T15:16:25.013Z"
+            },
+            {
+                "_id": "604d31b79e5cce0690187533",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Сокоизстисквачки",
+                "filters": [],
+                "priority": 129,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:42:15.678Z",
+                "updated_at": "2021-03-18T15:16:35.617Z"
+            },
+            {
+                "_id": "604d31d39e5cce0690187534",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Яйцеварки ,уреди за готвене на пара",
+                "filters": [],
+                "priority": 90,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:42:43.421Z",
+                "updated_at": "2022-02-02T11:42:13.634Z"
+            },
+            {
+                "_id": "604d31f49e5cce0690187535",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Сушилници за плодове и меса",
+                "filters": [],
+                "priority": 100,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:43:16.074Z",
+                "updated_at": "2021-03-18T15:16:50.545Z"
+            },
+            {
+                "_id": "604d321c9e5cce0690187536",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Електрически тигани",
+                "filters": [],
+                "priority": 185,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:43:56.845Z",
+                "updated_at": "2023-10-13T07:08:12.560Z"
+            },
+            {
+                "_id": "604d32659e5cce0690187537",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Млековарки",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:45:09.223Z",
+                "updated_at": "2021-11-03T08:45:00.110Z"
+            },
+            {
+                "_id": "604d32769e5cce0690187538",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Фрапе миксери",
+                "filters": [],
+                "priority": 125,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:45:26.698Z",
+                "updated_at": "2022-06-27T08:06:48.013Z"
+            },
+            {
+                "_id": "604d32c69e5cce069018753a",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Електрически тигани за палачинки",
+                "filters": [],
+                "priority": 180,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:46:46.362Z",
+                "updated_at": "2022-06-07T11:12:18.804Z"
+            },
+            {
+                "_id": "604d32e09e5cce069018753b",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Хлебопекарни",
+                "filters": [],
+                "priority": 170,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:47:12.604Z",
+                "updated_at": "2021-03-18T15:17:25.310Z"
+            },
+            {
+                "_id": "604d34839e5cce069018753c",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Уреди за гофрети",
+                "filters": [],
+                "priority": 145,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:54:11.268Z",
+                "updated_at": "2021-03-18T15:17:34.282Z"
+            },
+            {
+                "_id": "604d34a49e5cce069018753d",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Сандвич-тостери",
+                "filters": [],
+                "priority": 155,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:54:44.481Z",
+                "updated_at": "2021-03-18T15:17:42.490Z"
+            },
+            {
+                "_id": "604d35229e5cce069018753e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кафеварки",
+                "filters": [],
+                "priority": 120,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:56:50.743Z",
+                "updated_at": "2021-03-18T15:17:54.161Z"
+            },
+            {
+                "_id": "604d358a9e5cce069018753f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Парти грил",
+                "filters": [],
+                "priority": 160,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T21:58:34.680Z",
+                "updated_at": "2021-03-18T15:18:02.232Z"
+            },
+            {
+                "_id": "604d36cc9e5cce0690187540",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Газови котлони",
+                "filters": [],
+                "priority": 190,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T22:03:56.764Z",
+                "updated_at": "2021-03-18T15:18:11.842Z"
+            },
+            {
+                "_id": "604d36e19e5cce0690187541",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Индукционни котлони",
+                "filters": [],
+                "priority": 195,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T22:04:17.811Z",
+                "updated_at": "2021-03-18T15:18:20.671Z"
+            },
+            {
+                "_id": "604d3a329e5cce0690187542",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Влагоотделители",
+                "filters": [],
+                "priority": 55,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T22:18:26.669Z",
+                "updated_at": "2021-03-18T15:18:27.860Z"
+            },
+            {
+                "_id": "604d3d719e5cce0690187543",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Миксери",
+                "filters": [],
+                "priority": 145,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T22:32:17.477Z",
+                "updated_at": "2021-03-18T15:18:35.909Z"
+            },
+            {
+                "_id": "604d3f9e9e5cce0690187544",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Други практични ел. уреди",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T22:41:34.217Z",
+                "updated_at": "2021-03-13T22:43:13.299Z"
+            },
+            {
+                "_id": "604d40bf9e5cce0690187545",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Мултикукъри",
+                "filters": [],
+                "priority": 171,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2021-03-13T22:46:23.892Z",
+                "updated_at": "2021-03-18T15:18:55.303Z"
+            },
+            {
+                "_id": "62bc2e2130ab386096a09c7f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Соларни лампи",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09109e5cce06901874ef",
+                "created_at": "2022-06-29T10:49:05.729Z",
+                "updated_at": "2022-06-29T10:49:05.729Z"
+            }
+        ]
+    },
+    {
+        "_id": "59afcd13c37dff7d3a83383c",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Продукти за дома",
+        "filters": [],
+        "parent": null,
+        "priority": 9,
+        "updated_at": "2021-03-13T23:03:31.764Z",
+        "children": [
+            {
+                "_id": "59afcdd5c37dff7d3a83383d",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Тенджера за готвене",
+                "filters": [
+                    {
+                        "name": "емайлирани"
+                    },
+                    {
+                        "name": "керамични"
+                    },
+                    {
+                        "name": "каменни"
+                    },
+                    {
+                        "name": "инокс"
+                    },
+                    {
+                        "name": "индукционно дъно"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2018-01-30T11:51:27.031Z"
+            },
+            {
+                "_id": "59afcf4ec37dff7d3a83383e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Тиган за печене,пържене",
+                "filters": [
+                    {
+                        "name": "керамични"
+                    },
+                    {
+                        "name": "каменни"
+                    },
+                    {
+                        "name": "инокс"
+                    },
+                    {
+                        "name": "емаилирани"
+                    },
+                    {
+                        "name": "тефлон"
+                    },
+                    {
+                        "name": "индукционно дъно"
+                    },
+                    {
+                        "name": "за палачинки"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2018-01-30T11:51:43.633Z"
+            },
+            {
+                "_id": "59afd19bc37dff7d3a83383f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Тава за печене",
+                "filters": [
+                    {
+                        "name": "кръгла"
+                    },
+                    {
+                        "name": "правоъгълна"
+                    },
+                    {
+                        "name": "елипса"
+                    },
+                    {
+                        "name": "емаилирана"
+                    },
+                    {
+                        "name": "мраморна"
+                    },
+                    {
+                        "name": "керамична"
+                    },
+                    {
+                        "name": "инокс"
+                    },
+                    {
+                        "name": "за хляб"
+                    },
+                    {
+                        "name": "тефлон"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2018-01-30T11:51:51.613Z"
+            },
+            {
+                "_id": "59afd3a3c37dff7d3a833840",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Форми за печене",
+                "filters": [
+                    {
+                        "name": "за кекс"
+                    },
+                    {
+                        "name": "за мъфини"
+                    },
+                    {
+                        "name": "мраморни"
+                    },
+                    {
+                        "name": "силиконови"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0
+            },
+            {
+                "_id": "59afd48ec37dff7d3a833841",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Съдове от стъкло и от огнеупорно стъкло",
+                "filters": [
+                    {
+                        "name": "тави"
+                    },
+                    {
+                        "name": "касероли"
+                    },
+                    {
+                        "name": "форми за печене"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2023-01-26T10:06:20.670Z"
+            },
+            {
+                "_id": "59afd575c37dff7d3a833842",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Прибори за хранене",
+                "filters": [
+                    {
+                        "name": "вилици"
+                    },
+                    {
+                        "name": "лъжици"
+                    },
+                    {
+                        "name": "ножове"
+                    },
+                    {
+                        "name": "нож за пържоли"
+                    },
+                    {
+                        "name": "комплекти"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2020-02-19T10:23:20.035Z"
+            },
+            {
+                "_id": "59afd6f2c37dff7d3a833844",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Прибори за сервиране и готвене",
+                "filters": [
+                    {
+                        "name": "черпак"
+                    },
+                    {
+                        "name": "лъжица"
+                    },
+                    {
+                        "name": "решетка"
+                    },
+                    {
+                        "name": "щипка"
+                    },
+                    {
+                        "name": "шпатула"
+                    },
+                    {
+                        "name": "комплекти"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2022-02-04T14:25:50.363Z"
+            },
+            {
+                "_id": "59afd7f5c37dff7d3a833847",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Ножове за рязане",
+                "filters": [
+                    {
+                        "name": "стомана"
+                    },
+                    {
+                        "name": "керамични"
+                    },
+                    {
+                        "name": "комплекти"
+                    },
+                    {
+                        "name": "за белене"
+                    },
+                    {
+                        "name": "за пица"
+                    },
+                    {
+                        "name": "точило"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2018-01-30T11:52:24.051Z"
+            },
+            {
+                "_id": "59afd8f2c37dff7d3a833848",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Ренде,преси за чесън",
+                "filters": [],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2023-10-25T14:38:32.799Z"
+            },
+            {
+                "_id": "59afd97cc37dff7d3a833849",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Цедка , сита, гевгири,кошници",
+                "filters": [
+                    {
+                        "name": "стомана"
+                    },
+                    {
+                        "name": "пластмаса"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2022-02-04T13:59:15.942Z"
+            },
+            {
+                "_id": "59afd997c37dff7d3a83384a",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Други кухненски принадлежности",
+                "filters": [
+                    {
+                        "name": "преси"
+                    },
+                    {
+                        "name": "тирбушон"
+                    },
+                    {
+                        "name": "бъркалки"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2022-06-27T09:08:42.755Z"
+            },
+            {
+                "_id": "59ee0d4c0d72ab06492568ea",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Почистващ препарат",
+                "filters": [
+                    {
+                        "name": "препарат за петна"
+                    },
+                    {
+                        "name": "измиване на съдове"
+                    },
+                    {
+                        "name": "препарат за съдомиялна"
+                    },
+                    {
+                        "name": "прах,гел,капсули за пране"
+                    },
+                    {
+                        "name": "препарат за под"
+                    },
+                    {
+                        "name": "почистване на мебели"
+                    },
+                    {
+                        "name": "почистване на екран,дисплей"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0,
+                "updated_at": "2018-01-30T11:57:20.237Z"
+            },
+            {
+                "_id": "59f795200d72ab0649256bc7",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Хартия",
+                "filters": [
+                    {
+                        "name": "кухненска ролка"
+                    },
+                    {
+                        "name": "хартия за печене"
+                    },
+                    {
+                        "name": "сухи кърпички"
+                    },
+                    {
+                        "name": "мокри кърпички"
+                    },
+                    {
+                        "name": "тоалетна хартия"
+                    }
+                ],
+                "parent": "59afcd13c37dff7d3a83383c",
+                "priority": 0
+            },
+            {
+                "_id": "5b4f03ad8a30e40687878554",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Млековарки",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2018-07-18T09:09:01.606Z",
+                "updated_at": "2021-03-13T22:45:18.526Z"
+            },
+            {
+                "_id": "5dadfe70ce59350530ad539f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "За съхранение, транспортиране на храна ",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2019-10-21T18:52:32.562Z",
+                "updated_at": "2019-10-21T18:52:47.924Z"
+            },
+            {
+                "_id": "5e4fdb04ea55d2065733eb2e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Чайници, кани за чай,канчета ",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2020-02-21T13:28:36.755Z",
+                "updated_at": "2021-10-07T14:43:40.281Z"
+            },
+            {
+                "_id": "5e4fdb51ea55d2065733eb2f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кафеварки и джезвета",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2020-02-21T13:29:53.749Z",
+                "updated_at": "2020-02-21T13:30:43.454Z"
+            },
+            {
+                "_id": "5e56ca25ea55d2065733ec2b",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Комплекти",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2020-02-26T19:42:29.270Z",
+                "updated_at": "2020-02-26T20:27:03.817Z"
+            },
+            {
+                "_id": "5e56d48aea55d2065733ec30",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Касероли",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2020-02-26T20:26:50.669Z",
+                "updated_at": "2020-02-26T20:26:50.669Z"
+            },
+            {
+                "_id": "5f745b3e85833b6c5a87f3b1",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Електрически одеяла и възглавници",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2020-09-30T10:17:34.775Z",
+                "updated_at": "2020-09-30T10:18:54.214Z"
+            },
+            {
+                "_id": "604d32ac9e5cce0690187539",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Кани за филтриране на вода",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2021-03-13T21:46:20.213Z",
+                "updated_at": "2021-03-13T22:16:13.120Z"
+            },
+            {
+                "_id": "61fd20d730ab386096a09434",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": " Сушилници за съдове и прибори ",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2022-02-04T12:49:27.849Z",
+                "updated_at": "2022-02-05T11:09:21.594Z"
+            },
+            {
+                "_id": "620129dc30ab386096a09479",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Купи за салата - неръждаема стомана",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2022-02-07T14:17:00.284Z",
+                "updated_at": "2022-02-07T14:17:00.284Z"
+            },
+            {
+                "_id": "622b4c9630ab386096a09699",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Почистване на дома",
+                "filters": [],
+                "priority": 0,
+                "parent": "59afcd13c37dff7d3a83383c",
+                "created_at": "2022-03-11T13:20:22.763Z",
+                "updated_at": "2022-03-11T13:20:22.763Z"
+            }
+        ]
+    },
+    {
+        "_id": "604d09239e5cce06901874f1",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Дом и Градина",
+        "filters": [],
+        "priority": 6,
+        "created_at": "2021-03-13T18:49:07.506Z",
+        "updated_at": "2023-04-07T10:50:26.454Z",
+        "children": [
+            {
+                "_id": "604d21f19e5cce069018750d",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Барбекю",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09239e5cce06901874f1",
+                "created_at": "2021-03-13T20:34:57.831Z",
+                "updated_at": "2021-03-13T20:34:57.831Z"
+            },
+            {
+                "_id": "604d22039e5cce069018750e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Хамаци",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09239e5cce06901874f1",
+                "created_at": "2021-03-13T20:35:15.178Z",
+                "updated_at": "2021-03-13T20:35:15.178Z"
+            },
+            {
+                "_id": "604d24d89e5cce0690187516",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Градински инструменти",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09239e5cce06901874f1",
+                "created_at": "2021-03-13T20:47:20.422Z",
+                "updated_at": "2021-03-13T20:47:20.423Z"
+            },
+            {
+                "_id": "642ff5d31864ec050fa7d87f",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "За дома",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d09239e5cce06901874f1",
+                "created_at": "2023-04-07T10:52:03.500Z",
+                "updated_at": "2023-04-07T10:52:03.500Z"
+            }
+        ]
+    },
+    {
+        "_id": "604d04c29e5cce06901874ea",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Мултимедия",
+        "filters": [],
+        "priority": 6,
+        "created_at": "2021-03-13T18:30:26.317Z",
+        "updated_at": "2021-03-13T23:03:48.721Z",
+        "children": [
+            {
+                "_id": "604d05399e5cce06901874eb",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Тонколони",
+                "filters": [],
+                "priority": 3,
+                "parent": "604d04c29e5cce06901874ea",
+                "created_at": "2021-03-13T18:32:25.673Z",
+                "updated_at": "2021-03-13T18:34:52.326Z"
+            },
+            {
+                "_id": "604d05679e5cce06901874ec",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Слушалки",
+                "filters": [],
+                "priority": 2,
+                "parent": "604d04c29e5cce06901874ea",
+                "created_at": "2021-03-13T18:33:11.592Z",
+                "updated_at": "2021-03-13T18:35:07.724Z"
+            },
+            {
+                "_id": "604d057a9e5cce06901874ed",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Микрофони",
+                "filters": [],
+                "priority": 3,
+                "parent": "604d04c29e5cce06901874ea",
+                "created_at": "2021-03-13T18:33:30.535Z",
+                "updated_at": "2021-03-13T18:35:01.774Z"
+            },
+            {
+                "_id": "6156fa3e9128155880158698",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Радио",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d04c29e5cce06901874ea",
+                "created_at": "2021-10-01T12:08:30.117Z",
+                "updated_at": "2021-10-01T12:08:30.117Z"
+            },
+            {
+                "_id": "6396e12e1864ec050fa7cefe",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Телевизори",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d04c29e5cce06901874ea",
+                "created_at": "2022-12-12T08:07:10.505Z",
+                "updated_at": "2022-12-12T08:07:10.505Z"
+            }
+        ]
+    },
+    {
+        "_id": "604d22849e5cce069018750f",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Излет",
+        "filters": [],
+        "priority": 5,
+        "created_at": "2021-03-13T20:37:24.116Z",
+        "updated_at": "2021-04-19T10:43:01.880Z",
+        "children": [
+            {
+                "_id": "604d22919e5cce0690187510",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Хладилни кутии",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-03-13T20:37:37.408Z",
+                "updated_at": "2021-03-13T20:37:37.408Z"
+            },
+            {
+                "_id": "604d22e29e5cce0690187511",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Въздушни легла",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-03-13T20:38:58.136Z",
+                "updated_at": "2021-03-13T20:38:58.136Z"
+            },
+            {
+                "_id": "604d23029e5cce0690187512",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "За пренасяне на храна",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-03-13T20:39:30.358Z",
+                "updated_at": "2021-03-13T20:39:30.358Z"
+            },
+            {
+                "_id": "604d23249e5cce0690187513",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Хамаци",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-03-13T20:40:04.130Z",
+                "updated_at": "2021-03-13T20:40:04.131Z"
+            },
+            {
+                "_id": "604d23359e5cce0690187514",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Бутилки за вода,чай",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-03-13T20:40:21.603Z",
+                "updated_at": "2022-09-15T12:46:38.831Z"
+            },
+            {
+                "_id": "604d236a9e5cce0690187515",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Барбекю",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-03-13T20:41:14.645Z",
+                "updated_at": "2021-03-13T20:41:14.645Z"
+            },
+            {
+                "_id": "607d5edb9e5cce0690187732",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Къмпинг столове",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d22849e5cce069018750f",
+                "created_at": "2021-04-19T10:43:39.563Z",
+                "updated_at": "2021-04-19T10:43:49.709Z"
+            }
+        ]
+    },
+    {
+        "_id": "604d253e9e5cce0690187517",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Спорт",
+        "filters": [],
+        "priority": 4,
+        "created_at": "2021-03-13T20:49:02.341Z",
+        "updated_at": "2021-03-13T23:04:18.755Z",
+        "children": [
+            {
+                "_id": "604d254d9e5cce0690187518",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Аксесоари",
+                "filters": [],
+                "priority": 0,
+                "parent": "604d253e9e5cce0690187517",
+                "created_at": "2021-03-13T20:49:17.585Z",
+                "updated_at": "2021-03-13T20:49:17.585Z"
+            }
+        ]
+    },
+    {
+        "_id": "581faa1793fce5501790328c",
+        "company_id": "5803545e7e164875e7a26be0",
+        "name": "Грижа за косата",
+        "filters": [],
+        "parent": null,
+        "priority": 3,
+        "updated_at": "2021-03-13T23:05:30.566Z",
+        "children": [
+            {
+                "_id": "581fabb293fce5501790328d",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Шампоан за коса",
+                "filters": [
+                    {
+                        "name": "ежедневен шампоан"
+                    },
+                    {
+                        "name": "за суха коса"
+                    },
+                    {
+                        "name": "руса коса"
+                    },
+                    {
+                        "name": "шампоан против пърхот"
+                    },
+                    {
+                        "name": "шампоан против косопад"
+                    },
+                    {
+                        "name": "шампоан за боядисана коса"
+                    },
+                    {
+                        "name": "изглаждащ шампоан"
+                    },
+                    {
+                        "name": "шампоан за къдрава коса"
+                    },
+                    {
+                        "name": "шампоан за обем"
+                    },
+                    {
+                        "name": "шампоан за мазна коса"
+                    },
+                    {
+                        "name": "сух шампоан"
+                    },
+                    {
+                        "name": "шампоан за блясък в косата"
+                    },
+                    {
+                        "name": "шампоан за всяка коса"
+                    },
+                    {
+                        "name": "шампоан против себорея"
+                    },
+                    {
+                        "name": "анти жълт,матиращ шампоан"
+                    },
+                    {
+                        "name": "антижълт"
+                    },
+                    {
+                        "name": "хидратиращ шампоан"
+                    },
+                    {
+                        "name": "подхранващ шампоан"
+                    },
+                    {
+                        "name": "възстановяващ шампоан "
+                    },
+                    {
+                        "name": "шампоан за увредена коса"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-30T12:08:23.729Z"
+            },
+            {
+                "_id": "581fad3093fce5501790328e",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Маска за коса",
+                "filters": [
+                    {
+                        "name": "хидратираща"
+                    },
+                    {
+                        "name": "изтощена"
+                    },
+                    {
+                        "name": "боядисана"
+                    },
+                    {
+                        "name": "увредена"
+                    },
+                    {
+                        "name": "къдрава"
+                    },
+                    {
+                        "name": "блясък"
+                    },
+                    {
+                        "name": "изглаждаща"
+                    },
+                    {
+                        "name": "възстановяваща"
+                    },
+                    {
+                        "name": "оцветяваща"
+                    },
+                    {
+                        "name": "обем"
+                    },
+                    {
+                        "name": "суха"
+                    },
+                    {
+                        "name": "стърчаща"
+                    },
+                    {
+                        "name": "ежедневна"
+                    },
+                    {
+                        "name": "пърхот"
+                    },
+                    {
+                        "name": "пилинг"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:37:07.573Z"
+            },
+            {
+                "_id": "58220f0093fce550179032c8",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Балсам за коса",
+                "filters": [
+                    {
+                        "name": "обем"
+                    },
+                    {
+                        "name": "изглаждащ"
+                    },
+                    {
+                        "name": "боядисана"
+                    },
+                    {
+                        "name": "къдрава"
+                    },
+                    {
+                        "name": "възстановяващ"
+                    },
+                    {
+                        "name": "ежедневен"
+                    },
+                    {
+                        "name": "кисел"
+                    },
+                    {
+                        "name": "блясък"
+                    },
+                    {
+                        "name": "суха"
+                    },
+                    {
+                        "name": "зплитаща"
+                    },
+                    {
+                        "name": "увредена"
+                    },
+                    {
+                        "name": "антиоксидант"
+                    },
+                    {
+                        "name": "поддържащ"
+                    },
+                    {
+                        "name": "руса"
+                    },
+                    {
+                        "name": "пърхот"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:37:15.382Z"
+            },
+            {
+                "_id": "58220f1593fce550179032c9",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Боя за коса",
+                "filters": [
+                    {
+                        "name": "амонячни"
+                    },
+                    {
+                        "name": "без амоняк"
+                    },
+                    {
+                        "name": "за мъже"
+                    },
+                    {
+                        "name": "биодинамични"
+                    },
+                    {
+                        "name": "нискоамонячни"
+                    },
+                    {
+                        "name": "билкови"
+                    },
+                    {
+                        "name": "удобства"
+                    },
+                    {
+                        "name": "оксидант"
+                    },
+                    {
+                        "name": "активатор"
+                    },
+                    {
+                        "name": "полу перманенти"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:36:52.250Z"
+            },
+            {
+                "_id": "58220f3693fce550179032ca",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Стилизант за коса",
+                "filters": [
+                    {
+                        "name": "блясък"
+                    },
+                    {
+                        "name": "обем"
+                    },
+                    {
+                        "name": "изглаждащ"
+                    },
+                    {
+                        "name": "лак"
+                    },
+                    {
+                        "name": "пяна"
+                    },
+                    {
+                        "name": "гел"
+                    },
+                    {
+                        "name": "пудра"
+                    },
+                    {
+                        "name": "вакса"
+                    },
+                    {
+                        "name": "паста"
+                    },
+                    {
+                        "name": "влага"
+                    },
+                    {
+                        "name": "спрей"
+                    },
+                    {
+                        "name": "анти-фриз"
+                    },
+                    {
+                        "name": "оформящ"
+                    },
+                    {
+                        "name": "крем"
+                    },
+                    {
+                        "name": "кристали"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:37:25.919Z"
+            },
+            {
+                "_id": "58220f5793fce550179032cb",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Терапия за коса",
+                "filters": [
+                    {
+                        "name": "косопад"
+                    },
+                    {
+                        "name": "плекс"
+                    },
+                    {
+                        "name": "пърхот"
+                    },
+                    {
+                        "name": "подхранване"
+                    },
+                    {
+                        "name": "блясък"
+                    },
+                    {
+                        "name": "трайно изправяне"
+                    },
+                    {
+                        "name": "ботокс"
+                    },
+                    {
+                        "name": "спешна помощ"
+                    },
+                    {
+                        "name": "бърз разтеж"
+                    },
+                    {
+                        "name": "себорея"
+                    },
+                    {
+                        "name": "възстановяваща"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:37:33.837Z"
+            },
+            {
+                "_id": "58220f9693fce550179032cc",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Термозащита,протектор за коса",
+                "filters": [],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:39:38.004Z"
+            },
+            {
+                "_id": "58220fa693fce550179032cd",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Оцветител за коса",
+                "filters": [],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:38:19.069Z"
+            },
+            {
+                "_id": "58220fb393fce550179032ce",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Аксесоари за коса",
+                "filters": [],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:38:25.679Z"
+            },
+            {
+                "_id": "58552442b509cd101587e3fd",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Подхранване на коса",
+                "filters": [
+                    {
+                        "name": "олио"
+                    },
+                    {
+                        "name": "кристали"
+                    },
+                    {
+                        "name": "лосион"
+                    },
+                    {
+                        "name": "терапия"
+                    },
+                    {
+                        "name": "серум"
+                    },
+                    {
+                        "name": "флуид"
+                    },
+                    {
+                        "name": "крем"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:38:37.581Z"
+            },
+            {
+                "_id": "593978a7b5f1e6056cfc7d04",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Обезцветяване на коса",
+                "filters": [
+                    {
+                        "name": "супра"
+                    },
+                    {
+                        "name": "крем"
+                    },
+                    {
+                        "name": "олио"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:38:44.856Z"
+            },
+            {
+                "_id": "59f0ba380d72ab06492569cf",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Стимулиране на растежа на косата",
+                "filters": [
+                    {
+                        "name": "масло"
+                    },
+                    {
+                        "name": "лосион"
+                    },
+                    {
+                        "name": "шампоан"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:38:57.999Z"
+            },
+            {
+                "_id": "5a2825f10d72ab0649257bfa",
+                "company_id": "5803545e7e164875e7a26be0",
+                "name": "Къна за коса",
+                "filters": [
+                    {
+                        "name": "оцветяваща"
+                    }
+                ],
+                "parent": "581faa1793fce5501790328c",
+                "priority": 0,
+                "updated_at": "2018-01-20T13:39:06.065Z"
+            }
+        ]
+    }
+]

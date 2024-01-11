@@ -54,9 +54,6 @@ const Layout = () => {
   );
 };
 
-const Modal = () => (
-  <div className='w-32 h-32 bg-green-300 absolute top-[30%] left-[50%]'>MODAL</div>
-);
 
 const router = createBrowserRouter([
   {
